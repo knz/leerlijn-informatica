@@ -198,7 +198,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'LeerlijnInformaticavaardigheden.tex', u'Leerlijn Informaticavaardigheden Documentation',
+  ('index', 'LeerlijnInformaticavaardigheden.tex', u'Leerlijn Informaticavaardigheden',
    u'UvA docenten en assistenten', 'manual'),
 ]
 
@@ -228,7 +228,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'leerlijninformaticavaardigheden', u'Leerlijn Informaticavaardigheden Documentation',
+    ('index', 'leerlijninformaticavaardigheden', u'Leerlijn Informaticavaardigheden',
      [u'UvA docenten en assistenten'], 1)
 ]
 
@@ -242,8 +242,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'LeerlijnInformaticavaardigheden', u'Leerlijn Informaticavaardigheden Documentation',
-   u'UvA docenten en assistenten', 'LeerlijnInformaticavaardigheden', 'One line description of project.',
+  ('index', 'LeerlijnInformaticavaardigheden', u'Leerlijn Informaticavaardigheden',
+   u'UvA docenten en assistenten', 'LeerlijnInformaticavaardigheden', 'Basisvaardigheden bijbehorende alle informaticavakken.',
    'Miscellaneous'),
 ]
 
