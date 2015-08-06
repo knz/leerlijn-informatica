@@ -8,6 +8,7 @@ Inhoudsopgave:
 
    inleiding-docenten
    inleiding-studenten
+   uar
 
 Verzamelingen
 =============
@@ -15,4 +16,3 @@ Verzamelingen
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
