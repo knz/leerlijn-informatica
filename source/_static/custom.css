@@ -1,17 +1,24 @@
 
-.stitle-parent {background-color:silver;}
-.wtitle-parent {background-color:skyblue;}
-.ttitle-parent {background-color:gold;}
-.utitle-parent {background-color:tomato;}
-.dtitle-parent {background-color:palegreen;}
+.stitle {background-color:silver;}
+.wtitle {background-color:skyblue;}
+.ttitle {background-color:gold;}
+.utitle {background-color:tomato;}
+.dtitle {background-color:palegreen;}
+.stitle,
+.dtitle,
+.ttitle,
+.wtitle,
+.utitle {
+    display: inline-block;
+    font-family: 'Iceberg', monospace;
+}
+
 a .stitle,
 a .dtitle,
 a .ttitle,
 a .wtitle,
 a .utitle {
-    display: inline-block;
     color: black;
-    font-family: 'Iceberg', monospace;
 }
 
 .stitle::first-letter,
