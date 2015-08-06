@@ -1,6 +1,8 @@
 Inleiding en motivatie voor docenten
 ====================================
 
+:Auteurs: Robert van Wijk, Floris Kroon & Raphael 'kena' Poss
+
 Vanuit de tutoren, de student-assistenten en zelfs de huidige
 eerstejaars studenten komt regelmatig het geluid dat bepaalde
 vaardigheden niet of onvoldoende behandeld worden binnen de
@@ -46,114 +48,60 @@ worden. Behalve de onderwerpen die nu al bij PAV aan bod komen, zou
 meer aandacht voor gebruik van bijvoorbeeld figuren, formules en
 beamer waardevol kunnen zijn.
 
+Tevens zijn meerdere vaardigheden verwacht als vooreis voor
+vervolgopleidingen, denk aan bv. het automatisch verzamelen van
+statistische metingen van het gedrag van een programma, helaas nemen
+we vaak waar dat een significant deel van deze vaardigheden ontbreken
+bij een significant deel van de gediplomeerde studenten.
+
 De leerlijn
 -----------
 
-Doelstelling van de leerlijn informaticavaardigheden is het
-structureren en verdiepen van het onderwijs in deze drie vaardigheden,
-linux, LaTeX en git. Deze vaardigheden behoren niet direct tot het
-programmeren, maar zijn wel essentieel binnen het vakgebied. De
-leerlijn loopt door de eerste twee jaren van de bacheloropleiding
-informatica en behandelt de vaardigheden wanneer ze optimaal
-aansluiten bij de op dat moment behandelde vakinhoud.
+De doelstelling van de leerlijn informaticavaardigheden is het
+structureren en verdiepen van het onderwijs in vijf groepen
+vaardigheden: databeheer (D), de unixomgeving (U), omgaan met broncode
+(S), programmeerapparatuur (T) en technieken voor wetenschappelijke
+communicatie (W).
 
-Het nieuw te ontwikkelen materiaal dient te voldoen aan de volgende
-randvoorwaarden:
+Een volle overzicht van de voorgestelde vaardigheden is terug te vinden in de
+:doc:`Inleiding voor studenten <inleiding-studenten>`.
+
+Deze vaardigheden behoren niet direct tot het programmeren, maar zijn
+wel essentieel binnen het vakgebied. De leerlijn loopt door de eerste
+twee jaren van de bacheloropleiding informatica en behandelt de
+vaardigheden wanneer ze optimaal aansluiten bij de op dat moment
+behandelde vakinhoud.
+
+Het is de bedoeling dat de beschrijving van ieder vaardigheid
+gecommuniceerd aan studenten ruimte maakt voor twee soorten
+benaderingen tijdens de studie:
+
+- een "minimale investering" moet duidelijk worden beschreven door
+  middel van duidelijke toetsingcriteria, en eventueel direct
+  gerelateerd aan straf- of bonuspunten in de behorende vakopdrachten;
+
+- een "extra mijlpaal" sectie kan aspecten van de vaardigheid
+  beschrijven die niet strikt vereist zijn aan het eind van de studie
+  maar de kans geeft aan nieuwsgierige studenten om zich verder in te
+  diepen, met duidelijke uitleg van de voordelen behaald door de
+  vaardigheid.
+
+Ieder beschrijving van een vaardigheden is ook verder geformuleerd om
+te voldoen aan de volgende randvoorwaarden:
 
 - Het is gericht op de praktijk en bedoeld om te oefenen.
-- Het dient zelfstandig door de student gemaakt te kunnen worden.
+- Het dient zelfstandig door de student bestudeerd te kunnen worden.
 - Het dient relatief eenvoudig hergebruikt te kunnen worden bij
   veranderingen in het curriculum.
-
-Vaardigheden
-------------
-
-Er worden drie vaardigheden centraal gezet, namelijk werken met Linux,
-Git en LaTeX. Binnen deze vaardigheden worden voor de meeste
-onderdelen (bijvoorbeeld maken van figuren in LaTeX) een basisopdracht
-en een geavanceerde opdracht gemaakt. Door het in tweeën te delen,
-blijft de werkdruk voor de student beter te behappen en wordt er voor
-gezorgd dat een student minstens twee keer geoefend heeft met een
-specifiek onderdeel waardoor het beter blijft hangen. Ook is hierbij
-belangrijk dat de vaardigheden relevant zijn voor het vak en dat ze
-daarbij ook terugkomen.
-
-Linux
-~~~~~
-
-Bij Linux is het vooral het algemene gebruik waar in het begin
-aandacht aan besteed moet worden, zoals het werken in een
-terminal. Veel dingen kunnen in Linux ook grafisch, dus het
-overschakelen naar de terminal kan geleidelijk aan worden gedaan. Een
-leidraad kan gevonden worden in de tutorials van `Surrey`_
-en de `Introductie Unix`_ van Raphael Poss. Ook bestaan er certificeringen die
-concreter maken wat van bepaalde niveaus verwacht wordt bij `lpi.org`__.
-
-.. __: https://www.lpi.org/study-resources/lpic-1-101-exam-objectives/#103 
-
-Behalve het algemene gebruik van een terminal, waar al heel veel
-commands onder vallen, zijn het gebruik van een terminal-editor en
-debuggen nog twee belangrijke onderwerpen. Onder de eerste wordt
-bijvoorbeeld gebruik van vim verstaan, wat toestaat om bijvoorbeeld
-via ssh te programmeren. Dat is met een grafische editor (zoals gedit)
-lastiger. Voor het leren van vim zijn er ook allerlei tutorials, zoals
-op http://www.openvim.com/ of om te oefenen met de movement-toetsen de
-`vim adventures`__. Veel aandacht hoeft er echter niet
-aan vim besteed worden, het is geen essentiële vaardigheid.
-
-.. __: http://vim-adventures.com/
-
-Debuggen zou uitleg over gdb en valgrind inhouden. Ook hier is het
-belangrijk dat deze gelinkt worden aan een relevant vak, zodat de
-nieuwe kennis onmiddellijk in de praktijk kan worden gebracht. Al met
-al is het leren werken met linux een vaardigheid die over de eerste
-twee jaar van de bachelor steeds een beetje verbeterd kan worden.
-
-Git
-~~~
-
-Het huidige git-practicum bij PAV is goed, al gaat het niet verder dan
-een file.txt in een enkele repository. Bij webdb is het echter zo dat
-er een hele code base in git komt, dus meer is nodig. In principe
-leent webdb zich wel uitstekend voor het leren van git. Na het project
-is dan nog een vervolg nodig, bijvoorbeeld bij besturingssystemen.
-
-Eerder beginnen aan git is niet logisch omdat een gedeelte van de
-studenten dan nog niet goed genoeg kan programmeren en het gebruik van
-git ze dan nog weinig zegt. Later kan nog aandacht besteed worden aan
-geavanceerder gebruik als branches en merging, hoewel het valt aan te
-raden om dat ook al in het eerste jaar te behandelen.
-
-Er zijn online uitstekende tutorials, zoals die van github zelf
-`github git tutorial`_ en Atlassian_. Om te oefenen is er
-ook van alles, zoals de `git game`_.
-
-.. _github git tutorial: https://try.github.io/levels/1/challenges/1
-.. _Atlassian: https://www.atlassian.com/git/tutorials/ 
-.. _git game: https://github.com/git-game/git-game
-
-LaTeX
-~~~~~
-
-LaTeX krijgt binnen PAV al vrij veel aandacht, wat ertoe leidt dat het
-door de studenten goed gebruikt wordt. De huidige inhoud van PAV over
-LaTeX kan geïntegreerd worden met deze leerlijn, waarbij meer tijd
-genomen kan worden voor (correct) gebruik van figuren en tabellen,
-refereren, formules en eventueel LaTeX beamer.
-
-Basis-LaTeX hoort al bij het begin van de studie. Simpele figuren
-kunnen dan ook behandeld worden, complexere figuren komen later bij
-vakken waarbij dat relevant is (tweede jaar), dan krijgen de verslagen
-wat meer vorm. Dat geldt ook voor formules, die passen ook goed bij
-specifieke vakken.
 
 In het curriculum
 -----------------
 
 De leerlijn zal bestaan uit zelfstandig werk met terugblikken tijdens
-PAV of tijdens de relevante vakken. LaTeX en git zullen beide minder
-tijd vergen dan linux, twee keer een uur of vier oefenen en daarna
-blijvend gebruik zou genoeg moeten zijn.
+PAV of tijdens de relevante vakken. Ieder vaardigheid wordt
+gepresenteerd in een of meer modules die elk initieel tussen een en
+twee uur zelfstudie vereisen. Er wordt beoogd dat ieder vaardigheid
+verder automatisch wordt ontwikkeld door de natuurlijke loop van de opleiding.
 
 In de hoorcolleges, in de computerpractica en binnen het practicum
 academische vaardigheden kan op verschillende manieren bij deze
@@ -195,7 +143,7 @@ Ontwikkeling
 ------------
 
 Voorstel om gedurende het collegejaar 2015-2016 de huidige opdrachten
-waar nodig aan te passen en nieuwe opdrachten te laten ontwikkelen
+waar nodig aan te passen en eventueel nieuwe opdrachten te laten ontwikkelen
 door twee studentassistenten. De samenstelling kan wisselen
 afhankelijk van expertise. Er wordt gekozen voor twee zodat ze
 onderling kunnen overleggen. Daarnaast kan de coördinator academische
@@ -210,14 +158,33 @@ functioneren als visitekaartje van de opleiding in plaats van de
 indruk te wekken dat we vooral leunen op materiaal van andere
 universiteiten.
 
-Eigenaarschap
--------------
+De beschrijving van de voorgestelde vaardigheden zal dus worden
+gepubliceerd als zelfstandige, openbare website, en tegelijk
+beschikbaar als PDF boekje voor studenten die graag een papierekopie
+willen. Het is de bedoeling dat deze website beschikbaar voor de
+studenten wordt gemaakt aan het begin van de studie, en dat ze eraan
+kunnen blijven refereren tijdens de loop van de opleiding en eventueel
+daarna.
 
-Een leerlijn zonder eigenaar sterft een snelle dood. Het voorstel is
-om in eerste instantie de coördinator academische vaardigheden
-eigenaar te maken. Gezien de inhoud van de leerlijn is het mogelijk
-logischer om op termijn een docent die nauw betrokken is bij het
-programmeeronderwijs in de opleiding verantwoordelijk te maken.
+Eigenaarschap en onderhoud
+--------------------------
+
+De docententeam als geheel is verantwoordelijk voor de lange termijn
+visie van de leerlijn en het formuleren van de algemene profieleisen
+die naar individuele vaardigheden vertaald moeten worden.
+
+Het werk om deze eisen te vertalen naar individuele vaardiheidsmodules
+wordt dan uitgevoerd door een of meerdere redacteurs. De coördinator
+academische vaardigheden (Robert van Wijk) met behulp van gemotiveerde
+assistenten en docenten hebben de initiatief genomen om de rol van
+redacteur te spelen voor de eerste implementatie. Het is echter de
+verwachting dat de "betere" assistenten ieder jaar het document en de
+inbedding in het curriculum verder zullen uitbreiden en onderhouden.
+
+Elke vaardigheidsmodule of groep vaardigheden zal ook worden
+vertegenwoordigd door een of meer docenten en/of assistenten die als
+"sponsor" de richtlijn zullen zetten voor verdere ontwikkelingen en
+onderhoud.
 
 Kosten
 ------
@@ -228,11 +195,14 @@ ontwikkeling, onderhoud en uitvoering.
 Ontwikkeling
 ~~~~~~~~~~~~
 
-De meeste kosten zitten in de ontwikkeling van nieuw
-materiaal. Verwacht wordt dat voor het ontwikkelen van een opdracht
-van 4 uur voor de studenten minimaal 12 uur ontwikkeltijd nodig is,
-waardoor al snel meer dan 100 uur nodig is om een programma op te
-zetten.
+De meeste kosten zitten in de ontwikkeling van nieuw materiaal en de
+uitgebreide beschrijving van de verschillende vaardigheden (en dus
+productie van de bijbehorende web site). 
+
+Verwacht wordt dat voor het formuleren van de introductie van elke
+vaardigheid, zijn toetsingcriteria en het verwerven in de opleiding
+ongeveer 1-2 uur kan kosten, waardoor voor de 40 voorgestelde
+vaardigheden meer dan 50 uur nodig is om een programma op te zetten.
 
 Onderhoud
 ~~~~~~~~~
@@ -261,3 +231,7 @@ minuten) bij de opdrachten stilgestaan gaat worden binnen de
 PAV-bijeenkomsten, nemen de kosten voor de uitvoering toe. Naast een
 (beperkt) aantal extra uren assistentie betekent dit mogelijk ook dat
 onderwijszalen langer gebruikt worden, met de bijbehorende kosten.
+
+Voor de studenten zijn de extra inspanningen om de vaardigheden te leren
+makkelijk te verwaarlozen door de verwante productiviteits- en
+kwaliteitswinsten daarmee ontwikkeld.
