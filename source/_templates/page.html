@@ -8,7 +8,11 @@
 <div class="footer" role="contentinfo">
   <a href="http://creativecommons.org/licenses/by-sa/3.0/nl/">
     <img alt="cc-by-sa logo" width=80 height=15 src="_static/cc-by-sa-small.png" />
-  </a>
+  </a>{%- if show_source and has_source and sourcename %}
+  <br/>Pagina gebouwd vanuit
+  <a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow">{{ sourcename }}</a>
+  versie {{ release }}.
+  {%- endif %}
 </div>
 {{ super() }}
 {% endblock %}
