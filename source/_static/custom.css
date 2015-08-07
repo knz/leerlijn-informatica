@@ -40,4 +40,6 @@ a .utitle {
     content: " (verbergen)";
 }
 
-
+div.header img.rightlogo {
+    padding: 1em;
+}
