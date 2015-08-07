@@ -141,7 +141,7 @@ kunt klikken met je muis, of vinger op een touchscherm.
 .. index:: PID
 .. index:: process ID
 .. index:: Ctrl-Z
-.. index:: SIGTSTOP
+.. index:: SIGTSTP
 
 Op Unix zijn er meerdere manieren een programma af te sluiten:
 
