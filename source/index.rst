@@ -5,12 +5,15 @@ Inhoudsopgave:
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
    inleiding-docenten
    inleiding-studenten
-   uar
-   dcode
-   dfp
+   d*
+   u*
+   s*
+   t*
+   w*
 
 Verzamelingen
 =============
