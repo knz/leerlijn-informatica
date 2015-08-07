@@ -20,11 +20,13 @@ eind van hun studie. Het zijn technieken, kennis, methodes en
 referenties die van toepassing kunnen zijn in alle vakgebieden binnen
 de informatica en in elke informaticabaan na de studie.
 
-Deze website, die je ook als PDF document kunt downloaden, geeft een
+Deze website, die je ook als `PDF document`__ kunt downloaden, geeft een
 overzicht en gedetailleerde beschrijving voor elke vaardiheid in de
 leerlijn. Je hoeft dit hele document niet door te nemen aan het begin
 van je studie; in elk vak zal je worden uitgenodigd door je docenten
 en assistenten om een paar hoofdstukken te bestuderen.
+
+.. __: _static/LeerlijnInformaticavaardigheden.pdf
 
 Elk hoofdstuk betekent tussen 15mn en 2 uur zelfstudie, plus af en toe
 opnieuw oefenen of toepassen tijdens de rest van je studie.  Alle

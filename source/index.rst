@@ -16,8 +16,6 @@ voorwaarden van naamsvermelding en gelijkdelen van veranderde materiaal.
 .. |CC-BY-SA| image:: _static/cc-by-sa.png
 .. _`CC-BY-SA`: http://creativecommons.org/licenses/by-sa/3.0/nl/
 
-Inhoudsopgave:
-
 .. toctree::
    :maxdepth: 2
    :glob:
