@@ -9,6 +9,8 @@ Inhoudsopgave:
    inleiding-docenten
    inleiding-studenten
    uar
+   dcode
+   dfp
 
 Verzamelingen
 =============

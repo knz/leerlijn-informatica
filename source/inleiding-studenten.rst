@@ -199,6 +199,10 @@ studeren in de Informatica (MSc CS of dergelijk).
      - Snel verhoudingen en vergelijkingen schatten tussen binaire
        en hexadecimale getallen, 2-machten herkennen
 
+   * - |DFP+|_
+     - Zwevendekommagetallen
+     - Bereik kennen van float en double, omgaan met NaN, vergelijkingen uitdrukken in code
+
    * - |DPLOT1|_
      - Automatisch plotten (basis)
      - Scatter, bar en lijn plots automatisch produceren door middel
@@ -300,7 +304,7 @@ op vakopdrachten om je te motiveren.
 |          |                        +------------------+------------------+------------------+-------------------+--------------------+
 |          |                        |                  |                  |                  | |TPROF2+|_        | |DAUTO3+|_         |
 +----------+------------------------+------------------+------------------+------------------+-------------------+--------------------+
-| Blok 3   | Numerical recipes      |                  |                  |                  |                   |                    |
+| Blok 3   | Numerical recipes      |                  |                  |                  |                   | |DFP+|_            |
 +----------+------------------------+------------------+------------------+------------------+-------------------+--------------------+
 | Blok 4   | Gfx & game tech        |                  |                  | |SNAV2|_         |                   |                    |
 |          +------------------------+------------------+------------------+------------------+-------------------+--------------------+
