@@ -10,7 +10,7 @@ Documentversie: |release|.
 
 |CC-BY-SA|_ Dit werk wordt beschikbaar gemaakt onder de `Creative
 Commons Naamsvermelding-GelijkDelen 3.0 Nederland-licentie`__. Rechten
-zijn geleend aan derden om het werk te delen en veranderen, onder
+zijn verleend aan derden om het werk te delen en veranderen, onder
 voorwaarden van naamsvermelding en gelijkdelen van veranderde materiaal.
 
 .. __: http://creativecommons.org/licenses/by-sa/3.0/nl/
