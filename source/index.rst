@@ -1,7 +1,7 @@
 Leerlijn Informaticavaardigheden
 ================================
 
-Dit is de handboek van de leerlijn informaticavaardigheden, een
+Dit is het handboek van de leerlijn informaticavaardigheden, een
 dwarslopend curriculum voor BSc Informaticastudenten.
 
 Copyright © 2015, Universiteit van Amsterdam.
