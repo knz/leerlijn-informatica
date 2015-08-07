@@ -178,20 +178,6 @@ Conversie in de programmeertaal C
      printf("%e\n", 314.);   // geeft 3.140000e+02 (grondtal 10)
      printf("%A\n", 314.);   // geeft 0x1.3Ap+8 (grondtal 16)
 
-Verder inlezen
---------------
-
-- Josh Haberman, *What every computer programmer should know about
-  floating point, part 1.*. `Self published`__, 1994.
-
-  .. __: http://blog.reverberate.org/2014/09/what-every-computer-programmer-should.html
-
-- David Goldberg. *What every computer scientist should know about
-  floating point arithmetic.*. ACM Computing Surveys, 1991. (Citaat__, PDF__)
-
-  .. __: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768
-  .. __: http://cr.yp.to/2005-590/goldberg.pdf
-
 (Zelf)evaluatie
 ---------------
 
@@ -235,3 +221,17 @@ Verder inlezen
       Single precisie: NaN, want :math:`10^{50}` past niet in het 32-bit formaat.
 
       Dubbele precisie: 0.
+
+Verder inlezen
+--------------
+
+- Josh Haberman, *What every computer programmer should know about
+  floating point, part 1.*. `Self published`__, 1994.
+
+  .. __: http://blog.reverberate.org/2014/09/what-every-computer-programmer-should.html
+
+- David Goldberg. *What every computer scientist should know about
+  floating point arithmetic.*. ACM Computing Surveys, 1991. (Citaat__, PDF__)
+
+  .. __: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768
+  .. __: http://cr.yp.to/2005-590/goldberg.pdf
