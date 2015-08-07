@@ -10,6 +10,9 @@
 Algemene begrippen
 ------------------
 
+.. index:: archief
+.. index:: compressie
+
 Een *archief* is een verzameling van bestanden.
 
 Ieder archiveringsprogramma heeft zijn eigen opslagformaat voor de
@@ -29,6 +32,11 @@ voeren op willekeurige bestanden, niet alleen archieven.
 Opslagformaten
 --------------
 
+.. index:: tar
+.. index:: ustar
+.. index:: ar
+.. index:: cpio
+
 De meest gangbare "pure" archiefformaten zijn:
 
 ===== ============== =============== ============= ============
@@ -38,6 +46,10 @@ ustar Unix v7, 1979  POSIX           .tar          tar, pax
 ar    Unix v1, 1971  POSIX           .a            ar
 cpio  PWB/UNIX, 1977 POSIX (oud)     .cpio, .rpm   cpio, pax
 ===== ============== =============== ============= ============
+
+.. index:: gzip
+.. index:: xz
+.. index:: compress
 
 De meest gangbare "pure" compressieformaten zijn:
 

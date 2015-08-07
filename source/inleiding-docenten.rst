@@ -197,7 +197,7 @@ Ontwikkeling
 
 De meeste kosten zitten in de ontwikkeling van nieuw materiaal en de
 uitgebreide beschrijving van de verschillende vaardigheden (en dus
-productie van de bijbehorende web site). 
+productie van de bijbehorende web site).
 
 Verwacht wordt dat voor het formuleren van de introductie van elke
 vaardigheid, zijn toetsingcriteria en het verwerven in de opleiding
