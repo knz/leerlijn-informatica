@@ -464,7 +464,7 @@ weg". Voor de meeste programma's betekent het gewoon "afsluiten".
 
 .. index:: SIGTSTP
 
-De toetscombinatie Ctrl+Z stuurt alleen het signaal "``SIGTSTP``" aan
+De toetscombinatie :kbd:`Ctrl+Z` stuurt alleen het signaal "``SIGTSTP``" aan
 het proces op het hoofd van je terminal. De consequentie ervan, een
 pauze en dan de shell zien terugkomen op de voorgrond, gebeurt door
 het afhandelen van dit signaal door het proces zelf en de shell
@@ -472,7 +472,7 @@ erachter.
 
 .. index:: SIGTERM
 
-Het commando ":program:`kill`", ondanks zijn naam, is alleen een programma om
+Het commando :program:`kill`, ondanks zijn naam, is alleen een programma om
 signalen te sturen aan andere processen. Als je geen signaalnaam
 aangeeft, stuurt hij automatisch ``SIGTERM``.
 
