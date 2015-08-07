@@ -70,7 +70,7 @@ Grondtal           Cijfers
 Van representatie naar waarde
 `````````````````````````````
 
-Met grontal *b* wordt de waarde van een rij cijfers bepaald als volgt:
+Met grondtal *b* wordt de waarde van een rij cijfers bepaald als volgt:
 
 - de *b* cijfers zelf krijgen een vaste waarde tussen 0 en *b*-1.
 - de waarde van een rij cijfers met de vorm :math:`c_k...c_3c_2c_1c_0` is dan bepaald met de formule:
@@ -104,7 +104,7 @@ Hetzelfde representatie "456", geïnterpreteerd met grondtal :math:`8_{10}`, hee
      & = 302_{10}
    \end{array}
 
-Hetzelfde weer met grontal :math:`16_{10}`, wordt de waarde:
+Hetzelfde weer met grondtal :math:`16_{10}`, wordt de waarde:
 
 .. math::
 
@@ -119,7 +119,7 @@ En met grondtal :math:`2_{10}`:
 .. admonition:: Antwoord
    :class: toggle
 
-   Het getal "456" is niet een geldige representatie in grontal 2, omdat
+   Het getal "456" is niet een geldige representatie in grondtal 2, omdat
    dit positiestelsel maar 2 cijfers heeft!
 
 Van waarde naar representatie
@@ -133,18 +133,18 @@ De representatie van een waarde *w* wordt berekend met de volgende formule:
 
 De representatie stopt op cijferpositie *k* wanneer :math:`b^{k+1}` groter wordt dan *w*.
 
-Bijvoorbeeld, voor de waarde :math:`w = 123_{10}` en met grontal :math:`b = 2_{10}`:
+Bijvoorbeeld, voor de waarde :math:`w = 123_{10}` en met grondtal :math:`b = 2_{10}`:
 
 .. math::
 
    \begin{array}{l}
    c_0 = 123_{10} \bmod 2 = 1 \\
-   c_1 = \frac{123_{10}}{2_{10}} \bmod 2 = \lfloor 61.5 \rfloor \bmod 2 = 61 \bmod 2 = 1 \\
-   c_2 = \frac{123_{10}}{4_{10}} \bmod 2 = 30 \bmod 2 = 0 \\
-   c_3 = \frac{123_{10}}{8_{10}} \bmod 2 = 15 \bmod 2 = 1 \\
-   c_4 = \frac{123_{10}}{16_{10}} \bmod 2 = 7 \bmod 2 = 1 \\
-   c_5 = \frac{123_{10}}{32_{10}} \bmod 2 = 3 \bmod 2 = 1 \\
-   c_6 = \frac{123_{10}}{64_{10}} \bmod 2 = 1 \bmod 2 = 1  \qquad \text{(representatie stopt hier: } 2^7 > 123_{10}\text{)} \\
+   c_1 = \frac{123_{10}}{2_{10}} \bmod 2 = \lfloor 61.5_{10} \rfloor \bmod 2 = 61_{10} \bmod 2 = 1 \\
+   c_2 = \frac{123_{10}}{4_{10}} \bmod 2 = 30_{10} \bmod 2 = 0 \\
+   c_3 = \frac{123_{10}}{8_{10}} \bmod 2 = 15_{10} \bmod 2 = 1 \\
+   c_4 = \frac{123_{10}}{16_{10}} \bmod 2 = 7_{10} \bmod 2 = 1 \\
+   c_5 = \frac{123_{10}}{32_{10}} \bmod 2 = 3_{10} \bmod 2 = 1 \\
+   c_6 = \frac{123_{10}}{64_{10}} \bmod 2 = 1_{10} \bmod 2 = 1  \qquad \text{(representatie stopt hier: } 2^7 > 123_{10}\text{)} \\
    \end{array}
 
 De representatie van :math:`123_{10}` met grondtal 2 is dus :math:`1111011_2`.
@@ -155,26 +155,26 @@ Notaties in de informatica
 De programmeertal C (en zijn opvolgers inclusief Java, JavaScript en
 veel anderen) heeft de volgende notaties standaard gemaakt:
 
-- voor grontal 2 (binaire) representaties:  "0b" en dan de representatie, bijvoorbeeld "0b1111011"
+- voor grondtal 2 (binaire) representaties:  "0b" en dan de representatie, bijvoorbeeld "0b1111011"
 
-- voor grontal 16 (hexadecimaal):  "0x" en dan de representatie, bijvoorbeeld "0x7b"
+- voor grondtal 16 (hexadecimaal):  "0x" en dan de representatie, bijvoorbeeld "0x7b"
 
-- voor grontal 8 (octaal): "0" en dan de representatie, bijvoorbeeld "0173".
+- voor grondtal 8 (octaal): "0" en dan de representatie, bijvoorbeeld "0173".
 
   .. warning::
 
      Pas op! In de wiskunde heeft een extra nul cijfer voor een getal geen
      bijzondere betekenis, en het getal blijft vaak geinterpreteerd
-     met grontal 10. In de informatica, vooral programmacode, betekent
+     met grondtal 10. In de informatica, vooral programmacode, betekent
      een "0" aan het begin heel vaak dat de representatie octaal is.
 
 Conversie tussen grondtallen 2 en 16
 ------------------------------------
 
 Voor twee willekeurige grondtallen *a* en *b* bestaat geen makkelijke
-algemene formule om een representatie met grontal *a* te vertalen naar
-een representatie met grontal *b*. Maar voor het bijzonder geval van
-getallen 2 en 16, is het juist heel makkelijk: **ieder cijfer in grontal
+algemene formule om een representatie met grondtal *a* te vertalen naar
+een representatie met grondtal *b*. Maar voor het bijzonder geval van
+getallen 2 en 16, is het juist heel makkelijk: **ieder cijfer in grondtal
 16 kan direct gemapt worden naar een groep van 4 cijfers met
 grondtal 2**.
 
@@ -206,7 +206,7 @@ dead        1101111010101101 (1101 1110 1010 1101)
 
 .. note:: Deze conversiemethode kan altijd worden toegepast
    tussen grondtallen *a* en *b* zodra :math:`a = b^k`, waar dan
-   1 cijfer in grontal *a* gemapt is naar *k* cijfers in grontal *b*.
+   1 cijfer in grondtal *a* gemapt is naar *k* cijfers in grondtal *b*.
    Hier hebben we :math:`b = 2` en :math:`a = 16 = b^4`.
 
 Handige waardes
