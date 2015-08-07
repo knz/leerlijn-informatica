@@ -244,13 +244,7 @@ Zelfde voor een gecomprimeerd archief::
 Verder inlezen
 --------------
 
-- FreeBSD man pages `ar(1)`__, `tar(1)`__, `gzip(1)`__, `bzip2(1)`__, `xz(1)`__
-
-  .. __: https://www.freebsd.org/cgi/man.cgi?query=ar
-  .. __: https://www.freebsd.org/cgi/man.cgi?query=tar
-  .. __: https://www.freebsd.org/cgi/man.cgi?query=gzip
-  .. __: https://www.freebsd.org/cgi/man.cgi?query=bzip2
-  .. __: https://www.freebsd.org/cgi/man.cgi?query=xz
+- FreeBSD man pages |ar(1)|_, |tar(1)|_, |gzip(1)|_, |bzip2(1)|_, |xz(1)|_
 
 - Linux man pages `ar(1)`__, `tar(1)`__, `gzip(1)`__, `bzip2(1)`__, `xz(1)`__
 
