@@ -46,6 +46,9 @@ help:
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
+upload: html
+	rsync -e "ssh -p 10022" -P -c -rvz --delete $(BUILDDIR)/html/ kena@csa.science.uva.nl:/home/kena/www/inf-leervaardigheden
+
 common: source/common.d
 
 source/common.d: $(wildcard source/*.rst)
