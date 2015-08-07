@@ -634,6 +634,8 @@ Bestandsstructuur
 .. index:: pad (filesysteem)
 .. index:: filesysteem
 .. index:: bestandsstructuur
+.. index:: thuismap
+.. index:: home directory
 
 Bestanden worden georganiseerd in mappen, met mappen binnen
 mappen. Dit principe ken je al.
