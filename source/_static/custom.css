@@ -43,3 +43,17 @@ a .utitle {
 div.header img.rightlogo {
     padding: 1em;
 }
+
+.kbd {
+    display: inline-block;
+    border: 1px solid white;
+    background-color: black;
+    padding: 1px 5px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.program {
+    font-size: 120%;
+    font-family: monospace;
+}

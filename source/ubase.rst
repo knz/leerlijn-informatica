@@ -60,16 +60,16 @@ gebruikelijk te vinden bij een menu "Hulpprogramma's", "Utilities",
 "Systeem" of "Development". Al je Unixsysteem een visuele zoekfunctie
 heeft, kun je deze ook gebruiken: zoek naar "Terminal" of "xterm". Als
 je een veld kunt vinden om een commando handmatig in te voeren, tik
-dan "``xterm``" in. Op Linux (maar niet andere Unixsystemen) kun je
-ook toegang krijgen tot een volscherm terminal door Ctrl+Alt+F1
+dan ":program:`xterm`" in. Op Linux (maar niet andere Unixsystemen) kun je
+ook toegang krijgen tot een volscherm terminal door :kbd:`Ctrl+Alt+F1`
 tegelijk te drukken op het toetsenbord; daar moet je opnieuw een
 sessie openen door je gebruikersnaam en wachtwoord in te tikken. Je
-kunt terug naar de grafische omgeving door Alt+F7.
+kunt terug naar de grafische omgeving door :kbd:`Alt+F7`.
 
 Een terminal ziet er ongeveer zo uit:
 
 .. image:: _static/term.png
-   :width: 100%
+   :width: 80%
    :align: center
 
 Het kleurenschema (zwart op wit, wit of zwart, wit op groen, etc) maakt
@@ -92,13 +92,13 @@ Aan het begin heb je een soort mini-teksteditor voor maar 1 regel
 tekst, voor je commando. Hier kan je je eerste commando editen: de
 lettertoetsen om tekst toe te voegen, pijltjes te navigeren, maar ook:
 
-- Ctrl+A om te navigeren naar het begin van de lijn,
-- Ctrl+E naar het eind,
-- Alt+F (of [Escape], dan 'F') naar het volgende woord,
-- Alt+B (of [Escape], dan 'B') naar het vorige woord.
-- Ctrl+H als je "backspace" toets het niet goed doet (gebeurt helaas vaak)
+- :kbd:`Ctrl+A` om te navigeren naar het begin van de lijn,
+- :kbd:`Ctrl+E` naar het eind,
+- :kbd:`Alt+F` (of :kbd:`Esc`, dan :kbd:`F`) naar het volgende woord,
+- :kbd:`Alt+B` (of :kbd:`Esc`, dan :kbd:`B`) naar het vorige woord.
+- :kbd:`Ctrl+H` als je :kbd:`backspace` toets het niet goed doet (gebeurt helaas vaak)
 
-Zodra je een commando valideert met de [Enter] toets, zal de shell
+Zodra je een commando valideert met de :kbd:`Enter` toets, zal de shell
 zoeken naar de betekenis van je commando, en als het een programma is
 zal de shell een nieuwe process aanmaken om je programma te
 draaien. Zodra dit gebeurt, geeft de shell tijdelijk controle van de
@@ -108,7 +108,7 @@ Tik maar bijvoorbeeld in::
 
    echo hello; sleep 5
 
-(dan [Enter])
+(dan :kbd:`Enter`)
 
 Met deze regel vraag je aan je shell om eerst het commando |echo(1)|_ te
 draaien om tekst te printen op de terminal, dan het commando |sleep(1)|_
@@ -129,7 +129,7 @@ ervaring als studenten is dat het hoofdprobleem is altijd: "hoe kom ik
 terug naar een bekende situatie?". Stel je voor: je hebt een programma
 geopend, en je weet niet hoe je hem kunt afsluiten. Wat dan?
 
-Vaak werkt de "Escape" toets *niet*. De toetscombinatie Alt+F4 ook
+Vaak werkt de :kbd:`Esc` toets *niet*. De toetscombinatie :kbd:`Alt+F4` ook
 niet. Dan op een terminal is er natuurlijk geen kleine kruis die je
 kunt klikken met je muis, of vinger op een touchscherm.
 
@@ -149,9 +149,9 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
    aanwijzing van hoe je hem kunt afsluiten, gebruik dan dat.
 
 2. als je programma een soort commandolijn heeft waar je commando's
-   blijkt in te kunnen tikken, probeer dan de woorden "``quit``" of
-   "``exit``" in te tikken. Soms is de letter ``q`` alleen al
-   genoeg. Als het niet werkt, probeer dan "``help``". Tik
+   blijkt in te kunnen tikken, probeer dan de woorden ":program:`quit`" of
+   ":program:`exit`" in te tikken. Soms is de letter :kbd:`q` alleen al
+   genoeg. Als het niet werkt, probeer dan ":program:`help`". Tik
    bijvoorbeeld de volgende commando's in je terminal, en test jezelf
    dat je ze kunt afsluiten met een commandowoord::
 
@@ -163,10 +163,10 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
      gnuplot
 
 3. zo niet, als je programma meestal gebaseerd is op invoer vanuit een
-   terminal, gebruik dan de toetscombinatie Ctrl+D. Deze combinatie wordt
-   ook beschreven als "``^D``" in documentatieteksten; het betekent
+   terminal, gebruik dan de toetscombinatie :kbd:`Ctrl+D`. Deze combinatie wordt
+   ook beschreven als :kbd:`^D` in documentatieteksten; het betekent
    "de huidige invoer beëindigen". Tik de volgende commando's in je
-   terminal, en test jezelf dat je ze kunt afsluiten met ``^D``::
+   terminal, en test jezelf dat je ze kunt afsluiten met :kbd:`^D`::
 
        cat
        sort
@@ -175,77 +175,77 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
        perl
        python
 
-   NB: De meeste commando's die "``exit``" of "``quit``" ondersteunen
-   kunnen ook worden afgesloten door ``^D``.
+   NB: De meeste commando's die ":program:`exit`" of ":program:`quit`" ondersteunen
+   kunnen ook worden afgesloten door :kbd:`^D`.
 
-4. als ``^D`` het niet doet, kun je een "geweldadigere" manier
-   gebruiken: de toetscombinatie Ctrl+C, ook geschreven als
-   "``^C``". Het betekent "een signaal sturen aan het proces om zich af
+4. als :kbd:`^D` het niet doet, kun je een "geweldadigere" manier
+   gebruiken: de toetscombinatie :kbd:`Ctrl+C`, ook geschreven als
+   :kbd:`^C`. Het betekent "een signaal sturen aan het proces om zich af
    te sluiten", zonder te veel vragen te stellen. Het werkt met bijna
    alle programma's, tenminste die die de toetscombinatie niet
    specifiek hebben uitgeschakeld. Tik de volgende commando's in, en
-   zie voor jezelf hoe je ze kunt afsluiten met ``^C``::
+   zie voor jezelf hoe je ze kunt afsluiten met :kbd:`^C`::
 
        top
        yes
        sleep 10
        hexdump /dev/urandom
 
-   NB: ``^C`` werkt ook vaak als een programma lang niet reageert, of
+   NB: :kbd:`^C` werkt ook vaak als een programma lang niet reageert, of
    als je niet wil wachten.
 
 5. als het je niet lukt met de stappen #1-#4 het programma af te
    sluiten, heb je misschien te maken met een van "de bijzondere 4":
 
-   - het programma ``vi`` or ``vim`` (teksteditor): die wordt
-     afgesloten door [Escape], ':' (dubbele punt), 'q', '!', [Enter] in te
-     tikken.
+   - het programma :program:`vi` or :program:`vim` (teksteditor): die
+     wordt afgesloten door :kbd:`Esc`, :kbd:`:` (dubbele punt),
+     :kbd:`q`, :kbd:`!`, :kbd:`Enter` in te tikken.
 
-   - het programma ``emacs`` (een andere teksteditor): die wordt
-     afgesloten door Ctrl+X, dan Ctrl+C in te tikken.
+   - het programma :program:`emacs` (een andere teksteditor): die wordt
+     afgesloten door :kbd:`Ctrl+X`, dan :kbd:`Ctrl+C` in te tikken.
 
-   - het programma ``ssh`` (om een andere computer te benaderen): die
+   - het programma :program:`ssh` (om een andere computer te benaderen, zal je later zien in |USRV1|_): die
      wordt afgesloten door uit te loggen binnen de ssh sessie. Mocht
      dit niet lukken, bijvoorbeeld door een netwerkprobleem, kan
-     ``ssh`` worden afgesloten door [Enter], '~', '.' in te tikken.
+     :program:`ssh` worden afgesloten door :kbd:`Enter`, :kbd:`~`, :kbd:`.` in te tikken.
 
-   - het programma ``telnet``: tik dan Ctrl+] in, dan ``exit``.
+   - het programma :program:`telnet`: tik dan :kbd:`Ctrl+]` in, dan :program:`exit`.
 
 6. als alles tot nu toe heeft gefaald, kan je de "final solution"
    gebruiken. Dit werkt op alle processen, op alle commando's, en je
-   moet dus voorzichtig mee omgaan: het commando ``kill``.
+   moet dus voorzichtig mee omgaan: het commando :program:`kill`.
 
-   Om ``kill`` te kunnen gebruiken, moet je toegang hebben tot een
-   commandolijn. Natuurlijk, als je ``kill`` nodig hebt, is de kans
+   Om :program:`kill` te kunnen gebruiken, moet je toegang hebben tot een
+   commandolijn. Natuurlijk, als je :program:`kill` nodig hebt, is de kans
    groot dat je huidige terminal bezet is door het commando dat je wil
    beëindigen. Wat dan? Twee oplossingen.
 
-   Eerst kan je kijken of ``^Z`` het doet. "``^Z``" betekent "het
+   Eerst kan je kijken of :kbd:`^Z` het doet. :kbd:`^Z` betekent "het
    huidige programma pauzeren, sturen naar de achtergrond, en de shell
    met commandolijn die erachter aan het wachten was terug naar de
-   voorgrond plaatsen". Sommige programma's die niet op ``^C``
+   voorgrond plaatsen". Sommige programma's die niet op :kbd:`^C`
    reageren kunnen wel worden geplaatst naar de achtergrond met
-   ``^Z``.
+   :kbd:`^Z`.
 
-   Als ``^Z`` het niet doet, kun je ook een andere terminal openen op
+   Als :kbd:`^Z` het niet doet, kun je ook een andere terminal openen op
    hetzelfde systeem. Zelfs als het dan opnieuw moet inloggen, heb je
    toegang tot alle processen die je al draaiend hebt in je eerdere
    sessie.
 
    Zodra je wel een commandolijn beschikt naast het programma die je
    wil beëindigen, moet je zijn *proces identificatinummer* weten, ook
-   "PID" genoemd. Dit haal je door het commando "``ps x``", dat een
+   "PID" genoemd. Dit haal je door het commando ":program:`ps x`", dat een
    lijst aangeeft van alle processen die nu draaien van je op het
    systeem. Het identificatienummer is dan te vinden in de eerste
    column.
 
-   Met het PID kun je dan het commando ``kill`` intikken, gevolgd door
-   een spatie, dan het PID, dan [Enter]. Dit stuurt hetzelfde signaal
-   als ``^C`` maar dan ook zelfs als het proces de toetscombinatie
+   Met het PID kun je dan het commando :program:`kill` intikken, gevolgd door
+   een spatie, dan het PID, dan :kbd:`Enter`. Dit stuurt hetzelfde signaal
+   als :kbd:`^C` maar dan ook zelfs als het proces de toetscombinatie
    heeft uitgeschakeld.
 
    (NB: het was trouwens niet de hele waarheid: alleen het commando
-   ``kill`` met een PID is soms niet genoeg. Het commando ``kill``
+   :program:`kill` met een PID is soms niet genoeg. Het commando :program:`kill`
    heeft wel een "ultieme" vorm, maar deze zal je pas later
    ontdekken.)
 
@@ -254,23 +254,23 @@ Samenvatting toetscombinaties
 
 Tot nu toe heb je de volgende al geleerd:
 
-=============== ============= ============================================ =========================
-Toetscombinatie Waar?         Beschrijving                                 Wordt ook beschreven als
-=============== ============= ============================================ =========================
-Ctrl-A          Shell, Emacs  Begin van de lijn                            ``^A``,  C-a
-Ctrl-E          Shell, Emacs  Eind van de lijn                             ``^E``,  C-e
-Alt-F / Esc,F   Shell, Emacs  Volgende woord                               ``ESC F``, M-f
-Alt-B / Esc,B   Shell, Emacs  Vorige woord                                 ``ESC B``, M-b
-Ctrl+H          Shell, Emacs  Eerste karakter links verwijderen.           ``^H``, C-h
-Ctrl-D          Tekstinvoer   Tekstinvoer beëindigen                       ``^D``
-Ctrl-C          Shell         Huidige regel negeren, opnieuw beginnen      ``^C``
-Ctrl-C          algemeen      Huidige programma beëindigen                 ``^C``
-Ctrl-Z          algemeen      Huidige programma pauzeren, achtergrond      ``^Z``
-Esc, :, q, !    vi, vim       vi/vim beëindigen
-Ctrl-X, Ctrl-C  Emacs         Emacs beëindigen
-Enter, ~, .     ssh           ssh beëeindigen
-Ctrl+], exit    telnet        telnet beëindigen
-=============== ============= ============================================ =========================
+================================= ============= ============================================ =========================
+Toetscombinatie                   Waar?         Beschrijving                                 Wordt ook uitgedrukt als
+================================= ============= ============================================ =========================
+:kbd:`Ctrl-A`                     Shell, Emacs  Begin van de lijn                            :kbd:`^A` / :kbd:`C-a`
+:kbd:`Ctrl-E`                     Shell, Emacs  Eind van de lijn                             :kbd:`^E` / :kbd:`C-e`
+:kbd:`Alt-F` / :kbd:`Esc-F`       Shell, Emacs  Volgende woord                               :kbd:`ESC F` / :kbd:`M-f`
+:kbd:`Alt-B` / :kbd:`Esc-B`       Shell, Emacs  Vorige woord                                 :kbd:`ESC B` / :kbd:`M-b`
+:kbd:`Ctrl+H`                     Shell, Emacs  Eerste karakter links verwijderen.           :kbd:`^H` / :kbd:`C-h`
+:kbd:`Ctrl-D`                     Tekstinvoer   Tekstinvoer beëindigen                       :kbd:`^D`
+:kbd:`Ctrl-C`                     Shell         Huidige regel negeren, opnieuw beginnen      :kbd:`^C`
+:kbd:`Ctrl-C`                     algemeen      Huidige programma beëindigen                 :kbd:`^C`
+:kbd:`Ctrl-Z`                     algemeen      Huidige programma pauzeren, achtergrond      :kbd:`^Z`
+:kbd:`Esc` - :kbd:`:q!`           vi, vim       vi/vim beëindigen
+:kbd:`Ctrl-X  Ctrl-C`             Emacs         Emacs beëindigen
+:kbd:`Enter` :kbd:`~.`            ssh           ssh beëeindigen
+:kbd:`Ctrl+]` dan :program:`exit` telnet        telnet beëindigen
+================================= ============= ============================================ =========================
 
 Zoals je ziet kan dezelfde toetscombinatie meerdere functies hebben,
 afhankelijk van welk programma het ontvangt. Daarom is het belangrijk
@@ -291,37 +291,37 @@ Informatie over commando's
 .. index:: apropos
 
 - om te weten wat een bepaald commando doet: gebruik dan
-  "``man``". Dit is een interface naar de zogenaamde "online Unix
+  ":program:`man`". Dit is een interface naar de zogenaamde "online Unix
   manual": een collectie tekstpagina's en artikelen. De meeste
   commando's hebben allemaal een eigen pagina in de manual.
 
-  Tik dus in: ``man man`` [Enter]
+  Tik dus in: :program:`man man` :kbd:`Enter`
 
   en lees de pagina voor het commando |man(1)|_ zelf om het leren gebruiken.
 
-  Als je ``man`` draait en als de tekst niet volledig binnen de
+  Als je :program:`man` draait en als de tekst niet volledig binnen de
   terminal past, krijg je een soort navigatieinterface. Die bestuur je
   door je toetsenbord:
 
-  - [Spatie] om naar de volgende pagina te navigeren,
-  - "b" naar de vorige pagina,
+  - :kbd:`Spatie` om naar de volgende pagina te navigeren,
+  - :kbd:`b` naar de vorige pagina,
   - de pijltjes "omhoog" en "omlaag",
-  - "q" om de navigatie te verlaten,
-  - "/" en dan een zoektekst om iets te zoeken.
+  - :kbd:`q` om de navigatie te verlaten,
+  - :kbd:`/` en dan een zoektekst om iets te zoeken.
 
   Zoals je snel zal ontdekken, bevatten manual pages vaak meer
-  informatie dan wat je nodig hebt. Gebruik dan "/EXAMPLES" [Enter] om
+  informatie dan wat je nodig hebt. Gebruik dan "/EXAMPLES" :kbd:`Enter` om
   snel de voorbeelden te vinden. Veel pagina's hebben voorbeelden.
 
   Voor meer informatie: https://en.wikipedia.org/wiki/Man_page
 
 - om te herinneren welk commando iets doet, als je de naam van het
-  commando bent vergeten: "``apropos``".
+  commando bent vergeten: ":program:`apropos`".
 
   Stel je voor bijvoorbeeld dat je niet meer weet welk commando je
   moet gebruiken om een proces te beëindigen. Je denkt aan het woord
-  "terminate" maar dit is geen commando. Dan tik je ``apropos
-  terminate`` in: |apropos(1)|_ zoekt in alle beschikbare manual
+  "terminate" maar dit is geen commando. Dan tik je :program:`apropos
+  terminate` in: |apropos(1)|_ zoekt in alle beschikbare manual
   pagina's naar het woord "terminate" en laat je zien de naam van de
   pagina's die het woord bevatten. Hiermee zie je waarschijnlijk snel
   weer een referentie naar het programma |kill(1)|_.
@@ -337,7 +337,7 @@ Informatie over commando's
   Misschien past de tekst van het programma niet volledig binnen je
   terminal. Als je terminal wordt weergegeven in een grafische omgeving,
   beschik je misschien een scrollbar. (Dit is een luxe.) Zo niet, kan je
-  het woord "``|more``" toevoegen aan het eind van je commandolijn,
+  het woord ":program:`|more`" toevoegen aan het eind van je commandolijn,
   bijvoorbeeld::
 
       ls --help | more
@@ -346,7 +346,7 @@ Informatie over commando's
   terminal hebt.
 
 Naast die opties bestaat er nog een bijzondere hulp-systeem, die heet
-``info``. Weinig programma's maken gebruik van |info(1)|, maar voor de
+:program:`info`. Weinig programma's maken gebruik van |info(1)|, maar voor de
 enkele programma's die er wel in staan, is de documentatie daar zeer
 uitgebreid en vaak van zeer hoge kwaliteit. Je hoeft het nu niet te
 leren gebruiken, maar onthoud hem voor later, voornamelijk voor je
@@ -371,7 +371,7 @@ webbrowser.
 Draaiende programma's
 ---------------------
 
-Eerder heb je al geleerd hoe je ``^Z`` kan gebruiken om een programma
+Eerder heb je al geleerd hoe je :kbd:`^Z` kan gebruiken om een programma
 tijdelijk te stoppen en sturen naar de achtergrond; heb je ook geleerd
 hoe je de commando's |ps(1)|_ en |kill(1)|_ kunt gebruiken om een
 programma af te sluiten.
@@ -393,7 +393,7 @@ Opstarten, communiceren en eindigen / afsluiten
 .. index:: pstree
 
 Ieder proces wordt *opgestart* (rode pijlen) door een ander proces,
-behalve ``init``. Alle processen zijn dus gerelateerd door een
+behalve :program:`init`. Alle processen zijn dus gerelateerd door een
 ouder-kind relatie in een boomstructuur. Je kunt deze structuur
 bekijken door het programma |pstree(1)|_ te draaien.
 
@@ -430,10 +430,10 @@ Tot nu toe ziet er alsof je de volgende kunt doen met een proces:
 - het opstarten vanuit een shell;
 - zijn communicatiekanalen afsluiten:
 
-  - door Ctrl+D op de terminal, of
+  - door :kbd:`Ctrl+D` op de terminal, of
   - door de processen aan de andere kant van de communicatiekanalen af te sluiten;
 
-- het beëindigen door Ctrl+C;
+- het beëindigen door :kbd:`Ctrl+C`;
 - wachten totdat het zelf klaar is.
 
 .. index:: signaal (procesbeheer)
@@ -455,7 +455,7 @@ ingetikt.
 
 .. index:: SIGHUP
 
-Als je Ctrl+D gebruikt, of als je een terminal afsluit terwijl
+Als je :kbd:`Ctrl+D` gebruikt, of als je een terminal afsluit terwijl
 commando's "erin" draaien, dan gebeurt er het volgende: zodra het
 programma weer probeert te lezen op zijn invoerkanaal, of schrijven op
 zijn uitvoerkanaal, gaat hij automatisch van het systeem een signaal
@@ -472,7 +472,7 @@ erachter.
 
 .. index:: SIGTERM
 
-De commando "``kill``", ondanks zijn naam, is alleen een programma om
+Het commando ":program:`kill`", ondanks zijn naam, is alleen een programma om
 signalen te sturen aan andere processen. Als je geen signaalnaam
 aangeeft, stuurt hij automatisch ``SIGTERM``.
 
@@ -491,7 +491,7 @@ systeem).
    de terminal.  Wanneer de terminal eindigt, sluit het dan zijn
    communicatiekanaal met de processen opgestart vanaf de
    terminal. Als die processen dan met de terminal proberen te
-   communiceren, krijgen ze automatisch SIGHUP, en eindigen zo.
+   communiceren, krijgen ze automatisch ``SIGHUP``, en eindigen zo.
 
    Een interessante feature is dat een programma die niet met X11 of
    een terminal probeert te communiceren in het achtergrond blijft
@@ -511,51 +511,51 @@ een feature van de shell en is beschikbaar met bijna alle shells op alle Unix sy
 
 Probeer het volgende:
 
-1. Draai het commando: ``sleep 300``.
-2. Toets ``^Z``. Je shell zegt dan "[1]+  Stopped" of iets dergelijks.
+1. Draai het commando: :program:`sleep 300`.
+2. Toets :kbd:`^Z`. Je shell zegt dan "[1]+  Stopped" of iets dergelijks.
 
    Op dit moment is je proces gepauzeerd in de achtergrond.
-3. Draai het commando: ``jobs``
+3. Draai het commando: :program:`jobs`
 
-   ``jobs`` laat zien welke processen zijn nu opgestart door je shell.
-4. Draai het commando: ``fg %1``
+   :program:`jobs` laat zien welke processen zijn nu opgestart door je shell.
+4. Draai het commando: :program:`fg %1`
 
-   ``fg`` brengt een proces die op de achtergrond zit terug aan het
+   :program:`fg` brengt een proces die op de achtergrond zit terug aan het
    hoofd van de terminal, en activeert hem weer als het gepauzeerd
-   was. Hier komt dus ``sleep`` terug.
-5. Toets ``^Z`` weer.
-6. Draai het commando: ``bg %1``
+   was. Hier komt dus :program:`sleep` terug.
+5. Toets :kbd:`^Z` weer.
+6. Draai het commando: :program:`bg %1`
 
-   ``bg`` laat een proces in de achtergrond, maar activeert hem
+   :program:`bg` laat een proces in de achtergrond, maar activeert hem
    weer. Hierdoor blijft het proces draaien, alleen zit hij niet meer
    aan het hoofd van de terminal. Je kunt dan tegelijk iets anders
    gaan doen, bijvoorbeeld andere commando's intikken in je shell, of
    een andere commando terugbrengen aan het hoofd van je terminal.
-7. Draai het commando: ``vim``
-8. Toets ``^Z`` weer.
-9. Draai het commando: ``jobs``
+7. Draai het commando: :program:`vim`
+8. Toets :kbd:`^Z` weer.
+9. Draai het commando: :program:`jobs`
 
-   Hier zie je twee processen: ``sleep`` van eerder, die nog draait; en
-   ``vim`` die gestopt is.
-10. Draai het commando: ``kill %1``.
+   Hier zie je twee processen: :program:`sleep` van eerder, die nog draait; en
+   :program:`vim` die gestopt is.
+10. Draai het commando: :program:`kill %1`.
 
     Dit stuurt ``SIGTERM`` aan de eerste job om het af te sluiten.
-11. Draai het commando: ``fg``
+11. Draai het commando: :program:`fg`
 
     Dit brengt de andere job aan de voorgrond en activeert hem weer.
 12. Sluit die laatste job af zelf.
 
 Hiermee heb je geleerd:
 
-================= ==========================
-Toets/Commando    Beschrijving
-================= ==========================
-``^Z``            Proces pauzeren (``SIGTSTP``), sturen naar achtergrond
-``jobs``          Lijst van jobs aangeven
-``fg %N``         Breng een job terug aan het hoofd van de terminal, en activeer hem
-``bg %N``         Activeer een job weer maar laat hem in de achtergrond
-``kill %N``       Stuur een signaal aan een job.
-================= ==========================
+=================== ==========================
+Toets/Commando      Beschrijving
+=================== ==========================
+:kbd:`^Z`           Proces pauzeren (``SIGTSTP``), sturen naar achtergrond
+:program:`jobs`     Lijst van jobs aangeven
+:program:`fg %N`    Breng een job terug aan het hoofd van de terminal, en activeer hem
+:program:`bg %N`    Activeer een job weer maar laat hem in de achtergrond
+:program:`kill %N`  Stuur een signaal aan een job.
+=================== ==========================
 
 Om er meer over te leren: https://en.wikipedia.org/wiki/Job_control_%28Unix%29
 
@@ -572,22 +572,22 @@ nog 30 jaar zo.
 
 En je wordt ook waarschijnlijk verzocht om een kant te kiezen. :)
 
-Als je helemaal niet tussen Emacs and Vi wil kiezen: ``joe``, ``nano``
-en ``pico`` zijn andere kleine, eenvoudige interactieve teksteditors
+Als je helemaal niet tussen Emacs and Vi wil kiezen: :program:`joe`, :program:`nano`
+en :program:`pico` zijn andere kleine, eenvoudige interactieve teksteditors
 die bijna overal beschikbaar zijn.
 
 Anders:
 
-- Vi (``vi`` of zijn modernere versie ``vim``): werkt op basis van twee
+- Vi (:program:`vi` of zijn modernere versie :program:`vim`): werkt op basis van twee
   modi voor interactie: een "controle" modus en een "invoer" modus. Je
   wordt er een beetje schizofreen van. In de "controlemodus" van
-  ``vi`` tik je "commando's" om operaties uit te voeren op de tekst:
+  :program:`vi` tik je "commando's" om operaties uit te voeren op de tekst:
   tekst zoeken, verplaatsen, vervangen, etc. In tegenstelling met
-  ``emacs`` zijn de commando's van ``vi``/``vim`` redelijk logisch te
-  onthouden. Ook heeft ``vi`` meestal geen toets *combinatie* nodig,
+  :program:`emacs` zijn de commando's van :program:`vi`/:program:`vim` redelijk logisch te
+  onthouden. Ook heeft :program:`vi` meestal geen toets *combinatie* nodig,
   waar je met meerdere vingers tegelijk moet duwen op je toetsenbord.
 
-- Emacs (``emacs``): werkt op basis van zijn eigen besturingssysteem,
+- Emacs (:program:`emacs`): werkt op basis van zijn eigen besturingssysteem,
   geprogrammeerd in het eerbiedwaardige programmeertaal LISP. Emacs is
   dus heel krachtig met heel veel functionaliteit, maar dus ook
   wat ingewikkelder goed te leren gebruiken. Emacs maakt uigebreid
@@ -610,18 +610,18 @@ Kortom, in de praktijk:
 =================== ============== ===========================
 Actie               In vi/vim      In Emacs
 =================== ============== ===========================
-Editor afsluiten    :q / :q!       C-x C-c
-Bestand openen      :e <file>      C-x C-f
-Bestand opslaan     :w             C-x C-s
-Bestand sluiten     :close         C-x k
+Editor afsluiten    :q / :q!       :kbd:`C-x C-c`
+Bestand openen      :e <file>      :kbd:`C-x C-f`
+Bestand opslaan     :w             :kbd:`C-x C-s`
+Bestand sluiten     :close         :kbd:`C-x k`
 Navigeren           Pijlen         Pijlen
-Zoeken              /              C-s
-Navigeren           h/j/k/l        C-p / C-n / C-b / C-f
-Tekst verwijderen   x              C-h
-Regel verwijderen   dd             C-k
-Annuleren           u              C-_
+Zoeken              /              :kbd:`C-s`
+Navigeren           h/j/k/l        :kbd:`C-p` / :kbd:`C-n` / :kbd:`C-b` / :kbd:`C-f`
+Tekst verwijderen   x              :kbd:`C-h`
+Regel verwijderen   dd             :kbd:`C-k`
+Annuleren           u              :kbd:`C-_`
 Tekst toevoegen     i              Gewoon invoeren
-Naar controlemodus  Escape         M-x
+Naar controlemodus  :kbd:`Esc`     :kbd:`M-x`
 =================== ============== ===========================
 
 Bestandsstructuur
@@ -645,15 +645,15 @@ De bijzonderheden:
   vindt, gaat het proces dat bestand proberen te zoeken in de huidige
   map.
 
-- het commando om je "huidige map" te controleren: ``cd``
+- het commando om je "huidige map" te controleren: :program:`cd`
 
   (heet ook "change directory")
 
-  en om je huidige map te identificeren: ``pwd``
+  en om je huidige map te identificeren: :program:`pwd`
 
   ("print working directory")
 
-- Het commando ``cd`` zonder argumenten brengt je altijd naar je
+- Het commando :program:`cd` zonder argumenten brengt je altijd naar je
   "thuismap" of *home directory*.
 
 - Nieuwe processen hebben dezelfde working directory als hun ouder,
@@ -668,7 +668,7 @@ De bijzonderheden:
   "``/scratch``" naar een map met veel ruimte, bijvoorbeeld voor
   experimenten.
 
-  Opdracht: gebruik ``cd`` dan ``pwd`` om het absolute pad naar je
+  Opdracht: gebruik :program:`cd` dan :program:`pwd` om het absolute pad naar je
   thuismap te leren.
 
 - er is maar een grote boom van mappen: geen "schrijfletters".
@@ -683,9 +683,9 @@ De bijzonderheden:
 
 - de bijzondere naam "``.``" refereert altijd naar "deze map".
 
-- de belangrijkste commando's op mappen en bestanden: ``find``,
-  ``mkdir``, ``rmdir``, ``ls``, ``mv``, ``ln``, ``rm``, ``touch``,
-  ``stat``. Dit zal je verder zien in |UCMD|_.
+- de belangrijkste commando's op mappen en bestanden: |find(1)|_,
+  |mkdir(1)|_, |rmdir(1)|_, |ls(1)|_, |mv(1)|_, |ln(1)|_, |rm(1)|_, |touch(1)|_,
+  |stat(1)|_. Dit zal je verder zien in |UCMD|_.
 
   Gebruik |man(1)|_ om te weten wat ze doen.
 
@@ -710,15 +710,15 @@ De bijzonderheden:
    .. admonition:: Oplossing
       :class: toggle
 
-      Ctrl-A en Ctrl-E
+      :kbd:`Ctrl-A` en :kbd:`Ctrl-E`
 
 3. Je loopt vast in een onbekend programma. Wat doe je om het af te sluiten?
 
    .. admonition:: Oplossing
       :class: toggle
 
-      Eerst door programma UI proberen als het duidelijk is. Dan
-      Ctrl+D. Dan Ctrl+C. Anders |ps(1)|_ en dan |kill(1)|_.
+      Eerst door programma UI proberen als het duidelijk is. Anders
+      :kbd:`Ctrl+D`. Anders :kbd:`Ctrl+C`. Anders |ps(1)|_ en dan |kill(1)|_.
 
 4. Je wordt gevraagd om een onbekend programma voor het eerst te gebruiken. Hoe leer
    je meer over zijn gebruik?
@@ -735,12 +735,12 @@ De bijzonderheden:
        sleep 100 &
        ps
 
-   Hoeveel regels met "``sleep``" zie je in de output van ``ps``?
+   Hoeveel regels met "``sleep``" zie je in de output van :program:`ps`?
 
    .. admonition:: Oplossing
       :class: toggle
 
-      Twee (of meer als andere instanties van ``sleep`` eerder zijn opgestart).
+      Twee (of meer als andere instanties van |sleep(1)|_ eerder zijn opgestart).
 
 6. Je draait het commando ``sleep 100&`` in je terminal, dan sluit je
    je terminal af. Je maakt dan weer een nieuw terminal open, en draai
@@ -750,7 +750,7 @@ De bijzonderheden:
       :class: toggle
 
       Ja, want de processen opgestart vanaf de eerste terminal alleen
-      worden beeindigd (met SIGHUP) wanneer ze met de gesloten
+      worden beeindigd (met ``SIGHUP``) wanneer ze met de gesloten
       terminal proberen te communiceren. Omdat |sleep(1)|_ niet
       communiceert, blijft het gewoon draaien in het achtergrond.
 
@@ -761,7 +761,7 @@ De bijzonderheden:
 
       Vi: ``:q!``
 
-      Emacs: Ctrl-X Ctrl-C
+      Emacs: :kbd:`Ctrl-X Ctrl-C`
 
 8. Je huidige map is ``/home/hai``. Na het commando ``cd
    ../../etc/./../var``, wat is je huidige map?
@@ -777,6 +777,15 @@ De bijzonderheden:
       :class: toggle
 
       ``/``  (want ``/`` is zijn eigen bovenmap)
+
+10. De uitvoer van een commando past in je terminal niet. Wat doe je dan?
+
+    .. admonition:: Oplossing
+       :class: toggle
+
+       ":program:`| more`" of ":program:`| less`" toevoegen aan het
+       eind van het commando.
+
 
 Verder inlezen
 --------------
