@@ -661,11 +661,11 @@ De bijzonderheden:
   veranderen.
 
 - een *pad* is een naam naar een map of bestand *vanaf* de huidige
-  map. Bijvoorbeeld "``Documents/hello.txt``" refereert naar het
-  bestand/map ``hello.txt`` in de map ``Documents`` vanuit de huidige
+  map. Bijvoorbeeld :file:`Documents/hello.txt` refereert naar het
+  bestand/map :file:`hello.txt` in de map :file:`Documents` vanuit de huidige
   map. Je kunt een *absolute* map noemen door met een "/" te
   beginnen. Bijvoorbeeld op de UvA machines refereert altijd
-  "``/scratch``" naar een map met veel ruimte, bijvoorbeeld voor
+  :file:`/scratch` naar een map met veel ruimte, bijvoorbeeld voor
   experimenten.
 
   Opdracht: gebruik :program:`cd` dan :program:`pwd` om het absolute pad naar je
@@ -674,14 +674,14 @@ De bijzonderheden:
 - er is maar een grote boom van mappen: geen "schrijfletters".
   Verschillende opslagelementen worden benaderd door verschillende
   paden in de boom. Bijvoorbeeld op Android is de SD-kaart vaak te
-  vinden in de map ``/sdcard``. Op OSX worden harde schrijven en
-  geheugenkaartjes zichtbaar in de map ``/Volumes``. Meestal op andere
+  vinden in de map :file:`/sdcard`. Op OSX worden harde schrijven en
+  geheugenkaartjes zichtbaar in de map :file:`/Volumes`. Meestal op andere
   soorten Unixsysstemen zijn opslagelementen zichtbaar in de map
-  ``/mnt``.
+  :file:`/mnt`.
 
-- de bijzondere naam "``..``" refereert altijd naar "een map omhoog".
+- de bijzondere naam :file:`..` refereert altijd naar "een map omhoog".
 
-- de bijzondere naam "``.``" refereert altijd naar "deze map".
+- de bijzondere naam :file:`.` refereert altijd naar "deze map".
 
 - de belangrijkste commando's op mappen en bestanden: |find(1)|_,
   |mkdir(1)|_, |rmdir(1)|_, |ls(1)|_, |mv(1)|_, |ln(1)|_, |rm(1)|_, |touch(1)|_,
@@ -763,20 +763,20 @@ De bijzonderheden:
 
       Emacs: :kbd:`Ctrl-X Ctrl-C`
 
-8. Je huidige map is ``/home/hai``. Na het commando ``cd
-   ../../etc/./../var``, wat is je huidige map?
+8. Je huidige map is :file:`/home/hai`. Na het commando :program:`cd
+   ../../etc/./../var`, wat is je huidige map?
 
    .. admonition:: Oplossing
       :class: toggle
 
-      ``/var``
+      :file:`/var`
 
-9. Je huidige map is ``/``. Na het commando ``cd ..``, wat is je huidige map?
+9. Je huidige map is :file:`/`. Na het commando :program:`cd ..`, wat is je huidige map?
 
    .. admonition:: Oplossing
       :class: toggle
 
-      ``/``  (want ``/`` is zijn eigen bovenmap)
+      :file:`/`  (want :file:`/` is zijn eigen bovenmap)
 
 10. De uitvoer van een commando past in je terminal niet. Wat doe je dan?
 

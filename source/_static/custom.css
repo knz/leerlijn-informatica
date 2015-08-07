@@ -57,3 +57,10 @@ div.header img.rightlogo {
     font-size: 120%;
     font-family: monospace;
 }
+
+.file {
+    border: 1px solid black;
+    font-family: monospace;
+    font-size: 120%;
+    padding: 1px 5px;
+}

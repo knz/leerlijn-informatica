@@ -39,13 +39,14 @@ Opslagformaten
 
 De meest gangbare "pure" archiefformaten zijn:
 
-===== ============== =============== ============= ============
-Naam  Oorsprong      Standardisatie  Naamextensies Programma(s)
-===== ============== =============== ============= ============
-ustar Unix v7, 1979  POSIX           .tar          tar, pax
-ar    Unix v1, 1971  POSIX           .a            ar
-cpio  PWB/UNIX, 1977 POSIX (oud)     .cpio, .rpm   cpio, pax
-===== ============== =============== ============= ============
+===== ============== =============== ============== ============
+Naam  Oorsprong      Standardisatie  Naamextensies  Programma(s)
+===== ============== =============== ============== ============
+ustar Unix v7, 1979  POSIX           :file:`.tar`   |tar(1)|_, |pax(1)|_
+ar    Unix v1, 1971  POSIX           :file:`.a`     |ar(1)|_
+cpio  PWB/UNIX, 1977 POSIX (oud)     :file:`.cpio`,
+                                     :file:`.rpm`   |cpio(1)|_, |pax(1)|_
+===== ============== =============== ============== ============
 
 .. index:: gzip
 .. index:: xz
@@ -56,10 +57,10 @@ De meest gangbare "pure" compressieformaten zijn:
 ======== ========== ============ ============= =========================
 Formaat  Algoritme  Oorsprong    Naamextensies Programma(s)
 ======== ========== ============ ============= =========================
-xz       LZMA       Pavlov, 1999 .xz           xz
-bzip2    BWT        Seward, 1996 .bz2          bzip2, bunzip2
-gzip     LZ77       GNU, 1992    .gz           gzip, gunzip, zcat
-compress LZW        4.3BSD, 1984 .Z            compress, uncompress
+xz       LZMA       Pavlov, 1999 :file:`.xz`   |xz(1)|_
+bzip2    BWT        Seward, 1996 :file:`.bz2`  |bzip2(1)|_, |bunzip2(1)|_
+gzip     LZ77       GNU, 1992    :file:`.gz`   |gzip(1)|_, |gunzip(1)|_, |zcat(1)|_
+compress LZW        4.3BSD, 1984 :file:`.Z`    |compress(1)|_, |uncompress(1)|_
 ======== ========== ============ ============= =========================
 
 Gecombineerde archieverings+compressieformaten:
@@ -67,22 +68,23 @@ Gecombineerde archieverings+compressieformaten:
 ======== ========== ============ ============= =========================
 Formaat  Algoritme  Oorsprong    Naamextensies Programma(s)
 ======== ========== ============ ============= =========================
-zip      (meerdere) PKWARE, 1989 .zip, .jar    zip, unzip
-rar      LZSS/PPM   Roshal, 1993 .rar          rar, unrar
-7-Zip    LZMA       Pavlov, 1999 .7z           p7zip
+zip      (meerdere) PKWARE, 1989 :file:`.zip`,
+                                 :file:`.jar`  zip, unzip
+rar      LZSS/PPM   Roshal, 1993 :file:`.rar`  rar, unrar
+7-Zip    LZMA       Pavlov, 1999 :file:`.7z`   p7zip
 ======== ========== ============ ============= =========================
 
 De volgende bestandsnaamextensies zijn geen afzonderlijke formaten, ze
 zijn alleen afkortingen voor de combinatie van tar met een
 compressieprogramma:
 
-=============== =============== ===============
-Naamextensie    Gelijk aan      Gebruik met
-=============== =============== ===============
-.tgz            .tar.gz         tar -z, zcat | tar, tar | gzip -c
-.tbz            .tar.bz2        tar -j, bzcat | tar, tar | bzip2 -c
-.txz            .tar.xz         tar -J, xzcat | tar, tar | xz
-=============== =============== ===============
+=============== ================ ===============
+Naamextensie    Gelijk aan       Gebruik met
+=============== ================ ===============
+:file:`.tgz`    :file:`.tar.gz`  tar -z, zcat | tar, tar | gzip -c
+:file:`.tbz`    :file:`.tar.bz2` tar -j, bzcat | tar, tar | bzip2 -c
+:file:`.txz`    :file:`.tar.xz`  tar -J, xzcat | tar, tar | xz
+=============== ================ ===============
 
 Nieuw is beter vs. beschikbaarheid
 ----------------------------------
@@ -96,25 +98,28 @@ Waarom zou je dan een "oudere" formaat gebruiken? **Omdat de tools
 voor recentere formaten niet altijd beschikbaar zijn op een
 willekeurige computer.**
 
-In 2003 was bzip2 bijvoorbeeld een heel bekend goede
+In 2003 was |bzip2(1)|_ bijvoorbeeld een heel bekend goede
 compressieprogramma maar het was nog niet gangbaar op de meeste unix
-(en linux) systemen. In 2015 is xz heel wenselijk maar helaas nog niet
+(en Linux) systemen. In 2015 is |xz(1)|_ heel wenselijk maar helaas nog niet
 beschikbaar op veel computers.
 
 In het algemeen kies je een formaat als volgt:
 
 - als je bestanden beschikbaar moet maken aan een breder publiek, maak
   dan archieven in meerdere formaten. Het is bijvoorbeeld voor
-  opensource projecten gebruikelijk om .tar.gz, .tar.bz2, .tar.xz en
-  .zip tegelijk te publiceren.
+  opensource projecten gebruikelijk om :file:`.tar.gz`,
+  :file:`.tar.bz2`, :file:`.tar.xz` en :file:`.zip` tegelijk te
+  publiceren.
 
 - als je een bestand maakt voor gebruik alleen op korte termijn op
-  dezelfde computer, het maakt niet uit; gebruik dan waar je aan gewend bent.
+  dezelfde computer, het maakt niet uit; gebruik dan waar je aan
+  gewend bent.
 
 - als je bestanden moet inleveren voor werk of studie, gebruik dan het
   formaat aangeraden door je collega's / medestudenten / docenten. In
-  de bachelor informatica, wordt vaak een "compressed tarball" gevraagd,
-  dat betekent een tar archief gecomprimeerd met gzip of bzip2.
+  de bachelor informatica, wordt vaak een "compressed tarball"
+  gevraagd, dat betekent een tar archief gecomprimeerd met |gzip(1)|_
+  of |bzip2(1)|_.
 
 - als je bestanden wil archiveren voor eigen backups op lange termijn,
   gebruik dan een formaat die gestandardiseerd is, waarvoor de kans groot
@@ -129,9 +134,9 @@ Ieder compressiealgoritme kent parameters om de compressiekracht te controleren.
 Een hogere compressiekracht levert kleinere resultaten, maar vergroot
 de compressietijd.
 
-Je kunt voor compress, gzip, bzip2, zip en xz de compressiekracht
-aanpassen door een numerieke parameter tussen 0 (geen compressie) en 9
-(maximale compressie).
+Je kunt voor |compress(1)|_, |gzip(1)|_, |bzip2(1)|_, zip en |xz(1)|_
+de compressiekracht aanpassen door een numerieke parameter tussen 0
+(geen compressie) en 9 (maximale compressie).
 
 Gebruikelijke commando's
 ------------------------
@@ -196,7 +201,7 @@ Zelfde voor een gecomprimeerd archief::
 
       Een gecomprimeerd tar-archief.
 
-2. Je hebt een groot tar archief ``files.tar``, en wil zijn inhoud
+2. Je hebt een groot tar archief :file:`files.tar`, en wil zijn inhoud
    inspecteren zonder het uit te pakken. Hoe doe je dit?
 
    .. admonition:: Oplossing
@@ -206,8 +211,8 @@ Zelfde voor een gecomprimeerd archief::
 
          tar -tf files.tar  # evt. -tvf
 
-3. Je hebt al een archief ``myfiles.tar`` gemaakt, maar moet een
-   ``.tgz`` inleveren. Welk commando gebruik je?
+3. Je hebt al een archief :file:`myfiles.tar` gemaakt, maar moet een
+   :file:`.tgz` inleveren. Welk commando gebruik je?
 
    .. admonition:: Oplossing
       :class: toggle
@@ -217,7 +222,7 @@ Zelfde voor een gecomprimeerd archief::
          gzip myfiles.tar
          mv myfiles.tar.gz myfiles.tgz
 
-4. Je krijgt een bestand ``readme.txt.gz``. Hoe lees je dit?
+4. Je krijgt een bestand :file:`readme.txt.gz`. Hoe lees je dit?
 
    .. admonition:: Oplossing
       :class: toggle
@@ -231,7 +236,7 @@ Zelfde voor een gecomprimeerd archief::
           zless readme.txt.gz
 
 5. Je wil een gecomprimeerd archief maken met een hogere compressiekracht
-   dan standaard, maar het commando "tar" ondersteunt geen parameter om
+   dan standaard, maar het commando |tar(1)|_ ondersteunt geen parameter om
    de compressiekracht aan te passen. Hoe doe je het dan?
 
    .. admonition:: Oplossing
