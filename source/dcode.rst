@@ -171,12 +171,13 @@ veel anderen) heeft de volgende notaties standaard gemaakt:
 Conversie tussen grondtallen 2 en 16
 ------------------------------------
 
-Voor twee willekeurige grondtallen *a* en *b* bestaat geen makkelijke
+Voor twee willekeurige grondtallen *a* en *b* bestaat er geen makkelijke
 algemene formule om een representatie met grondtal *a* te vertalen naar
-een representatie met grondtal *b*. Maar voor het bijzonder geval van
-getallen 2 en 16, is het juist heel makkelijk: **ieder cijfer in grondtal
-16 kan direct gemapt worden naar een groep van 4 cijfers met
-grondtal 2**.
+een representatie met grondtal *b*.
+
+Maar voor het bijzonder geval van getallen 2 en 16, is het juist heel
+makkelijk: **ieder cijfer in grondtal 16 kan direct gemapt worden naar
+een groep van 4 cijfers met grondtal 2**.
 
 =========== ===========
 Grondtal 16 Grondtal 2
