@@ -54,7 +54,7 @@ Wat je absoluut moet weten
   daarvan kun je de afwijking tussen de te vergelijken waardes
   vergelijken met een drempel :math:`\epsilon`, bijvoorbeeld:
 
-  .. code:: c
+  .. code-block:: c
 
      if (fabs(a - b) < 0.0001) // ipv a == b
 
@@ -172,7 +172,7 @@ Conversie in de programmeertaal C
 
 - Van waarde naar representatie: |printf(3)|_, |snprintf(3)|_. Bijvoorbeeld:
 
-  .. code:: c
+  .. code-block:: c
 
      printf("%g\n", 314.);   // geeft 314 (grondtal 10)
      printf("%e\n", 314.);   // geeft 3.140000e+02 (grondtal 10)

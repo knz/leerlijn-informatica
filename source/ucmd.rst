@@ -170,7 +170,9 @@ Goed te weten:
   draaibaar programma in een bestand :file:`pretty.jpg`.
 
 - Het programma |file(1)|_ kijkt naar de data binnen een bestand om je
-  te informeren over zijn type. Bijvoorbeeld::
+  te informeren over zijn type. Bijvoorbeeld
+
+  .. code-block:: shell
 
      $ file hello.jpg
      hello.jpg: JPEG image data, JFIF standard 1.01
@@ -222,7 +224,7 @@ Programma               Beschrijving
   - :program:`cut -cN-M` selecteert kolommen N tot M in de input. Een
     kolom is gedefinieerd door 1 character. Bijvoorbeeld:
 
-    .. code:: shell
+    .. code-block:: shell
 
       $ ls
       Makefile  README.rst  build/  genlinks.py source/
@@ -237,7 +239,7 @@ Programma               Beschrijving
   - :program:`cut -dX -fN-M` selecteert kolommen N-M op basis van
     scheidingsteken X. Bijvoorbeeld:
 
-    .. code:: shell
+    .. code-block:: shell
 
       $ cat /etc/passwd | tail -n 3
       _displaypolicyd:*:244:244::/var/empty:/usr/bin/false
@@ -274,7 +276,7 @@ Programma   Beschrijving
 - Om te zoeken op basis van naam of eigenschappen worden de volgende
   vormen het vaakst gebruikt:
 
-  .. code:: shell
+  .. code-block:: shell
 
        # zoek naar een exacte naam
        find . -name bestandsnaam.txt
@@ -300,7 +302,7 @@ Programma   Beschrijving
 - De meest gebruikte vorm van |grep(1)|_ is met een enkel woord,
   bijvoorbeeld:
 
-  .. code:: shell
+  .. code-block:: shell
 
        # zoek naar "root" in bestand /etc/passwd
        $ grep root /etc/passwd
@@ -311,7 +313,7 @@ Programma   Beschrijving
 - Je kunt |grep(1)|_ eenvoudig combineren met |head(1)|_ of andere
   commando's, bijvoorbeeld:
 
-  .. code:: shell
+  .. code-block:: shell
 
        # tel hoeveel regels in /etc/passwd "krb" bevatten:
        $ cat /etc/passwd | grep krb | wc -l
@@ -348,7 +350,7 @@ Programma   Beschrijving
    .. admonition:: Oplossing
       :class: toggle
 
-      .. code:: shell
+      .. code-block:: shell
 
          tail app.log
 
@@ -367,7 +369,7 @@ Programma   Beschrijving
    .. admonition:: Oplossing
       :class: toggle
 
-      .. code:: shell
+      .. code-block:: shell
 
          mkdir -p /backups/20150808
          cp -a opdracht /backups/20150808
@@ -383,7 +385,7 @@ Programma   Beschrijving
    .. admonition:: Oplossing
       :class: toggle
 
-      .. code:: shell
+      .. code-block:: shell
 
          cat /etc/passwd | cut -d: -f1 | grep o | sort -r
 
@@ -394,7 +396,7 @@ Programma   Beschrijving
    .. admonition:: Oplossing
       :class: toggle
 
-      .. code:: shell
+      .. code-block:: shell
 
          cat roman1.txt roman2.txt | grep hello | wc -l
 

@@ -254,7 +254,7 @@ Conversies in de programmeertaal C
 
 - conversie van waarde naar representatie in grondtal 8 of 16: |printf(3)|_, |snprintf(3)|_:
 
-  .. code:: c
+  .. code-block:: c
 
      printf("%x\n", 123);  // produceert 7b
      printf("%#x\n", 123); // produceerd 0x7b

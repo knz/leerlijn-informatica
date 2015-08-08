@@ -143,7 +143,7 @@ Wanneer je de naam van je block device kent, kun je het gewenste
 commando aanroepen. Bijvoorbeeld, als je USB stick :file:`/dev/sda1`
 heeft als block device, kan je het mounten met:
 
-.. code:: shell
+.. code-block:: shell
 
    mount /dev/sda1 /mnt
 
