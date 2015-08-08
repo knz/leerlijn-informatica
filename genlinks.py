@@ -16,6 +16,11 @@ for fn in glob.glob('source/*.rst'):
         for m in mre.finditer(t):
             ms.add(m.group(1))
 
+print("""
+.. THIS FILE WAS AUTOMATICALLY GENERATED
+.. MANUAL MODIFICATIONS WILL BE LOST
+""")
+
 for gl in "sudtw":
     print(".. role:: %ctitle" % gl)
 

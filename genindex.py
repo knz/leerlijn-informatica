@@ -8,6 +8,10 @@ vre = re.compile(r'\|([USDTW][A-Z0-9+]+)\|_')
 vs = set() # vaardigheden
 
 print("""
+.. THIS FILE WAS AUTOMATICALLY GENERATED
+.. (vanuit de inbeddingstabel in inleiding-studenten.rst)
+.. MANUAL MODIFICATIONS WILL BE LOST
+
 .. toctree::
    :maxdepth: 2
 
