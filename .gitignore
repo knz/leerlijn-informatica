@@ -1,2 +1,4 @@
 build
 source/common.d
+source/toctree.d
+.#*
