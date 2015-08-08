@@ -49,7 +49,11 @@ help:
 upload: latexpdf html
 	rsync -e "ssh -p 10022" -P -c -rvz --delete $(BUILDDIR)/html/ kena@csa.science.uva.nl:/home/kena/www/inf-leervaardigheden
 
-common: source/common.d
+common: source/common.d source/toctree.d
+
+source/toctree.d: source/inleiding-studenten.rst
+	python genindex.py >$@.tmp
+	if cmp $@.tmp $@; then rm $@.tmp; else mv -f $@.tmp $@; fi
 
 source/common.d: $(wildcard source/*.rst)
 	python genlinks.py >$@.tmp

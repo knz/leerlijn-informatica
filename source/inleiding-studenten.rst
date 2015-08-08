@@ -210,11 +210,6 @@ studeren in de Informatica (MSc CS of dergelijk).
      - Scatter, bar en lijn plots automatisch produceren door middel
        van simpele templates met gnuplot of matplotlib
 
-   * - |DPLOT2+|_
-     - Automatisch plotten (adv)
-     - Tweede Y-as gebruiken, logaritmische schaal toepassen, meedere
-       plots bij elkaar genereren
-
    * - |DSTAT1|_
      - Statistische gegevens verzamelen (basis)
      - Bestaande formules voor min, max, gemiddelde, mediaan, std afwijking
@@ -317,5 +312,5 @@ op vakopdrachten om je te motiveren.
 |          | Reflectie op de        |           |           |           |            |             |
 |          | digitale cultuur       |           |           |           |            |             |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 6   | Project software eng.  | |WFIG2+|_ |           |           |            |             |
+| Blok 6   | Project software eng.  | |WFIG2+|_ |           |           |            | |DSTAT4+|_  |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+

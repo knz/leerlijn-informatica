@@ -21,17 +21,7 @@ voorwaarden van naamsvermelding en gelijkdelen van veranderde materiaal.
 De brondcode voor deze handleiding wordt hier bijgehouden:
 https://gitlab-fnwi.uva.nl/inf-leervaardigheden/handleiding
 
-.. toctree::
-   :maxdepth: 2
-   :glob:
-
-   inleiding-docenten
-   inleiding-studenten
-   d*
-   u*
-   s*
-   t*
-   w*
+.. include:: toctree.d
 
 Verzamelingen
 =============
