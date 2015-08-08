@@ -624,72 +624,6 @@ Tekst toevoegen     i              Gewoon invoeren
 Naar controlemodus  :kbd:`Esc`     :kbd:`M-x`
 =================== ============== ===========================
 
-Bestandsstructuur
------------------
-
-.. index:: current directory
-.. index:: pwd
-.. index:: huidige map
-.. index:: cd
-.. index:: pad (filesysteem)
-.. index:: filesysteem
-.. index:: bestandsstructuur
-.. index:: thuismap
-.. index:: home directory
-
-Bestanden worden georganiseerd in mappen, met mappen binnen
-mappen. Dit principe ken je al.
-
-De bijzonderheden:
-
-- ieder proces heeft een notie van "huidige map", of *working
-  directory*. Als je een bestand noemt zonder te zeggen waar het zich
-  vindt, gaat het proces dat bestand proberen te zoeken in de huidige
-  map.
-
-- het commando om je "huidige map" te controleren: :program:`cd`
-
-  (heet ook "change directory")
-
-  en om je huidige map te identificeren: :program:`pwd`
-
-  ("print working directory")
-
-- Het commando :program:`cd` zonder argumenten brengt je altijd naar je
-  "thuismap" of *home directory*.
-
-- Nieuwe processen hebben dezelfde working directory als hun ouder,
-  maar kunnen het verder veranderen zonder die van de ouder te
-  veranderen.
-
-- een *pad* is een naam naar een map of bestand *vanaf* de huidige
-  map. Bijvoorbeeld :file:`Documents/hello.txt` refereert naar het
-  bestand/map :file:`hello.txt` in de map :file:`Documents` vanuit de huidige
-  map. Je kunt een *absolute* map noemen door met een "/" te
-  beginnen. Bijvoorbeeld op de UvA machines refereert altijd
-  :file:`/scratch` naar een map met veel ruimte, bijvoorbeeld voor
-  experimenten.
-
-  Opdracht: gebruik :program:`cd` dan :program:`pwd` om het absolute pad naar je
-  thuismap te leren.
-
-- er is maar een grote boom van mappen: geen "schrijfletters".
-  Verschillende opslagelementen worden benaderd door verschillende
-  paden in de boom. Bijvoorbeeld op Android is de SD-kaart vaak te
-  vinden in de map :file:`/sdcard`. Op OSX worden harde schrijven en
-  geheugenkaartjes zichtbaar in de map :file:`/Volumes`. Meestal op andere
-  soorten Unixsysstemen zijn opslagelementen zichtbaar in de map
-  :file:`/mnt`.
-
-- de bijzondere naam :file:`..` refereert altijd naar "een map omhoog".
-
-- de bijzondere naam :file:`.` refereert altijd naar "deze map".
-
-- de belangrijkste commando's op mappen en bestanden: |find(1)|_,
-  |mkdir(1)|_, |rmdir(1)|_, |ls(1)|_, |mv(1)|_, |ln(1)|_, |rm(1)|_, |touch(1)|_,
-  |stat(1)|_. Dit zal je verder zien in |UCMD|_.
-
-  Gebruik |man(1)|_ om te weten wat ze doen.
 
 (Zelf)evaluatie
 ---------------
@@ -765,28 +699,13 @@ De bijzonderheden:
 
       Emacs: :kbd:`Ctrl-X Ctrl-C`
 
-8. Je huidige map is :file:`/home/hai`. Na het commando :program:`cd
-   ../../etc/./../var`, wat is je huidige map?
+8. De uitvoer van een commando past in je terminal niet. Wat doe je dan?
 
    .. admonition:: Oplossing
       :class: toggle
 
-      :file:`/var`
-
-9. Je huidige map is :file:`/`. Na het commando :program:`cd ..`, wat is je huidige map?
-
-   .. admonition:: Oplossing
-      :class: toggle
-
-      :file:`/`  (want :file:`/` is zijn eigen bovenmap)
-
-10. De uitvoer van een commando past in je terminal niet. Wat doe je dan?
-
-    .. admonition:: Oplossing
-       :class: toggle
-
-       ":program:`| more`" of ":program:`| less`" toevoegen aan het
-       eind van het commando.
+      ":program:`| more`" of ":program:`| less`" toevoegen aan het
+      eind van het commando.
 
 
 Verder inlezen
