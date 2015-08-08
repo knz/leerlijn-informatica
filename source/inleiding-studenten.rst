@@ -170,6 +170,10 @@ studeren in de Informatica (MSc CS of dergelijk).
        inspecteren (file, cat, less, head, tail, grep
        met simpele strings, wc, cut)
 
+   * - |USH|_
+     - Basisfeatures van de shell
+     - Environment variabelen, jokertekens, redirecties, commandoprompt aanpassen
+
    * - |UAR|_
      - Dataarchiefformaten beheren
      - Gebruik van tar, zip, dd, dump/restore, cpio en verschillende
@@ -273,7 +277,7 @@ op vakopdrachten om je te motiveren.
 |          +------------------------+-----------+-----------+-----------+------------+-------------+
 |          | Programmeertalen       | |WPRE1|_  |           |           |            |             |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 3   | Webprogrammeren        | |WTYP1|_  |           | |SGIT1|_  |            |             |
+| Blok 3   | Webprogrammeren        | |WTYP1|_  | |USH|_    | |SGIT1|_  |            |             |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+
 | Blok 4   | Datastructuren         |           | |UAR|_    | |SNAV1|_  | |TDBG1|_   | |DSTAT1|_   |
 |          |                        +-----------+-----------+-----------+------------+-------------+
