@@ -4,3 +4,7 @@
 ==============================
 
 Goed gebruik van “ ” ‘ ’ - – —, kerning, spaties en verbindingstekens
+
+Woordenschat
+
+aanhangstekens - quotes
