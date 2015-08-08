@@ -46,6 +46,9 @@ De bijzonderheden:
 - Het commando :program:`cd` zonder argumenten brengt je altijd naar
   je "thuismap" of *home directory*.
 
+- In je shell wordt de afkorting "``~``" ook erkend voor je
+  thuismap. Dus brengt :program:`cd ~` je ook terug naar je thuismap.
+
 - Nieuwe processen hebben dezelfde working directory als hun
   ouderproces, maar kunnen het verder veranderen zonder die van de
   ouder te veranderen.
@@ -209,10 +212,15 @@ Programma               Beschrijving
   (bv. :program:`| less`) gebruikt het dan maar 1 kolom.  Om
   kolommen te forceren, gebruik dan :program:`ls -C`.
 
+- Standaard telt |wc(1)|_ regels, woorden en bytes tegelijk. Om alleen
+  regels te tellen, gebruik dan :program:`wc -l`.
+
 - |cut(1)|_ kent twee hoofdvormen:
 
   - :program:`cut -cN-M` selecteert kolommen N tot M in de input. Een
-    kolom is gedefinieerd door 1 character. Bijvoorbeeld::
+    kolom is gedefinieerd door 1 character. Bijvoorbeeld:
+
+    .. code:: shell
 
       $ ls
       Makefile  README.rst  build/  genlinks.py source/
@@ -225,7 +233,9 @@ Programma               Beschrijving
       sou
 
   - :program:`cut -dX -fN-M` selecteert kolommen N-M op basis van
-    scheidingsteken X. Bijvoorbeeld::
+    scheidingsteken X. Bijvoorbeeld:
+
+    .. code:: shell
 
       $ cat /etc/passwd | tail -n 3
       _displaypolicyd:*:244:244::/var/empty:/usr/bin/false
@@ -237,6 +247,12 @@ Programma               Beschrijving
       _astris
       _krbfast
 
+- |sort(1)|_ geeft het omgekeerde volgorde wanneer aangeroepen met
+  :program:`sort -r`.
+
+- |sort(1)|_ kan ook duplicaatregels verwijderen indien aangeroepen met
+  :program:`sort -u`.
+
 Bestanden en mappen zoeken
 --------------------------
 
@@ -247,10 +263,62 @@ Programma   Beschrijving
 |grep(1)|_  Zoeken op inhoud
 =========== ============================
 
+- Met |find(1)|_ geef je altijd als eerste parameter het pad naar de
+  map waar je wilt beginnen met zoeken. Vaak is het :program:`find .`
+  (zoeken vanaf huidige map), :program:`find ~` (zoeken overal in
+  thuismap) of :program:`find /` (zoeken op hele
+  bestandsstructuur).
 
-Navigatie filesysteem (ls, mkdir, cd, pwd, cp, mv, find, du, rm), bestanden
-       inspecteren (file, cat, less, head, tail, grep
-       met simpele strings, wc, cut)
+- Om te zoeken op basis van naam of eigenschappen worden de volgende
+  vormen het vaakst gebruikt:
+
+  .. code:: shell
+
+       # zoek naar een exacte naam
+       find . -name bestandsnaam.txt
+
+       # zoeken naar een naamsdeel. Pas op,
+       # de aanhangtekens zijn belangrijk.
+       find . -name "*naamsdeel*"
+
+       # zoeken naar bestanden grooter dan 100 kbytes
+       find . -size +100k
+
+       # zoeken naar bestanden veranderd
+       # sinds 10 minuten geleden:
+       find . -mtime -10m
+
+  .. note:: |find(1)|_ kent veel meer vormen, je kunt zelfs meerdere
+     condities combineren. Lees er evt. verder over in de manpage.
+
+- In tegenstelling met |find(1)|_, met |grep(1)|_ komt het te zoeken
+  woord eerst en dan pas de paden naar de te inspecteren bestanden of
+  mappen.
+
+- De meest gebruikte vorm van |grep(1)|_ is met een enkel woord,
+  bijvoorbeeld:
+
+  .. code:: shell
+
+       # zoek naar "root" in bestand /etc/passwd
+       $ grep root /etc/passwd
+       root:*:0:0:System Administrator:/var/root:/bin/sh
+       daemon:*:1:1:System Services:/var/root:/usr/bin/false
+       _cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+
+- Je kunt |grep(1)|_ eenvoudig combineren met |head(1)|_ of andere
+  commando's, bijvoorbeeld:
+
+  .. code:: shell
+
+       # tel hoeveel regels in /etc/passwd "krb" bevatten:
+       $ cat /etc/passwd | grep krb | wc -l
+       7
+
+       # print de laatste regel in /etc/passwd
+       # die "krb" bevat:
+       $ cat /etc/passwd | grep krb | tail -n 1
+       _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 
 (Zelf)evaluatie
 ---------------
@@ -263,21 +331,76 @@ Navigatie filesysteem (ls, mkdir, cd, pwd, cp, mv, find, du, rm), bestanden
 
       :file:`/var`
 
-2. Je huidige map is :file:`/`. Na het commando :program:`cd ..`, wat is je huidige map?
+2. Je huidige map is :file:`/`. Na het commando :program:`cd ..`, wat
+   is je huidige map?
 
    .. admonition:: Oplossing
       :class: toggle
 
       :file:`/`  (want :file:`/` is zijn eigen bovenmap)
 
+3. Een logbestand groeit wanneer applicaties meldingen schrijven aan
+   het eind van het bestand. Welk kommando gebruik je om
+   de laatste 10 logberichten van :file:`app.log` te printen?
 
+   .. admonition:: Oplossing
+      :class: toggle
+
+      .. code:: shell
+
+         tail app.log
+
+4. Het commando :program:`rm foo` faalt met de melding "rm: foo: is a
+   directory". Wat doe je om het te verwijderen?
+
+   .. admonition:: Oplossing
+      :class: toggle
+
+      Eerst kijken met |ls(1)|_ of :file:`foo` belangrijke bestanden
+      bevat. Dan eventueel :program:`rm -r`.
+
+5. Hoe maak je een backup van je projectmap :file:`opdracht` in map
+   :file:`/backups/20150808`?
+
+   .. admonition:: Oplossing
+      :class: toggle
+
+      .. code:: shell
+
+         mkdir -p /backups/20150808
+         cp -a opdracht /backups/20150808
+
+      .. note:: Het is belangrijk om :program:`-a` te gebruiken met
+         |cp(1)|_ omdat anders worden de bestandseigenschappen niet goed
+         bewaard.
+
+6. Welk commando gebruik je om de naam van alle gebruikers (eerste
+   kolom in :file:`/etc/passwd`) die een een "o" in hun naam hebben, in
+   omgekeerde volgorde weer te geven?
+
+   .. admonition:: Oplossing
+      :class: toggle
+
+      .. code:: shell
+
+         cat /etc/passwd | cut -d: -f1 | grep o | sort -r
+
+7. Welk commando gebruik je om te tellen hoeveel regels met het woord
+   "hello" zich bevinden in :file:`roman1.txt` en :file:`roman2.txt`
+   samengevoegd?
+
+   .. admonition:: Oplossing
+      :class: toggle
+
+      .. code:: shell
+
+         cat roman1.txt roman2.txt | grep hello | wc -l
+
+         # eventueel ook:
+         grep hello roman1.txt roman2.txt | wc -l
 
 Verder inlezen
 --------------
-
-- Raphael Poss. `Introductie Unix`__, 2013.
-
-  .. __: http://science.raphael.poss.name/intro-unix.html
 
 - University of Surrey. `UNIX Tutorial for Beginners`__. 2001.
 

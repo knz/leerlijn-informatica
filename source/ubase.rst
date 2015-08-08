@@ -290,12 +290,14 @@ Informatie over commando's
 ``````````````````````````
 
 .. index:: man
+.. index:: manpage
 .. index:: apropos
 
 - om te weten wat een bepaald commando doet: gebruik dan
-  ":program:`man`". Dit is een interface naar de zogenaamde "online Unix
-  manual": een collectie tekstpagina's en artikelen. De meeste
-  commando's hebben allemaal een eigen pagina in de manual.
+  ":program:`man`". Dit is een interface naar de zogenaamde "online
+  Unix manual": een collectie tekstpagina's en artikelen, ook
+  *manpages* genoemd. De meeste commando's hebben allemaal een eigen
+  pagina in de manual.
 
   Tik dus in: :program:`man man` :kbd:`Enter`
 
