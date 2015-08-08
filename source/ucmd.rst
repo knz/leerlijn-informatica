@@ -7,6 +7,10 @@ De volgende secties introduceren een aantal verschillende
 programma's. Vergeet niet |man(1)|_ raad te plegen voor meer
 informatie.
 
+.. contents::
+
+Een deel van dit hoofdstuk is afgeleid van de `Introductie Unix`_.
+
 Bestandsstructuur
 -----------------
 
@@ -282,3 +286,7 @@ Verder inlezen
 - Colin Barschel. `Unix Toolbox`__, 2007-2012.
 
   .. __: http://cb.vu/unixtoolbox.xhtml
+
+- Raphael Poss. `Introductie Unix`_, 2013.
+
+  .. _`Introductie Unix`: http://science.raphael.poss.name/intro-unix.html

@@ -10,6 +10,8 @@ rustig door te nemen, om alles goed te laten bezinken.
 
 .. contents::
 
+Een deel van dit hoofdstuk is afgeleid van de `Introductie Unix`_.
+
 Waar ben ik?
 ------------
 
@@ -711,8 +713,9 @@ Naar controlemodus  :kbd:`Esc`     :kbd:`M-x`
 Verder inlezen
 --------------
 
-- Raphael Poss. `Introductie Unixm, sectie "Vergeet niet voor later"`__, 2013.
+- Raphael Poss. Introductie Unix, sectie `"Vergeet niet voor later"`__, 2013.
 
+  .. _`Introductie Unix`: http://science.raphael.poss.name/intro-unix.html
   .. __: http://science.raphael.poss.name/intro-unix.html#vergeet-niet-voor-later
 
 - University of Surrey. `UNIX Introduction`__. 2001.
