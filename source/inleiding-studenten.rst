@@ -162,7 +162,7 @@ studeren in de Informatica (MSc CS of dergelijk).
 
    * - |UBASE|_
      - Unix concepten
-     - Programma vs. proces; redirecties; pipes; jobbeheer; man; sudo; kill
+     - Programma vs. proces; jobbeheer; man; kill
 
    * - |UCMD|_
      - Basiscommando's
