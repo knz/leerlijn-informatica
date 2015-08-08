@@ -122,6 +122,8 @@ al goed geconfigureerd.
 Je eerste :file:`Makefile`
 --------------------------
 
+.. index:: Makefile
+
 1. Om het voorbeeld voor te bereiden, maak twee C bestanden aan
    :file:`hello.c` en :file:`world.c`.  In de eerste plaats je de
    volgende broncode:
@@ -232,6 +234,9 @@ Je eerste :file:`Makefile`
 Hergebruikbaar :file:`Makefile` voor je eigen projecten
 -------------------------------------------------------
 
+.. index:: voorbeeld Makefile
+.. index:: Makefile (voorbeeld)
+
 Voor Java applicaties
 `````````````````````
 
@@ -309,6 +314,8 @@ indien je ze allemaal opnieuw wil bouwen met :program:`make all`.
 Automatisch paralleliseren op een multi-core computer
 -----------------------------------------------------
 
+.. index:: parallel bouwen (make)
+
 Als je een computer gebruikt met meer dan 1 processor of met meerdere cores,
 kun je aan |make(1)|_ vragen om meerdere cores te gebruiken met parameter :program:`-j`.
 
@@ -325,6 +332,8 @@ computer. Bijvoorbeeld met 4 cores kun je :program:`-j 6` gebruiken.
 
 Automatisch bouwen van LaTeX documenten
 ---------------------------------------
+
+.. index:: latexmk
 
 Je hebt wellicht al geleerd dat je het commando :program:`pdflatex`
 kunt aanroepen om een LaTeX document te vertalen naar PDF.
