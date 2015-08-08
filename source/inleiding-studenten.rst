@@ -166,7 +166,7 @@ studeren in de Informatica (MSc CS of dergelijk).
 
    * - |UCMD|_
      - Basiscommando's
-     - Navigatie filesysteem (ls, mkdir, cd, pwd, cp, mv, find, du, rm), bestanden
+     - Navigatie bestandssysteem (ls, mkdir, cd, pwd, cp, mv, find, du, rm), bestanden
        inspecteren (file, cat, less, head, tail, grep
        met simpele strings, wc, cut)
 
@@ -176,12 +176,12 @@ studeren in de Informatica (MSc CS of dergelijk).
 
    * - |UAR|_
      - Dataarchiefformaten beheren
-     - Gebruik van tar, zip, dd, dump/restore, cpio en verschillende
+     - Gebruik van tar, zip, cpio en verschillende
        compressiemethodes vanaf de commandolijn
 
-   * - |UFS|_
+   * - |UFS+|_
      - Opslagbeheer
-     - Aanmaken en wissen van eigen filesystemen vanaf de commandolijn
+     - Aanmaken en wissen van eigen filesystemen vanaf de commandolijn, sudo
 
    * - |USRV1|_
      - Op afstand werken (basis)
@@ -270,7 +270,7 @@ op vakopdrachten om je te motiveren.
 | blok 1   |                        +-----------+-----------+-----------+------------+-------------+
 |          |                        |           | |UCMD|_   |           |            |             |
 |          +------------------------+-----------+-----------+-----------+------------+-------------+
-|          | Arch & comp org        |           | |UFS|_    |           |            | |DAUTO1|_   |
+|          | Arch & comp org        |           | |UFS+|_   |           |            | |DAUTO1|_   |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+
 | Blok 2   | Discrete wiskunde &    | |WMATH1|_ |           |           |            |             |
 |          | logica                 |           |           |           |            |             |

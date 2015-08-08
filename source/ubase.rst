@@ -3,7 +3,7 @@
 |UBASE| – Unix concepten
 ========================
 
-:Auteur: Raphael ‘kena’ Poss
+:Author: Raphael ‘kena’ Poss
 
 Je wordt aangeraden om dit hoofdstuk over de loop van een paar weken
 rustig door te nemen, om alles goed te laten bezinken.
@@ -20,7 +20,7 @@ Waar ben ik?
 Je zit voor je Unix systeem. Je scherm staat aan, toetsenbord reageert
 goed: je *console* staat klaar voor gebruik.
 
-.. index:: sessie, gebruikers-
+.. index:: sessie, gebruikersessie
 
 Iedere Unix gebruiker werkt binnen een *sessie* die hem/haar
 identificeert.  Als je nog geen sessie open hebt, moet je dat nu

@@ -3,6 +3,8 @@
 |UCMD| – Basiscommando's
 ==========================
 
+:Author: Raphael ‘kena’ Poss
+
 De volgende secties introduceren een aantal verschillende
 programma's. Vergeet niet |man(1)|_ raad te plegen voor meer
 informatie.
@@ -11,7 +13,7 @@ informatie.
 
 Een deel van dit hoofdstuk is afgeleid van de `Introductie Unix`_.
 
-Bestandsstructuur
+Bestandssysteem
 -----------------
 
 .. index:: current directory
@@ -20,7 +22,7 @@ Bestandsstructuur
 .. index:: cd
 .. index:: pad (filesysteem)
 .. index:: filesysteem
-.. index:: bestandsstructuur
+.. index:: bestandssysteem
 .. index:: thuismap
 .. index:: home directory
 
@@ -142,8 +144,8 @@ Goed te weten:
 Bestandstatus inspecteren
 -------------------------
 
-.. index:: stat, command
-.. index:: file, command
+.. index:: stat (command)
+.. index:: file (command)
 .. index:: modified, last modification date
 .. index:: accessed, last access date
 .. index:: created, creation date
@@ -267,7 +269,7 @@ Programma   Beschrijving
   map waar je wilt beginnen met zoeken. Vaak is het :program:`find .`
   (zoeken vanaf huidige map), :program:`find ~` (zoeken overal in
   thuismap) of :program:`find /` (zoeken op hele
-  bestandsstructuur).
+  bestandssysteem).
 
 - Om te zoeken op basis van naam of eigenschappen worden de volgende
   vormen het vaakst gebruikt:
