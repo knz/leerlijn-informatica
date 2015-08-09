@@ -333,6 +333,7 @@ computer. Bijvoorbeeld met 4 cores kun je :program:`-j 6` gebruiken.
 Automatisch bouwen van LaTeX documenten
 ---------------------------------------
 
+.. index:: LaTeX (automatisch bouwen)
 .. index:: latexmk
 
 Je hebt wellicht al geleerd dat je het commando :program:`pdflatex`
