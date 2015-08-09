@@ -2,6 +2,22 @@ body{
     font-family: "Open Sans","Lucida Grande","Lucida Sans Unicode","Geneva","Verdana",sans-serif;
 }
 
+iframe{    
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    overflow: auto;
+    resize: vertical;
+}
+
+div.icontainer .head:after {
+    content: " (weergeven)";
+}
+
+div.icontainer .head.open:after {
+    content: " (verbergen)";
+}
+
 pre,
 code,
 kbd,
