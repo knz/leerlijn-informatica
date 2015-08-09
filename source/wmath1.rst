@@ -125,7 +125,7 @@ Wat je absoluut moet weten
       .. math::
          \sum_{n=1}^{50} 2n
 
-3. De formule van Euler zegt dat :math:`e^{i\pi} =
+3. De formule van Euler zegt dat :math:`e^{xi\pi} =
    \text{cos}(x)+i \text{sin}(x)`. Hoe schrijf je dit in LaTeX?
 
    .. admonition:: Oplossing
