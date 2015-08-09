@@ -63,7 +63,7 @@ Wat je absoluut moet weten
 
   Als je subscript of superscript langer dan 1 teken is, gebruik dan {...}:
   "``$ x^{n+1} $``" ":math:`x^{n+1}`" en "``$ x_{i+1} $``" ":math:`x_{i+1}`".
-VG
+
 - som met: ``$ \sum_{i=1}^n $``
 
   .. math::
