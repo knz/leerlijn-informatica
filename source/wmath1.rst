@@ -48,14 +48,14 @@ Wat je absoluut moet weten
 
 - variabelen en functienamen van maar één letter schrijf je gewoon,
   bijvoorbeeld "``$ x+f(x) $``" ":math:`x+f(x)`". Breedere woorden schrijf
-  je altijd met ``\text{...}``, bijvoorbeeld "``$ x+\text{sin}(x) $``"
-  ":math:`x+\text{sin}(x)`". Als je dit niet doet, kan je woord heel
+  je altijd met ``\mathit{...}``, bijvoorbeeld "``$ x+\mathit{sin}(x) $``"
+  ":math:`x+\mathit{sin}(x)`". Als je dit niet doet, kan je woord heel
   lelijk eruitzien, bijvoorbeeld:
 
   - "``$ fft(x) $``" ":math:`fft(x)`" – kijk hoe ver de 2 "f" staan van
     elkaar!
 
-  - "``$ \text{fft}(x) $``" ":math:`\text{fft}(x)`" – alles goed.
+  - "``$ \mathit{fft}(x) $``" ":math:`\mathit{fft}(x)`" – alles goed.
 
 - ondergeschreven (Engels: *subscript*) en erboven geschreven (Engels:
   *superscript*) tekens maak je met "``_``" en "``^``", bijvoorbeeld
@@ -70,12 +70,14 @@ Wat je absoluut moet weten
 
      \sum_{i=1}^n
 
+- gewonen woorden zoals "als", "en" etc. schrijf je met "``\text{...}``".
+
 - een lege spatie tussen een formule en een conditie schrijf je met
   "``\quad``", bijvoorbeeld:
 
-  ``$ y = \frac{x}{x+1} \quad \text{als }x \neq -1 $``
+  ``$ y = \frac{x}{x+1} \quad \text{als} \quad x \neq -1 $``
 
-  :math:`y = \frac{x}{x+1} \quad \text{als }x \neq -1`
+  :math:`y = \frac{x}{x+1} \quad \text{als} \quad x \neq -1`
 
 - "Gewone" haakjes blijven klein, zelfs rond een groot
   symbool. Gebruik ``\left(`` en ``\right)`` om ze automatisch te
@@ -110,7 +112,17 @@ Wat je absoluut moet weten
 
       :math:`d = \sqrt{a^2+b^2}`
 
-2. Hoe schrijf je de som van alle even getallen tussen 2 en 100
+2. Hoe schrijf je de oppervlakte van een cirkel met straal *r* in
+   LaTeX?
+
+   .. admonition:: Oplossing
+      :class: toggle
+
+      ``$ a = \pi r^2 $``
+
+      :math:`a = \pi r^2`
+
+3. Hoe schrijf je de som van alle even getallen tussen 2 en 100
    inclusief?
 
    .. admonition:: Oplossing
@@ -125,13 +137,27 @@ Wat je absoluut moet weten
       .. math::
          \sum_{n=1}^{50} 2n
 
-3. De formule van Euler zegt dat :math:`e^{xi\pi} =
-   \text{cos}(x)+i \text{sin}(x)`. Hoe schrijf je dit in LaTeX?
+4. De formule van Euler zegt dat :math:`e^{ix} =
+   \mathit{cos}(x)+i \mathit{sin}(x)`. Hoe schrijf je dit in LaTeX?
 
    .. admonition:: Oplossing
       :class: toggle
 
-      ``$ e^{i\pi} = \text{cos}(x)+i \text{sin}(x) $``
+      ``$ e^{ix} = \mathit{cos}(x)+i \mathit{sin}(x) $``
+
+5. Repareer de volgende formule: :math:`x\leq 2y if and only if \frac{x}{2}\leq y`
+   (``$ x\leq 2y if and only if \frac{x}{2}\leq y$``)
+
+   .. admonition:: Oplossing
+      :class: toggle
+
+      .. code-block:: latex
+
+         $x \leq 2y \quad \text{if and only if} \quad \frac{x}{2}\leq y$
+
+      :math:`x \leq 2y \quad \text{if and only if} \quad \frac{x}{2}\leq y`
+
+
 
 Verder inlezen
 --------------
