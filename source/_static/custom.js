@@ -1,21 +1,22 @@
 $(document).ready(function() {
 
-    $('#contents').after(
+    $('.section > .section :first').before(
         "<div class='icontainer'><span class='head'>Bonus: definitie uit de <a href='http://www.catb.org/jargon/html/index.html'>Jargon File</a></span><br/>" +
         "<iframe id='fortune' src='//csa.science.uva.nl/fortune/fortune.cgi' /></div>" );
 
     ifr = $("#fortune")
+    ifr.height("3em");
     var sz = 0;
     var shown = false;
     ifr.load(function() {
         setInterval(function() {
             sz = $("#fortune").contents().height();
             if (shown) {
-                $("#fortune").height(sz);
+                $("#fortune").animate({'height':sz},200);
             } else {
-                $("#fortune").height("3em");
+                $("#fortune").animate({'height':"3em"},200);
             }
-        }, 30);
+        }, 1000);
     });
     $('.icontainer').click(function() {
         $(this).children(".head").toggleClass("open");
