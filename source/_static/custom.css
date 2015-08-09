@@ -27,6 +27,10 @@ tt{
     font-size:1em;
 }
 
+pre{
+    border-radius: 4px;
+}
+
 .stitle {background-color:silver;}
 .wtitle {background-color:skyblue;}
 .ttitle {background-color:gold;}
