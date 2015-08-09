@@ -25,14 +25,16 @@ De meeste formules schrijf je tussen dollartekens, bijvoorbeeld
 
 Er zijn twee soorten wiskundige *omgevingen* (Engels: *environments*):
 
-============== ============================ ================================
-Omgeving       *inline*                     *blok*
-============== ============================ ================================
-Voorbeeld      :math:`\sum_{i=0}^n2^i`      .. math::
-                                               \sum_{i=0}^n2^i
+- *inline*:
 
-Schrijf je met ``$...$`` of ``\(...\)``     ``$$...$$`` of ``\[...\]``
-============== ============================ ================================
+  Schrijf je ``$...$``, voorbeeld: :math:`\sum_{i=0}^n2^i`
+
+- *blok*:
+
+  Schrijf je ``$$...$$``, voorbeeld:
+
+  .. math::
+     \sum_{i=0}^n2^i
 
 Inline wiskunde blijft compact, kun je gebruiken bv. binnen een zin,
 maar het maakt het lezen van complexe formules moeilijker. Blok
@@ -77,29 +79,16 @@ Wat je absoluut moet weten
 
 - "Gewone" haakjes blijven klein, zelfs rond een groot
   symbool. Gebruik ``\left(`` en ``\right)`` om ze automatisch te
-  vergroten.
+  vergroten:
 
-  .. list-table::
-     :widths: 50 50
-     :header-rows: 1
+  .. math::
+     (\sum_k 2^k) \quad \text{vs.} \quad \left(\sum_k 2^k\right)
 
-     * - Gewone haakjes
-       - ``\left`` .. ``\right``
+  .. math::
+     [\sum_k 2^k] \quad \text{vs.} \quad \left[\sum_k 2^k\right]
 
-     * - .. math::
-            (\sum_k 2^k)
-       - .. math::
-            \left(\sum_k 2^k\right)
-
-     * - .. math::
-            [\sum_k 2^k]
-       - .. math::
-            \left[\sum_k 2^k\right]
-
-     * - .. math::
-            \{\sum_k 2^k\}
-       - .. math::
-            \left\{\sum_k 2^k\right\}
+  .. math::
+     \{\sum_k 2^k\} \quad \text{vs.} \quad \left\{\sum_k 2^k\right\}
 
 - De griekse letters schrijf je met een ``\`` dan hun naam,
   bijvoorbeeld "``$\pi \theta$``" ":math:`\pi \theta`".
