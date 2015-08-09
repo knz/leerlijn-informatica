@@ -1,27 +1,35 @@
 $(document).ready(function() {
 
-    $('.section > .section :first').before(
-        "<div class='icontainer'><span class='head'>Bonus: definitie uit de <a href='http://www.catb.org/jargon/html/index.html'>Jargon File</a></span><br/>" +
-        "<iframe id='fortune' src='//csa.science.uva.nl/fortune/fortune.cgi' /></div>" );
+    if (window.location.pathname.indexOf("/inleiding-") == -1)
+    {
+        $('.section > .section :first').before(
+            "<div class='icontainer'>" +
+                "<span class='head'>Bonus: definitie uit de " +
+                "<a href='http://www.catb.org/jargon/html/index.html'>Jargon File</a></span><br/>" +
+                "<iframe id='fortune' src='//csa.science.uva.nl/fortune/fortune.cgi' /></div>" );
 
-    ifr = $("#fortune")
-    ifr.height("3em");
-    var sz = 0;
-    var shown = false;
-    ifr.load(function() {
-        setInterval(function() {
-            sz = $("#fortune").contents().height();
-            if (shown) {
-                $("#fortune").animate({'height':sz},200);
-            } else {
-                $("#fortune").animate({'height':"3em"},200);
-            }
-        }, 1000);
-    });
-    $('.icontainer').click(function() {
-        $(this).children(".head").toggleClass("open");
-        shown = !shown;
-    });
+        ifr = $("#fortune");
+        ifr.height("3em");
+        var shown = false;
+        var done = false;
+        ifr.load(function() {
+            setInterval(function() {
+                if (shown) {
+                    var sz = $("#fortune").contents().height();
+                    $("#fortune").animate({'height':sz},200);
+                } else {
+                    if (!done)
+                        $("#fortune").animate({'height':"3em"},200);
+                    done = true;
+                }
+            }, 1000);
+        });
+        $('.icontainer').click(function() {
+            $(this).children(".head").toggleClass("open");
+            shown = !shown;
+            done = false;
+        });
+    }
 
     $('.utitle').parent().addClass('utitle-parent');
     $('.dtitle').parent().addClass('dtitle-parent');
