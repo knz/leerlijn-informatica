@@ -10,6 +10,11 @@
 Waarom presenteren met LaTeX?
 -----------------------------
 
+.. index:: dia's
+.. index:: presentaties
+.. index:: Beamer (LaTeX)
+.. index:: LaTeX (Beamer)
+
 Waarom LaTeX (en Beamer) wanneer Google Presentaties, Keynote,
 Powerpoint enz. ook beschikbaar zijn?
 
@@ -84,6 +89,8 @@ Richtlijnen voor het structureren
 
 Simpele animaties
 -----------------
+
+.. index:: animaties (in dia's)
 
 Binnen een dia kun je ook inhoud stap voor stap laten zien tijdens het
 presenteren. Bijvoorbeeld:
