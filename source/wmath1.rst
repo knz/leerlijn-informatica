@@ -48,7 +48,7 @@ Wat je absoluut moet weten
 
 - variabelen en functienamen van maar één letter schrijf je gewoon,
   bijvoorbeeld "``$ x+f(x) $``" ":math:`x+f(x)`". Breedere woorden schrijf
-  je altijf met ``\text{...}``, bijvoorbeeld "``$ x+\text{sin}(x) $``"
+  je altijd met ``\text{...}``, bijvoorbeeld "``$ x+\text{sin}(x) $``"
   ":math:`x+\text{sin}(x)`". Als je dit niet doet, kan je woord heel
   lelijk eruitzien, bijvoorbeeld:
 

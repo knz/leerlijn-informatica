@@ -9,9 +9,10 @@ De volgende secties introduceren een aantal verschillende
 programma's. Vergeet niet |man(1)|_ raad te plegen voor meer
 informatie.
 
+Een deel van dit hoofdstuk is afgeleid van de `Introductie Unix`_.
+
 .. contents::
 
-Een deel van dit hoofdstuk is afgeleid van de `Introductie Unix`_.
 
 Bestandssysteem
 -----------------
