@@ -403,3 +403,19 @@ met veel ingebouwde regels voor gebruik met LaTeX.
       .. code-block:: shell
 
          latexmk -pdf document.tex
+
+Verder inlezen
+--------------
+
+- Free Software Foundation. `GNU make - user manual`__.
+
+  .. __: http://www.gnu.org/software/make/manual/make.html
+
+- John Collins. `latexmk - Fully automated LaTeX document
+  generation`__,
+
+  .. __: http://ctan.org/pkg/latexmk
+
+- John Collins. `latexmk - manual page`__.
+
+  .. __: http://mirrors.ctan.org/support/latexmk/latexmk.pdf
