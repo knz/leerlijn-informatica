@@ -47,24 +47,24 @@ Wat je absoluut moet weten
 .. index:: superscript (math)
 
 - variabelen en functienamen van maar één letter schrijf je gewoon,
-  bijvoorbeeld "``$x+f(x)$``" ":math:`x+f(x)`". Breedere woorden schrijf
-  je altijf met ``\text{...}``, bijvoorbeeld "``$x+\text{sin}(x)$``"
+  bijvoorbeeld "``$ x+f(x) $``" ":math:`x+f(x)`". Breedere woorden schrijf
+  je altijf met ``\text{...}``, bijvoorbeeld "``$ x+\text{sin}(x) $``"
   ":math:`x+\text{sin}(x)`". Als je dit niet doet, kan je woord heel
   lelijk eruitzien, bijvoorbeeld:
 
-  - "``$fft(x)``" ":math:`fft(x)`" – kijk hoe ver de 2 "f" staan van
+  - "``$ fft(x) $``" ":math:`fft(x)`" – kijk hoe ver de 2 "f" staan van
     elkaar!
 
-  - "``\text{fft}(x)``" ":math:`\text{fft}(x)`" – alles goed.
+  - "``$ \text{fft}(x) $``" ":math:`\text{fft}(x)`" – alles goed.
 
 - ondergeschreven (Engels: *subscript*) en erboven geschreven (Engels:
   *superscript*) tekens maak je met "``_``" en "``^``", bijvoorbeeld
-  "``$x^2$``" ":math:`x^2`" en "``$x_i$``" ":math:`x_i`".
+  "``$ x^2 $``" ":math:`x^2`" en "``$ x_i $``" ":math:`x_i`".
 
   Als je subscript of superscript langer dan 1 teken is, gebruik dan {...}:
-  "``$x^{n+1}$``" ":math:`x^{n+1}`" en "``$x_{i+1}$``" ":math:`x_{i+1}`".
-
-- som met: ``\sum_{i=1}^n``
+  "``$ x^{n+1} $``" ":math:`x^{n+1}`" en "``$ x_{i+1} $``" ":math:`x_{i+1}`".
+VG
+- som met: ``$ \sum_{i=1}^n $``
 
   .. math::
 
@@ -73,7 +73,7 @@ Wat je absoluut moet weten
 - een lege spatie tussen een formule en een conditie schrijf je met
   "``\quad``", bijvoorbeeld:
 
-  ``y = \frac{x}{x+1} \quad \text{als }x \neq -1``
+  ``$ y = \frac{x}{x+1} \quad \text{als }x \neq -1 $``
 
   :math:`y = \frac{x}{x+1} \quad \text{als }x \neq -1`
 
@@ -91,7 +91,7 @@ Wat je absoluut moet weten
      \{\sum_k 2^k\} \quad \text{vs.} \quad \left\{\sum_k 2^k\right\}
 
 - De griekse letters schrijf je met een ``\`` dan hun naam,
-  bijvoorbeeld "``$\pi \theta$``" ":math:`\pi \theta`".
+  bijvoorbeeld "``$ \pi \theta $``" ":math:`\pi \theta`".
 
 - Om heel snel voorbeelden op te kunnen zoeken, onthoud goed de link
   naar de `Wikibook: LaTeX/Mathematics`_.
@@ -106,7 +106,7 @@ Wat je absoluut moet weten
    .. admonition:: Oplossing
       :class: toggle
 
-      ``$d = \sqrt{a^2 + b^2}$``
+      ``$ d = \sqrt{a^2 + b^2} $``
 
       :math:`d = \sqrt{a^2+b^2}`
 
@@ -116,11 +116,11 @@ Wat je absoluut moet weten
    .. admonition:: Oplossing
       :class: toggle
 
-      ``$2 + 4 + ... + 98 + 100$``
+      ``$ 2 + 4 + ... + 98 + 100 $``
 
       :math:`2 + 4 + ... + 98 + 100`
 
-      of: ``$\sum_{n=1}^{50} 2n$``
+      of: ``$ \sum_{n=1}^{50} 2n $``
 
       .. math::
          \sum_{n=1}^{50} 2n
@@ -131,7 +131,7 @@ Wat je absoluut moet weten
    .. admonition:: Oplossing
       :class: toggle
 
-      ``$e^{i\pi} = \text{cos}(x)+i \text{sin}(x)``
+      ``$ e^{i\pi} = \text{cos}(x)+i \text{sin}(x) $``
 
 Verder inlezen
 --------------
