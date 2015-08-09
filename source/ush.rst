@@ -5,6 +5,8 @@
 
 Prompt
 
+History
+
 Jokertekens
 
 Env vars

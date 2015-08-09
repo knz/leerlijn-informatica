@@ -172,7 +172,7 @@ studeren in de Informatica (MSc CS of dergelijk).
 
    * - |USH|_
      - Basisfeatures van de shell
-     - Environment variabelen, jokertekens, redirecties, commandoprompt aanpassen
+     - Geschiedenis, environment variabelen, jokertekens, redirecties, commandoprompt aanpassen
 
    * - |UAR|_
      - Dataarchiefformaten beheren
