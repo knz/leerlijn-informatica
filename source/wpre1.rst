@@ -24,6 +24,6 @@ volgende website:
 Verder inlezen
 --------------
 
-- Till Tantau, Joseph Wright, Vedran Miletić et al. `The BEAMER class, User Guide`_.
+- Till Tantau, Joseph Wright, Vedran Miletić et al. `The BEAMER class, User Guide`_.
 
   .. __: http://mirrors.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf
