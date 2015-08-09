@@ -213,6 +213,7 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 'preamble': r'''
+\usepackage{amssymb}
 \renewcommand{\DUspan}[2]{%
 \ifcsname DUrole#1\endcsname%
 \csname DUrole#1\endcsname{#2}%

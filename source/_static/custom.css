@@ -90,3 +90,7 @@ div.header img.rightlogo {
     font-size: 120%;
     padding: 1px 5px;
 }
+
+blockquote .attribution {
+    text-align: right;
+}
