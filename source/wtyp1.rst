@@ -3,6 +3,8 @@
 |WTYP1| – Typografie (basis)
 ==============================
 
+:Author: Raphael ‘kena’ Poss
+
 .. contents::
 
 ":math:`\text{\LaTeX}`" ipv. "LaTeX"
@@ -209,7 +211,7 @@ Streepjes
 
 - een kastlijntje (Engels: *em dash*) is langer dan een
   gedachtestreepje.  Je schrijft het in HTML met ``&mdash;``, in LaTeX
-  met "``---``" Dit gebruik je:
+  met "``---``". Dit gebruik je:
 
   - in het Nederlands, *met spaties eromheen*, ter afscheiding van een
     tussenzin of voor het aangeven van een onverwachte
