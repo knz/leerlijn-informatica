@@ -3,9 +3,10 @@
 |WTYP1| – Typografie (basis)
 ==============================
 
-:Author: Raphael ‘kena’ Poss
+:Auteur: Raphael ‘kena’ Poss
 
-.. contents::
+.. contents:: Inhoud
+   :local:
 
 Goed gebruik van het LaTeX logo
 -------------------------------

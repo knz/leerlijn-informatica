@@ -3,7 +3,7 @@
 |WMATH1| – Formules (basis)
 =============================
 
-:Author: Raphael ‘kena’ Poss
+:Auteur: Raphael ‘kena’ Poss
 
 .. index:: LaTeX (math)
 
@@ -12,7 +12,8 @@ uitdrukken in LaTeX documenten en presentaties. Het is dus belangrijk
 dat je snel de LaTeX taal kent voor simpele formules, zodat je snel en
 efficiënt formules kunt produceren.
 
-.. contents::
+.. contents:: Inhoud
+   :local:
 
 Omgevingen
 ----------

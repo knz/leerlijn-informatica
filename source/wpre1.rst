@@ -3,9 +3,10 @@
 |WPRE1| – Beamer (basis)
 ==========================
 
-:Author: Raphael ‘kena’ Poss
+:Auteur: Raphael ‘kena’ Poss
 
-.. contents::
+.. contents:: Inhoud
+   :local:
 
 Waarom presenteren met LaTeX?
 -----------------------------

@@ -3,12 +3,13 @@
 |DAUTO1| – Workflows automatiseren (basis)
 ============================================
 
-:Author: Raphael ‘kena’ Poss
+:Auteur: Raphael ‘kena’ Poss
 
 In dit hoofdstuk krijg je een eerste inleiding voor het
 gebruik van |make(1)|_, Makefiles en :program:`latexmk`.
 
-.. contents::
+.. contents:: Inhoud
+   :local:
 
 Wat doet |make(1)| eigenlijk?
 -----------------------------

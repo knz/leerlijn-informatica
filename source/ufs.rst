@@ -3,9 +3,10 @@
 |UFS+| – Opslagbeheer
 ======================
 
-:Author: Raphael ‘kena’ Poss
+:Auteur: Raphael ‘kena’ Poss
 
-.. contents::
+.. contents:: Inhoud
+   :local:
 
 Soorten bestandssysteem
 -------------------------

@@ -3,8 +3,8 @@ Inleiding voor studenten
 
 .. include:: common.d
 
-.. contents::
-
+.. contents:: Inhoud
+   :local:
 
 Inleiding
 ---------

@@ -3,9 +3,10 @@
 |DFP+| – Zwevendekommagetallen
 ===============================
 
-:Author: Raphael ‘kena’ Poss
+:Auteur: Raphael ‘kena’ Poss
 
-.. contents::
+.. contents:: Inhoud
+   :local:
 
 Wat je absoluut moet weten
 --------------------------

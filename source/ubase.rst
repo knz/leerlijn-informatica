@@ -3,14 +3,15 @@
 |UBASE| – Unix concepten
 ========================
 
-:Author: Raphael ‘kena’ Poss
+:Auteur: Raphael ‘kena’ Poss
 
 Je wordt aangeraden om dit hoofdstuk over de loop van een paar weken
 rustig door te nemen, om alles goed te laten bezinken.
 
 Een deel van dit hoofdstuk is afgeleid van de `Introductie Unix`_.
 
-.. contents::
+.. contents:: Inhoud
+   :local:
 
 
 Waar ben ik?

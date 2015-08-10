@@ -3,9 +3,10 @@
 |DCODE| – Computergetallenstelsels
 ==================================
 
-:Author: Raphael ‘kena’ Poss
+:Auteur: Raphael ‘kena’ Poss
 
-.. contents::
+.. contents:: Inhoud
+   :local:
 
 Algemene begrippen
 ------------------
