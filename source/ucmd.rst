@@ -212,7 +212,7 @@ Programma               Beschrijving
   - :program:`ls -l | more` pauseert tijdens de weergave van een grote
     map.
 
-- |ls(1)|_ zonder argumenten en niet gecombineert print zijn uitvoer
+- |ls(1)|_ zonder argumenten en niet gecombineerd print zijn uitvoer
   in kolommen. Als het wordt gecombineerd met een ander programma
   (bv. :program:`| less`) gebruikt het dan maar 1 kolom.  Om
   kolommen te forceren, gebruik dan :program:`ls -C`.
@@ -283,7 +283,7 @@ Programma   Beschrijving
        find . -name bestandsnaam.txt
 
        # zoeken naar een naamsdeel. Pas op,
-       # de aanhangtekens zijn belangrijk.
+       # de aanhalingstekens zijn belangrijk.
        find . -name "*naamsdeel*"
 
        # zoeken naar bestanden grooter dan 100 kbytes
