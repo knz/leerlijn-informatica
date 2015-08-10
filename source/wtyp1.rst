@@ -7,8 +7,8 @@
 
 .. contents::
 
-":math:`\text{\LaTeX}`" ipv. "LaTeX"
-------------------------------------
+Goed gebruik van het LaTeX logo
+-------------------------------
 
 Het LaTeX logo druk je uit als "``\LaTeX``" (:math:`\text{\LaTeX}`)
 binnen LaTeX documenten. Het is zijn kenmerk.
