@@ -1,3 +1,5 @@
+.. include:: common.d
+
 Inleiding en motivatie voor docenten
 ====================================
 
@@ -12,6 +14,9 @@ vakgebied. Er wordt kort aandacht aan besteed, bijvoorbeeld bij PAV,
 maar daarna vindt er weinig of geen herhaling plaats en er wordt na
 zekere tijd simpelweg aangenomen dat de studenten deze vaardigheden
 beheersen.
+
+.. contents:: Inhoud
+   :local:
 
 Huidige situatie
 ----------------
@@ -166,25 +171,6 @@ studenten wordt gemaakt aan het begin van de studie, en dat ze eraan
 kunnen blijven refereren tijdens de loop van de opleiding en eventueel
 daarna.
 
-Eigenaarschap en onderhoud
---------------------------
-
-De docententeam als geheel is verantwoordelijk voor de lange termijn
-visie van de leerlijn en het formuleren van de algemene profieleisen
-die naar individuele vaardigheden vertaald moeten worden.
-
-Het werk om deze eisen te vertalen naar individuele vaardigheidsmodules
-wordt dan uitgevoerd door een of meerdere redacteurs. De coördinator
-academische vaardigheden (Robert van Wijk) met behulp van gemotiveerde
-assistenten en docenten hebben de initiatief genomen om de rol van
-redacteur te spelen voor de eerste implementatie. Het is echter de
-verwachting dat de "betere" assistenten ieder jaar het document en de
-inbedding in het curriculum verder zullen uitbreiden en onderhouden.
-
-Elke vaardigheidsmodule of groep vaardigheden zal ook worden
-vertegenwoordigd door een of meer docenten en/of assistenten die als
-"sponsor" de richtlijn zullen zetten voor verdere ontwikkelingen en
-onderhoud.
 
 Kosten
 ------
@@ -235,3 +221,52 @@ onderwijszalen langer gebruikt worden, met de bijbehorende kosten.
 Voor de studenten zijn de extra inspanningen om de vaardigheden te leren
 makkelijk te verwaarlozen door de verwante productiviteits- en
 kwaliteitswinsten daarmee ontwikkeld.
+
+Eigenaarschap en onderhoud
+--------------------------
+
+De docententeam als geheel is verantwoordelijk voor de lange termijn
+visie van de leerlijn en het formuleren van de algemene profieleisen
+die naar individuele vaardigheden vertaald moeten worden.
+
+Het werk om deze eisen te vertalen naar individuele vaardigheidsmodules
+wordt dan uitgevoerd door een of meerdere redacteurs. De coördinator
+academische vaardigheden (Robert van Wijk) met behulp van gemotiveerde
+assistenten en docenten hebben de initiatief genomen om de rol van
+redacteur te spelen voor de eerste implementatie. Het is echter de
+verwachting dat de "betere" assistenten ieder jaar het document en de
+inbedding in het curriculum verder zullen uitbreiden en onderhouden.
+
+Elke vaardigheidsmodule of groep vaardigheden zal ook worden
+vertegenwoordigd door een of meer docenten en/of assistenten die als
+"sponsor" de richtlijn zullen zetten voor verdere ontwikkelingen en
+onderhoud.
+
+Dankwoord
+---------
+
+De oprichter van deze initiatief is Robert van Wijk.
+
+Robert van Wijk, Rex Valkering, Floris Kroon en Raphael Poss hebben de
+eerste implementatiestrategie ontwikkeld.
+
+De lijst vaardigheden is verder ontwikkeld door de volgende
+deelnemers:
+
+==================== ==========================================
+Persoon              Vaardigheden
+==================== ==========================================
+Robert van Wijk      |SGIT1|_ |SGIT2|_ |WBIB1|_ |WBIB2|_ |WPRE1|_
+                     |WPRE2|_ |WFIG1|_ |WFIG2+|_ |WMATH1|_ |WMATH2|_
+                     |TDBG1|_ |TDBG2+|_ |DAUTO1|_ |UBASE|_
+Andy Pimentel        |DSTAT1|_ 
+Floris Kroon         |UCMD|_ 
+Mark Makkes          |USRV2+|_ |DCODE|_
+Merijn Verstraaten   |USRV1|_ |WTYP1|_
+Raphael Poss         |SDOC2+|_ |SNAV1|_ |SNAV2|_ |TPROF1|_ |TPROF2+|_
+                     |USH|_ |UAR|_ |UFS+|_ |URE1|_ |URE2+|_ |DFP+|_
+                     |DPLOT1|_ |DSTAT2|_ |DAUTO2|_ |DAUTO3+|_ |DSTREAM+|_
+Rob Belleman         |DSTAT3|_ |DSTAT4+|_
+Roeland Douma        |DBAK|_
+Taddeüs Kroes        |SDOC1|_
+==================== ==========================================
