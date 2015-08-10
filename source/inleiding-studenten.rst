@@ -251,6 +251,12 @@ studeren in de Informatica (MSc CS of dergelijk).
      - Continu 1D gegevens dynamisch plotten, lopende gemiddelde, min, max,
        std afwijking berekenen
 
+   * - |DBAK|_
+     - Back-ups (basis)
+     - Unix toegangsrechten en toegangsdata goed weten te bewaren in
+       back-ups; Voor- en na-delen kennen van Dropbox, SURFdrive,
+       Google Drive, eigen schijven
+
 Inbedding in het curriculum
 ---------------------------
 
@@ -268,7 +274,7 @@ op vakopdrachten om je te motiveren.
 +==========+========================+===========+===========+===========+============+=============+
 | Jaar 1,  | Inleiding programmeren |           | |UBASE|_  |           |            | |DCODE|_    |
 | blok 1   |                        +-----------+-----------+-----------+------------+-------------+
-|          |                        |           | |UCMD|_   |           |            |             |
+|          |                        |           | |UCMD|_   |           |            | |DBAK|_     |
 |          +------------------------+-----------+-----------+-----------+------------+-------------+
 |          | Arch & comp org        |           | |UFS+|_   |           |            | |DAUTO1|_   |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+
