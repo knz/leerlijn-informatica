@@ -34,7 +34,7 @@ talstelsel.
 Een *positiestelsel* (*positional notation* in het Engels) is een
 talstelsel waar de representatie van getallen opgebouwd wordt door de
 cijfers te lezen of schrijven in een vaste richting. Dit is de meest
-gangbare soort talstelsel. De onderscheid bestaan omdat bv. romeinse
+gangbare soort talstelsel. Deze onderscheid bestaat omdat bv. romeinse
 getallen geen positiestelsel vormen.
 
 In het dagelijks leven ben je al gewend aan 3 positiestelsels: 10, 12
