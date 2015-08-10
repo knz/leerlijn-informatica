@@ -12,7 +12,7 @@ Inleiding
 Elke professionele kok weet dat je de handgreep van een hete pan niet
 direct met je hand pakt. Echter is er geen vak "handgreep beheren" in
 een kokopleiding. Dit is een vaardigheid die wordt ontwikkeld tijdens
-alle activiteten in de kokopleiding.
+alle activiteiten in de kokopleiding.
 
 De **leerlijn informaticavaardigheden** is een dergelijk verzamelingen
 van basisvaardigheden verwacht van *alle* BSc informaticastudenten aan het
@@ -21,7 +21,7 @@ referenties die van toepassing kunnen zijn in alle vakgebieden binnen
 de informatica en in elke informaticabaan na de studie.
 
 Deze website, die je ook als `PDF document`__ kunt downloaden, geeft een
-overzicht en gedetailleerde beschrijving voor elke vaardiheid in de
+overzicht en gedetailleerde beschrijving voor elke vaardigheid in de
 leerlijn. Je hoeft dit hele document niet door te nemen aan het begin
 van je studie; in elk vak zal je worden uitgenodigd door je docenten
 en assistenten om een paar hoofdstukken te bestuderen.
@@ -31,7 +31,7 @@ en assistenten om een paar hoofdstukken te bestuderen.
 Elk hoofdstuk betekent tussen 15mn en 2 uur zelfstudie, plus af en toe
 opnieuw oefenen of toepassen tijdens de rest van je studie.  Alle
 vaardigheden in de leerlijn zijn letterlijk de moeite waard: elke
-studieuur die je erzin zal investeren betaalt zich terug in
+studieuur die je erin zal investeren betaalt zich terug in
 productiviteits- en kwaliteitswinsten: **hogere cijfers in minder uren
 werk.**
 

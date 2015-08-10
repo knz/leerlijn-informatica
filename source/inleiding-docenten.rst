@@ -173,7 +173,7 @@ De docententeam als geheel is verantwoordelijk voor de lange termijn
 visie van de leerlijn en het formuleren van de algemene profieleisen
 die naar individuele vaardigheden vertaald moeten worden.
 
-Het werk om deze eisen te vertalen naar individuele vaardiheidsmodules
+Het werk om deze eisen te vertalen naar individuele vaardigheidsmodules
 wordt dan uitgevoerd door een of meerdere redacteurs. De coördinator
 academische vaardigheden (Robert van Wijk) met behulp van gemotiveerde
 assistenten en docenten hebben de initiatief genomen om de rol van
