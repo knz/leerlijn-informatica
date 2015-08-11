@@ -65,8 +65,8 @@ De leerlijn
 De doelstelling van de leerlijn informaticavaardigheden is het
 structureren en verdiepen van het onderwijs in vijf groepen
 vaardigheden: databeheer (D), de unixomgeving (U), omgaan met broncode
-(S), programmeerapparatuur (T) en technieken voor wetenschappelijke
-communicatie (W).
+(S), programmeerapparatuur (T), technieken voor wetenschappelijke
+communicatie (W) en achtergrondkennis van de informatica (X).
 
 Een volle overzicht van de voorgestelde vaardigheden is terug te vinden in de
 :doc:`Inleiding voor studenten <inleiding-studenten>`.
@@ -171,7 +171,6 @@ studenten wordt gemaakt aan het begin van de studie, en dat ze eraan
 kunnen blijven refereren tijdens de loop van de opleiding en eventueel
 daarna.
 
-
 Kosten
 ------
 
@@ -260,13 +259,16 @@ Robert van Wijk      |SGIT1|_ |SGIT2|_ |WBIB1|_ |WBIB2|_ |WPRE1|_
                      |WPRE2|_ |WFIG1|_ |WFIG2+|_ |WMATH1|_ |WMATH2|_
                      |TDBG1|_ |TDBG2+|_ |DAUTO1|_ |UBASE|_
 Andy Pimentel        |DSTAT1|_ 
+Edwin Steffens       |UNET|_ |XHIST|_
 Floris Kroon         |UCMD|_ 
 Mark Makkes          |USRV2+|_ |DCODE|_
 Merijn Verstraaten   |USRV1|_ |WTYP1|_
 Raphael Poss         |SDOC2+|_ |SNAV1|_ |SNAV2|_ |TPROF1|_ |TPROF2+|_
                      |USH|_ |UAR|_ |UFS+|_ |URE1|_ |URE2+|_ |DFP+|_
                      |DPLOT1|_ |DSTAT2|_ |DAUTO2|_ |DAUTO3+|_ |DSTREAM+|_
+                     |XETHOS+|_
 Rob Belleman         |DSTAT3|_ |DSTAT4+|_
 Roeland Douma        |DBAK|_
 Taddeüs Kroes        |SDOC1|_
+Toto van Inge        |XSTARS|_
 ==================== ==========================================

@@ -5,7 +5,7 @@ import glob
 mre = re.compile(r'\|([a-zA-Z0-9]+\(\d+\))\|')
 ms = set() # man pages
 
-vre = re.compile(r'\|([USDTW][A-Z0-9+]+)\|')
+vre = re.compile(r'\|([USDXTW][A-Z0-9+]+)\|')
 vs = set() # vaardigheden
 
 for fn in glob.glob('source/*.rst'):
@@ -21,7 +21,7 @@ print("""
 .. MANUAL MODIFICATIONS WILL BE LOST
 """)
 
-for gl in "sudtw":
+for gl in "sudtwx":
     print(".. role:: %ctitle" % gl)
 
 for v in vs:

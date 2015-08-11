@@ -4,7 +4,7 @@ from __future__ import print_function
 import re
 import os.path
 
-vre = re.compile(r'\|([USDTW][A-Z0-9+]+)\|_')
+vre = re.compile(r'\|([USDTWX][A-Z0-9+]+)\|_')
 vs = set() # vaardigheden
 
 print("""

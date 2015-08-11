@@ -11,8 +11,8 @@ Inleiding
 
 Elke professionele kok weet dat je de handgreep van een hete pan niet
 direct met je hand pakt. Echter is er geen vak "handgreep beheren" in
-een kokopleiding. Dit is een vaardigheid die wordt ontwikkeld tijdens
-alle activiteiten in de kokopleiding.
+een koksopleiding. Dit is een vaardigheid die wordt ontwikkeld tijdens
+alle activiteiten in de koksopleiding.
 
 De **leerlijn informaticavaardigheden** is een dergelijk verzamelingen
 van basisvaardigheden verwacht van *alle* BSc informaticastudenten aan het
@@ -28,9 +28,9 @@ en assistenten om een paar hoofdstukken te bestuderen.
 
 .. __: _static/LeerlijnInformaticavaardigheden.pdf
 
-Elk hoofdstuk betekent tussen 15mn en 2 uur zelfstudie, plus af en toe
+Elk hoofdstuk betekent tussen 15min en 2 uur zelfstudie, plus af en toe
 opnieuw oefenen of toepassen tijdens de rest van je studie.  Alle
-vaardigheden in de leerlijn zijn letterlijk de moeite waard: elke
+vaardigheden in de leerlijn zijn letterlijk de moeite waard: elk
 studieuur die je erin zal investeren betaalt zich terug in
 productiviteits- en kwaliteitswinsten: **hogere cijfers in minder uren
 werk.**
@@ -40,30 +40,33 @@ opdrachten; elke opdracht zal verder toelichten welke extra en
 minpunten zijn verbonden aan de leerlijn.
 
 De volgende twee secties geven een samenvatting aan van alle
-vaardigheden in de leerlijn en de volgorde waar ze worden
+vaardigheden in de leerlijn en de volgorde waarin ze worden
 geïntroduceerd in je opleiding.
 
 Overzicht van alle vaardigheden
 -------------------------------
 
-De leerlijn vaardigheden is gesplitst in 5 banen:
-
-**S** (:stitle:`"Source"`)
-   Omgaan met broncode
-
-**U** (:utitle:`"Unix"`)
-   Omgaan met de Unix commando en procesomgeving
+De leerlijn vaardigheden is gesplitst in 6 banen:
 
 **D** (:dtitle:`"Data"`)
    Omgaan met data, produceren en verwerken
 
+**S** (:stitle:`"Source"`)
+   Omgaan met broncode
+
 **T** (:ttitle:`"Tools"`)
    Omgaan met programmeerapparatuur
+
+**U** (:utitle:`"Unix"`)
+   Omgaan met de Unix commando- en procesomgeving
 
 **W** (:wtitle:`"Wetenschap"`)
    Wetenschappelijk communiceren
 
-Op elke baan heeft ieder vaardigheden een kenmerk die met de letter
+**X** (:xtitle:`"Xclusive"` of Xtra)
+   Achtergrondkennis over de informatica
+
+Op elke baan heeft iedere vaardigheid een kenmerk die met de letter
 van zijn baan begint.
 
 Alle vaardigheden behoren bij het gewenste profiel van een
@@ -191,6 +194,10 @@ studeren in de Informatica (MSc CS of dergelijk).
      - Op afstand werken (adv)
      - Tunnel of SOCKS proxy aanmaken en gebruiken met SSH
 
+   * - |UNET|_
+     - Internetinfrastructuur (basis)
+     - Omgaan met IP addressen, netmask, DNS, ifconfig, traceroute, ping, whois
+
    * - |URE1|_
      - Reguliere expressies (basis)
      - Complexe zoekopdrachten uitvoeren met grep en python.re
@@ -257,6 +264,20 @@ studeren in de Informatica (MSc CS of dergelijk).
        back-ups; Voor- en na-delen kennen van Dropbox, SURFdrive,
        Google Drive, eigen schijven
 
+   * - |XSTARS|_
+     - Belangrikste informatici
+     - De namen (her)kennen met hun belangrijkste contributies
+
+   * - |XHIST|_
+     - Belangrijkste mijlpalen
+     - Volgorde en geschatte data voor de belangrijkste uitvindingen,
+       incl. eerste computer, programmeertaal, C, Unix, TCP/IP, e-mail
+
+   * - |XETHOS+|_
+     - Controversiële onderwerpen
+     - Rationeel en geïnformeerd aangaan in discussies over
+       controversiele onderwerpen van de informatica
+
 Inbedding in het curriculum
 ---------------------------
 
@@ -269,58 +290,58 @@ curriculum.
 Probeer je vaardigheden zelfstandig te ontwikkelen; reken niet alleen
 op vakopdrachten om je te motiveren.
 
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Periode  | Vak                    | Baan W    | Baan U    | Baan S    | Baan T     | Baan D      |
-+==========+========================+===========+===========+===========+============+=============+
-| Jaar 1,  | Inleiding programmeren |           | |UBASE|_  |           |            | |DCODE|_    |
-| blok 1   |                        +-----------+-----------+-----------+------------+-------------+
-|          |                        |           | |UCMD|_   |           |            | |DBAK|_     |
-|          +------------------------+-----------+-----------+-----------+------------+-------------+
-|          | Arch & comp org        |           | |UFS+|_   |           |            | |DAUTO1|_   |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 2   | Discrete wiskunde &    | |WMATH1|_ |           |           |            |             |
-|          | logica                 |           |           |           |            |             |
-|          +------------------------+-----------+-----------+-----------+------------+-------------+
-|          | Programmeertalen       | |WPRE1|_  |           |           |            |             |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 3   | Webprogrammeren        | |WTYP1|_  | |USH|_    | |SGIT1|_  |            |             |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 4   | Datastructuren         |           | |UAR|_    | |SNAV1|_  | |TDBG1|_   | |DSTAT1|_   |
-|          |                        +-----------+-----------+-----------+------------+-------------+
-|          |                        |           |           |           |            | |DPLOT1|_   |
-|          +------------------------+-----------+-----------+-----------+------------+-------------+
-|          | Lineaire algebra       | |WFIG1|_  |           |           |            |             |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 5   | Automaten & formele    |           | |URE1|_   |           |            |             |
-|          | talen                  |           |           |           |            |             |
-|          +------------------------+-----------+-----------+-----------+------------+-------------+
-|          | Besturingssystemen     | |WBIB1|_  | |USRV1|_  | |SGIT2|_  | |TPROF1|_  | |DAUTO2|_   |
-|          |                        +-----------+-----------+-----------+------------+-------------+
-|          |                        |           |           | |SDOC1|_  |            | |DSTREAM+|_ |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 6   | Multimedia             | |WPRE2|_  |           |           |            |             |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Jaar 2,  | Intro. Comp. Sci.      | |WMATH2|_ |           |           |            |             |
-| blok 1   +------------------------+-----------+-----------+-----------+------------+-------------+
-|          | Algoritmen &           |           |           |           |            |             |
-|          | complexiteit           |           |           |           |            |             |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 2   | Netwerken & Security   |           | |USRV2+|_ |           |            |             |
-|          +------------------------+-----------+-----------+-----------+------------+-------------+
-|          | Conc. & parallel prog. | |WBIB2|_  | |URE2+|_  | |SDOC2+|_ | |TDBG2+|_  | |DSTAT2|_   |
-|          |                        +-----------+-----------+-----------+------------+-------------+
-|          |                        |           |           |           | |TPROF2+|_ | |DAUTO3+|_  |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 3   | Numerical recipes      |           |           |           |            | |DFP+|_     |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 4   | Gfx & game tech        |           |           | |SNAV2|_  |            |             |
-|          +------------------------+-----------+-----------+-----------+------------+-------------+
-|          | Beeldbewerken          |           |           |           |            |             |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 5   | Statistisch redeneren  |           |           |           |            | |DSTAT3|_   |
-|          +------------------------+-----------+-----------+-----------+------------+-------------+
-|          | Reflectie op de        |           |           |           |            |             |
-|          | digitale cultuur       |           |           |           |            |             |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
-| Blok 6   | Project software eng.  | |WFIG2+|_ |           |           |            | |DSTAT4+|_  |
-+----------+------------------------+-----------+-----------+-----------+------------+-------------+
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Periode  | Vak                    | Baan W    | Baan U    | Baan S    | Baan T     | Baan D      | Baan X      |
++==========+========================+===========+===========+===========+============+=============+=============+
+| Jaar 1,  | Inleiding programmeren |           | |UBASE|_  |           |            | |DCODE|_    |             |
+| blok 1   |                        +-----------+-----------+-----------+------------+-------------+-------------+
+|          |                        |           | |UCMD|_   |           |            | |DBAK|_     |             |
+|          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+|          | Arch & comp org        |           | |UFS+|_   |           |            | |DAUTO1|_   |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 2   | Discrete wiskunde &    | |WMATH1|_ |           |           |            |             |             |
+|          | logica                 |           |           |           |            |             |             |
+|          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+|          | Programmeertalen       | |WPRE1|_  |           |           |            |             | |XHIST|_    |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 3   | Webprogrammeren        | |WTYP1|_  | |USH|_    | |SGIT1|_  |            |             |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 4   | Datastructuren         |           | |UAR|_    | |SNAV1|_  | |TDBG1|_   | |DSTAT1|_   |             |
+|          |                        +-----------+-----------+-----------+------------+-------------+-------------+
+|          |                        |           |           |           |            | |DPLOT1|_   |             |
+|          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+|          | Lineaire algebra       | |WFIG1|_  |           |           |            |             |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 5   | Automaten & formele    |           | |URE1|_   |           |            |             |             |
+|          | talen                  |           |           |           |            |             |             |
+|          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+|          | Besturingssystemen     | |WBIB1|_  | |USRV1|_  | |SGIT2|_  | |TPROF1|_  | |DAUTO2|_   |             |
+|          |                        +-----------+-----------+-----------+------------+-------------+-------------+
+|          |                        |           |           | |SDOC1|_  |            | |DSTREAM+|_ |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 6   | Multimedia             | |WPRE2|_  | |UNET|_   |           |            |             |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Jaar 2,  | Intro. Comp. Sci.      | |WMATH2|_ |           |           |            |             |             |
+| blok 1   +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+|          | Algoritmen &           |           |           |           |            |             |             |
+|          | complexiteit           |           |           |           |            |             |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 2   | Netwerken & Security   |           | |USRV2+|_ |           |            |             |             |
+|          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+|          | Conc. & parallel prog. | |WBIB2|_  | |URE2+|_  | |SDOC2+|_ | |TDBG2+|_  | |DSTAT2|_   |             |
+|          |                        +-----------+-----------+-----------+------------+-------------+-------------+
+|          |                        |           |           |           | |TPROF2+|_ | |DAUTO3+|_  |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 3   | Numerical recipes      |           |           |           |            | |DFP+|_     |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 4   | Gfx & game tech        |           |           | |SNAV2|_  |            |             |             |
+|          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+|          | Beeldbewerken          |           |           |           |            |             |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 5   | Statistisch redeneren  |           |           |           |            | |DSTAT3|_   |             |
+|          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+|          | Reflectie op de        |           |           |           |            |             | |XSTARS|_   |
+|          | digitale cultuur       |           |           |           |            |             | |XETHOS+|_  |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
+| Blok 6   | Project software eng.  | |WFIG2+|_ |           |           |            | |DSTAT4+|_  |             |
++----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+

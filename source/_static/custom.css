@@ -36,16 +36,19 @@ pre{
 .ttitle {background-color:gold;}
 .utitle {background-color:tomato;}
 .dtitle {background-color:palegreen;}
+.xtitle {background-color:mediumorchid;}
 .stitle,
 .dtitle,
 .ttitle,
 .wtitle,
+.xtitle,
 .utitle {
     display: inline-block;
     font-family: 'Iceberg', monospace;
 }
 
 a .stitle,
+a .xtitle,
 a .dtitle,
 a .ttitle,
 a .wtitle,
@@ -53,6 +56,7 @@ a .utitle {
     color: black;
 }
 
+.xtitle::first-letter,
 .stitle::first-letter,
 .ttitle::first-letter,
 .utitle::first-letter,
