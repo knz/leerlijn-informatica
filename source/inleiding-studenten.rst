@@ -264,11 +264,11 @@ studeren in de Informatica (MSc CS of dergelijk).
        back-ups; Voor- en na-delen kennen van Dropbox, SURFdrive,
        Google Drive, eigen schijven
 
-   * - |XSTARS|_
+   * - |XSTARS+|_
      - Belangrikste informatici
      - De namen (her)kennen met hun belangrijkste contributies
 
-   * - |XHIST|_
+   * - |XHIST+|_
      - Belangrijkste mijlpalen
      - Volgorde en geschatte data voor de belangrijkste uitvindingen,
        incl. eerste computer, programmeertaal, C, Unix, TCP/IP, e-mail
@@ -302,7 +302,7 @@ op vakopdrachten om je te motiveren.
 | Blok 2   | Discrete wiskunde &    | |WMATH1|_ |           |           |            |             |             |
 |          | logica                 |           |           |           |            |             |             |
 |          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
-|          | Programmeertalen       | |WPRE1|_  |           |           |            |             | |XHIST|_    |
+|          | Programmeertalen       | |WPRE1|_  |           |           |            |             | |XHIST+|_   |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
 | Blok 3   | Webprogrammeren        | |WTYP1|_  | |USH|_    | |SGIT1|_  |            |             |             |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
@@ -340,7 +340,7 @@ op vakopdrachten om je te motiveren.
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
 | Blok 5   | Statistisch redeneren  |           |           |           |            | |DSTAT3|_   |             |
 |          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
-|          | Reflectie op de        |           |           |           |            |             | |XSTARS|_   |
+|          | Reflectie op de        |           |           |           |            |             | |XSTARS+|_  |
 |          | digitale cultuur       |           |           |           |            |             | |XETHOS+|_  |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
 | Blok 6   | Project software eng.  | |WFIG2+|_ |           |           |            | |DSTAT4+|_  |             |

@@ -1,6 +1,6 @@
 .. include:: common.d
 
-|XSTARS| – Belangrijkste informatici
+|XSTARS+| – Belangrijkste informatici
 ========================================
 
 (en hun contributies)

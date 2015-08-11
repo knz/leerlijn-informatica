@@ -311,7 +311,7 @@ Robert van Wijk      |SGIT1|_ |SGIT2|_ |WBIB1|_ |WBIB2|_ |WPRE1|_
                      |WPRE2|_ |WFIG1|_ |WFIG2+|_ |WMATH1|_ |WMATH2|_
                      |TDBG1|_ |TDBG2+|_ |DAUTO1|_ |UBASE|_
 Andy Pimentel        |DSTAT1|_ 
-Edwin Steffens       |UNET|_ |XHIST|_
+Edwin Steffens       |UNET|_ |XHIST+|_
 Floris Kroon         |UCMD|_ 
 Mark Makkes          |USRV2+|_ |DCODE|_
 Merijn Verstraaten   |USRV1|_ |WTYP1|_
@@ -322,5 +322,5 @@ Raphael Poss         |SDOC2+|_ |SNAV1|_ |SNAV2|_ |TPROF1|_ |TPROF2+|_
 Rob Belleman         |DSTAT3|_ |DSTAT4+|_
 Roeland Douma        |DBAK|_
 Taddeüs Kroes        |SDOC1|_
-Toto van Inge        |XSTARS|_
+Toto van Inge        |XSTARS+|_
 ==================== ==========================================

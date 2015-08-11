@@ -1,6 +1,6 @@
 .. include:: common.d
 
-|XHIST| – Belangrijkste mijlpalen
+|XHIST+| – Belangrijkste mijlpalen
 =================================
 
 De grootste fases:
