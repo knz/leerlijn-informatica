@@ -85,7 +85,7 @@ benaderingen tijdens de studie:
   middel van duidelijke toetsingcriteria, en eventueel direct
   gerelateerd aan straf- of bonuspunten in de behorende vakopdrachten;
 
-- een "extra mijlpaal" sectie kan aspecten van de vaardigheid
+- een "extra mijlpaal" dimensie kan aspecten van de vaardigheid
   beschrijven die niet strikt vereist zijn aan het eind van de studie
   maar de kans geeft aan nieuwsgierige studenten om zich verder in te
   diepen, met duidelijke uitleg van de voordelen behaald door de
@@ -143,6 +143,58 @@ motiveert ze om daadwerkelijk tijdig en zelfstandig de opdrachten te
 maken.  Ook kan het maken van de oefeningen onderdeel worden gemaakt
 van de afrekening rondom PAV: als een student het niet doet, kan deze
 een gekoppeld vak niet meer halen.
+
+Stimulansen, beloning en verwachte studiehouding
+------------------------------------------------
+
+De leerlijn zal niet worden gepresenteerd als verplicht en
+toetsbaar, echter verwacht en aanvullend. 
+
+De volgende vragen kunnen dan ontstaan:
+
+- *de aanvullende materialen kosten extra studieuren, hoe krijgen de
+  studenten daar extra studiepunten voor zonder de huidige vakken te
+  verminken?*
+
+  De afspraak met de studenten is dat ieder studieuur bestemd deze
+  vaardigheden zich terugbetaalt over de loop van een jaar door
+  meetbare winsten in productiviteit (minder uren werk voor dezelfde
+  cijfers) en kwaliteit (hogere cijfers voor dezelfde hoeveelheid
+  werk).
+
+  Deze winsten moeten zonodig worden onderstreept door docenten en
+  assistenten in ieder vak waaraan de vaardigheden zijn verbonden.
+
+- *als ze niet verplicht zijn, zullen ongeïnteresseerde studenten deze
+  vaardigheden dan vermijden, en de geïnteresseerde studenten zouden
+  die vaardigheden sowieso ontwikkelen zonder begeleiding, waarom dan
+  de moeite nemen?*
+
+  - voor de geïnteresseerde studenten: met begeleiding kunnen ze dus
+    deze vaardigheden sneller leren, en kunnen ze focusen op de
+    onderwerpen geselecteerd als belangrijker door meer ervaren
+    experten (docenten en oudere studenten). Die nieuwe kader leidt
+    dus sneller tot hetzelfde resultaat; dit is een redenatie dat de
+    betere studenten snel zullen begrijpen.
+
+  - voor de ongeïnteresseerde studenten: er moet verder een
+    onderscheid worden gemaakt tussen studenten *a priori*
+    ongeïnteresseerd, maar open voor het leren; en studenten *actief*
+    ongeïnteresseerd, die hun diploma willen halen met minimale
+    hoeveelheid werk. (NB: deze kenschetsing is van hun gedrag, niet van hun
+    persoonlijkheid; gedragen kunnen snel evolueren over tijd en soms
+    zelfs over zeer korte periodes, bv van een vak naar een ander).
+
+    Voor "a priori" ongeïnteresseerden ligt de verantwoordelijkheid om
+    de stof levendig en interessant te maken bij de docenten, maar
+    er kan ook een soort groepsdruk ontstaan waardoor de studenten
+    geïnspireerd raken door het voorbeeld van meer evaren klasgenoten
+    of van studenten van latere jaren.
+
+    Voor "actief" ongeïnteresseerden zal een onderdeel van de leerlijn
+    toch worden getoetst in de vakopdrachten, en we verwachten dus
+    dat een deel van de vaardigheiden toch wel gekoppeld wordt aan
+    de eisen voor het halen van het diploma.
 
 Ontwikkeling
 ------------
