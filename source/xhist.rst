@@ -1,7 +1,7 @@
 .. include:: common.d
 
 |XHIST+| – Belangrijkste mijlpalen
-=================================
+===================================
 
 De grootste fases:
 
@@ -20,4 +20,4 @@ JavaScript, Perl/Python/Ruby, Rust
 
 OS:  TSS, Multics, Unix, z/OS, Minix, DOS, Windows, BSD, Linux
 
-Videospelletjes: Pong, Skywars, Pac-Man, Space invaders, Mario/Zelda, Starcraft, Minecraft 
+Videospelletjes: Pong, Skywars, Pac-Man, Space invaders, Mario/Zelda, Starcraft, Minecraft
