@@ -317,6 +317,40 @@ Variabelesubstitutie
   Voor meer mogelijkheden, kijk naar de sectie "Parameter expansion" in
   de manpage van je shell, bv. |sh(1)|_
 
+- Als een variabele meerdere woorden bevat, worden ze gesplitst als meerdere
+  argumenten tijdens de substitutie. Dit kun je uitschakelen om
+  de substitutie tussen *dubbele* aanhalingstekens te plaatsen. Bijvoorbeeld:
+
+  .. code-block:: shell
+
+     $ a="hello.txt world.txt"
+     $ ls $a
+     hello.txt
+     world.txt
+     $ touch "lange naam met spaties.txt"
+     $ a="lange naam met spaties.txt"
+     $ ls $a
+     ls: lange: no such file or directory
+     ls: naam: no such file or directory
+     ls: met: no such file or directory
+     ls: spaties.txt: no such file or directory
+     $ ls "$a"
+     lange naam met spaties.txt
+
+- Substitutie wordt uitgeschakeld wanneer het dollarteken zich bevindt in *enkele*
+  aanhalingstekens, bijvoorbeeld:
+
+  .. code-block:: shell
+
+     $ a="hai man"
+     $ echo "$a"
+     hai man
+     $ echo '$a'
+     $a
+
+  Dit gebruik je bijvoorbeeld wanneer je moet werken met bestandsnamen
+  die een dollartekken bevatten.
+
 Simpele programma's
 -------------------
 
