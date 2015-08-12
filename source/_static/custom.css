@@ -22,7 +22,8 @@ pre,
 code,
 kbd,
 samp,
-tt{
+tt,
+.program {
     font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
     font-size:1em;
 }
