@@ -26,8 +26,8 @@ zijn totdat een probleem ontstaat, en dan is het te laat om ermee te
 beginnen.
 
 .. note:: Tijdens je studie **kan je niet "data verlies" gebruiken
-   als excuus voor laat inleveren**, tenzij er spraak is van diefstal
-   gemeld bij de politie. Het is je eigen verantwoordelijkheid om
+   als excuus voor laat inleveren**, zelfs wanneer er spraak is van diefstal.
+   Het is je eigen verantwoordelijkheid om
    jezelf back-ups te regelen en ervoor zorgen dat je back-ups altijd
    goed up-to-date en bruikbaar zijn.
 
