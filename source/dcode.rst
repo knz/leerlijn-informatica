@@ -51,7 +51,7 @@ Onderliggende wiskunde
 
 .. index:: grondtal
 .. index:: radix
-.. index:: base, number
+.. index:: base (number)
 .. index:: binair
 .. index:: octaal
 .. index:: hexadecimaal
