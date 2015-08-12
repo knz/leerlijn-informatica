@@ -3,6 +3,8 @@
 |USH| – Unix shell
 ==================
 
+:Author: Raphael ‘kena’ Poss
+
 .. contents:: Inhoud
    :local:
 
@@ -37,7 +39,7 @@ je werk daarna:
    * - `Z shell`_
      - :program:`zsh`
      - Beschikbaar als softwarepakket
-     - Heel krachtige features voor ontwikkelaars. **Dit wil je!**
+     - Heel krachtige features voor ontwikkelaars. **Dit wil je!** [#]_
    * - `C shell`_
      - :program:`tcsh`, :program:`csh`
      - Vaak standaard beschikbaar
@@ -48,6 +50,7 @@ je werk daarna:
 .. _`Almquist shell`: https://en.wikipedia.org/wiki/Almquist_shell
 .. _`Z shell`: https://en.wikipedia.org/wiki/Z_shell
 .. _`C shell`: https://en.wikipedia.org/wiki/C_shell
+.. [#] http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/
 .. [#] http://www.faqs.org/faqs/unix-faq/shell/csh-whynot/
 
 
@@ -452,3 +455,24 @@ dat je ze alvast kunt leren:
       .. code-block:: shell
 
          export PATH=$HOME/bin:$PATH
+
+
+Verder inlezen
+--------------
+
+- Peter Stephenson. `A User's Guide to the Z-Shell`__. 2003.
+
+  .. __: http://zsh.sourceforge.net/Guide/zshguide.htmlhttp://zsh.sourceforge.net/Guide/zshguide.html
+
+- `explain shell`__: formulier om een gedetailleerde uitleg te krijgen
+  over willekeurige commando's.
+
+  .. __: http://explainshell.com/
+
+- `manpage van Bash`__
+
+  .. __: http://linux.die.net/man/1/bash
+
+- GNU project. `Bash Reference Manual`__.
+
+  http://www.gnu.org/software/bash/manual/bash.html
