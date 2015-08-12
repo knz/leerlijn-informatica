@@ -148,7 +148,9 @@ Bestandssynchronisatie
 Versiebeheerprogramma's
 -----------------------
 
+.. index:: VCS
 .. index:: versiebeheer
+.. index:: version control
 .. index:: git
 .. index:: mercurial
 .. index:: subversion
@@ -157,7 +159,7 @@ Versiebeheerprogramma's
 .. index:: opslagplaats
 .. index:: gitlab
 
-Versiebeheerprogramma's houden de veranderingen aan je bestanden over
+Versiebeheerprogramma's (Engels: :def:`version control software`, afgekort VCS) houden de veranderingen aan je bestanden over
 tijd in de gaten en bewaren oude kopiëen door middel van eigen
 database, die heet een :def:`opslagplaats` (Engels: :def:`repository`).
 
