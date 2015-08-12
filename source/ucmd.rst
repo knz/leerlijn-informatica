@@ -32,8 +32,8 @@ mappen. Dit principe ken je al.
 
 De bijzonderheden:
 
-- ieder proces heeft een notie van "huidige map", of *working
-  directory*. Als je een bestand noemt zonder te zeggen waar het zich
+- ieder proces heeft een notie van :def:`huidige map` (Engels: :def:`current working
+  directory`, afgekort "cwd"). Als je een bestand noemt zonder te zeggen waar het zich
   vindt, gaat het proces dat bestand proberen te zoeken in de huidige
   map.
 
@@ -47,7 +47,7 @@ De bijzonderheden:
   ("print working directory")
 
 - Het commando :program:`cd` zonder argumenten brengt je altijd naar
-  je "thuismap" of *home directory*.
+  je :def:`thuismap` (Engels: :def:`home directory`).
 
 - In je shell wordt de afkorting "``~``" ook erkend voor je
   thuismap. Dus brengt :program:`cd ~` je ook terug naar je thuismap.
@@ -56,10 +56,10 @@ De bijzonderheden:
   ouderproces, maar kunnen het verder veranderen zonder die van de
   ouder te veranderen.
 
-- Een *pad* is een naam naar een map of bestand *vanaf* de huidige
+- Een :def:`pad` (Engels: :def:`path`) is een naam naar een map of bestand *vanaf* de huidige
   map. Bijvoorbeeld :file:`Documents/hello.txt` refereert naar het
   bestand/map :file:`hello.txt` in de map :file:`Documents` vanuit de
-  huidige map. Je kunt een *absoluut* pad noemen door met een "/" te
+  huidige map. Je kunt een :def:`absoluut pad` noemen door met een "/" te
   beginnen. Bijvoorbeeld op de UvA machines refereert altijd
   :file:`/scratch` naar een map met veel ruimte, bijvoorbeeld voor
   experimenten.
@@ -127,8 +127,8 @@ Goed te weten:
   aanmaakdatum en eigenaar van de kopie. Om deze eigenschappen te
   bewaren, gebruik :program:`cp -a`.
 
-- |ln(1)|_ kan twee soorten verwijzingen aanmaken, zogenoemd "hard" en
-  "soft" links (ook *symbolic* genoemd). Soft links worden heel vak
+- |ln(1)|_ kan twee soorten verwijzingen aanmaken, zogenoemd :def:`"hard" en
+  "soft" links` (ook :def:`symbolic` genoemd). Soft links worden heel vak
   gebruikt om Unix software te bouwen. Raadpleeg de Wikipedia pagina's
   voor meer informatie:
 

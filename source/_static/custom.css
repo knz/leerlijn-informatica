@@ -98,3 +98,9 @@ div.header img.rightlogo {
 blockquote .attribution {
     text-align: right;
 }
+
+.def {
+    font-style: oblique;
+    font-weight: bold;
+    color: green;
+}

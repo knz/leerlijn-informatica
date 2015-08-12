@@ -14,13 +14,13 @@ Algemene begrippen
 .. index:: archief
 .. index:: compressie
 
-Een *archief* is een verzameling van bestanden.
+Een :def:`archief` is een verzameling van bestanden.
 
 Ieder archiveringsprogramma heeft zijn eigen opslagformaat voor de
-inhoud van archieven, oftevel *archiefformaat*.
+inhoud van archieven, oftevel :def:`archiefformaat`.
 
 Je kent al waarschijnlijk het ZIP formaat.  Je weet misschien al dat
-ZIP een zogenaamd *gecomprimeerd* formaat is: de grootte van een ZIP
+ZIP een zogenaamd :def:`gecomprimeerd` formaat is: de grootte van een ZIP
 archief is vaak kleiner dan de bestanden erin. ZIP is in feite een
 combinatie van een archiefformaat én een compressieformaat.
 

@@ -44,7 +44,7 @@ cores) voor extra snelheid.
 Waarom |make(1)|_ en waarom workflows automatiseren?
 ----------------------------------------------------
 
-Een *workflow* in de wetenschap is als een recept voor een kok: een
+Een :def:`workflow` in de wetenschap is als een recept voor een kok: een
 stapwijs methode om een bepaalde doel te bereiken.
 
 In de informatica kunnen sommige workflows heel complex
@@ -54,11 +54,11 @@ van alle taken wordt snel onhandig!
 
 Er zijn twee strategiëen om *workflows te automatiseren*:
 
-- een *script* schrijven: een programma dat andere programma's
+- een :def:`script` schrijven: een programma dat andere programma's
   aanroept in een vaste volgorde;
 
 - de *afhankelijkheidsrelaties tussen delen van het resultaat*
-  (Engels: *dependency graph*) beschrijven, en aan het computer een
+  (Engels: :def:`dependency graph`) beschrijven, en aan het computer een
   volgorde automatisch laten bepalen om het resultaat te produceren,
   door middel van een expertsysteem, zoals |make(1)|_.
 
@@ -91,7 +91,7 @@ Overzicht van |make(1)|
 In een notendop werkt |make(1)|_ als volgt:
 
 - je geeft hem als invoer een bestand dat :file:`Makefile` heet; en
-  als commandolijnparameter een *doel*.
+  als commandolijnparameter een :def:`doel`.
 
 - |make(1)|_ zoekt dan binnen de :file:`Makefile` hoe hij het doel kan
   aanmaken, en voert de benodigde stappen uit in een automatisch bepaalde volgorde.

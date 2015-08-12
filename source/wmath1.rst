@@ -20,17 +20,18 @@ Omgevingen
 
 .. index:: inline (math)
 .. index:: block (math)
+.. index:: environment (math)
 
 De meeste formules schrijf je tussen dollartekens, bijvoorbeeld
 "``$x+y$``" ":math:`x+y`".
 
-Er zijn twee soorten wiskundige *omgevingen* (Engels: *environments*):
+Er zijn twee soorten :def:`wiskundige omgevingen` (Engels: :def:`math environments`):
 
-- *inline*:
+- :def:`inline`:
 
   Schrijf je ``$...$``, voorbeeld: :math:`\sum_{i=0}^n2^i`
 
-- *blok*:
+- :def:`blok`:
 
   Schrijf je ``$$...$$``, voorbeeld:
 
@@ -58,8 +59,8 @@ Wat je absoluut moet weten
 
   - "``$ \mathit{fft}(x) $``" ":math:`\mathit{fft}(x)`" – alles goed.
 
-- ondergeschreven (Engels: *subscript*) en erboven geschreven (Engels:
-  *superscript*) tekens maak je met "``_``" en "``^``", bijvoorbeeld
+- ondergeschreven (Engels: :def:`subscript`) en erboven geschreven (Engels:
+  :def:`superscript`) tekens maak je met "``_``" en "``^``", bijvoorbeeld
   "``$ x^2 $``" ":math:`x^2`" en "``$ x_i $``" ":math:`x_i`".
 
   Als je subscript of superscript langer dan 1 teken is, gebruik dan {...}:

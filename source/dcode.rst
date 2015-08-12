@@ -16,8 +16,8 @@ Algemene begrippen
 .. index:: numeral system
 
 Een talstelsel, getallenstelsel of getallensysteem is een wiskundig
-systeem om getallen voor te stellen [#]_. Ze heten ook *numeral
-system* in het Engels.
+systeem om getallen voor te stellen [#]_. Ze heten ook :def:`numeral
+system` in het Engels.
 
 .. [#] https://nl.wikipedia.org/wiki/Talstelsel
 
@@ -31,7 +31,7 @@ talstelsel.
 .. index:: positiestelsel
 .. index:: positional notation
 
-Een *positiestelsel* (*positional notation* in het Engels) is een
+Een :def:`positiestelsel` (:def:`positional notation` in het Engels) is een
 talstelsel waar de representatie van getallen opgebouwd wordt door de
 cijfers te lezen of schrijven in een vaste richting. Dit is de meest
 gangbare soort talstelsel. Deze onderscheid bestaat omdat bv. romeinse
@@ -56,8 +56,8 @@ Onderliggende wiskunde
 .. index:: octaal
 .. index:: hexadecimaal
 
-Een positioneel talstelsel met grondtal *b* (:math:`b > 1`, Engels: *radix* of *base*)
-wordt gebaseerd op *b* verschillende symbolen, of *cijfers*.
+Een positioneel talstelsel met grondtal *b* (:math:`b > 1`, Engels: :def:`radix` of :def:`base`)
+wordt gebaseerd op *b* verschillende symbolen, of :def:`cijfers`.
 
 ================== ====================
 Grondtal           Cijfers
@@ -214,6 +214,10 @@ dead        1101111010101101 (1101 1110 1010 1101)
 Handige waardes
 ---------------
 
+.. index:: bit (definitie)
+.. index:: byte (definitie)
+.. index:: nibble (definitie)
+
 Iedere informaticus wordt productiever en sneller in zijn werk door de
 volgende tabellen uit zijn hoofd te leren:
 
@@ -240,9 +244,9 @@ volgende tabellen uit zijn hoofd te leren:
   :math:`2^{32}` ongeveer 4 miljiard                     0x100000000
   ============== ===================== ================= ===============
 
-- een *bit* is een cijfer met grondtal 2 (0 of 1).
-- een *byte* is een groep van 8 bits.
-- een *nibble* is een groep van 4 bits. Ieder hexadecimaal cijfer is gecodeerd met precies 1 nibble.
+- een :def:`bit` is een cijfer met grondtal 2 (0 of 1).
+- een :def:`byte` is een groep van 8 bits.
+- een :def:`nibble` is een groep van 4 bits. Ieder hexadecimaal cijfer is gecodeerd met precies 1 nibble.
 
 Conversies in de programmeertaal C
 ----------------------------------

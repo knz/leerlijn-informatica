@@ -20,11 +20,11 @@ Waar ben ik?
 .. index:: console
 
 Je zit voor je Unix systeem. Je scherm staat aan, toetsenbord reageert
-goed: je *console* staat klaar voor gebruik.
+goed: je :def:`console` staat klaar voor gebruik.
 
 .. index:: sessie, gebruikersessie
 
-Iedere Unix gebruiker werkt binnen een *sessie* die hem/haar
+Iedere Unix gebruiker werkt binnen een :def:`sessie` die hem/haar
 identificeert.  Als je nog geen sessie open hebt, moet je dat nu
 doen: log in met gebruikersnaam en wachtwoord.
 
@@ -81,7 +81,7 @@ natuurlijk niet uit. Zorg er alleen voor dat de tekst groot genoeg is
 om je ogen niet in te hoeven spannen.
 
 Wat je ziet is een plek waar je commando's in kan tikken op het
-toetsenbord. Dit heet de "command line", of *commandolijn*.
+toetsenbord. Dit heet de "command line", of :def:`commandolijn`.
 
 Shell en programma's
 ````````````````````
@@ -89,7 +89,7 @@ Shell en programma's
 .. index:: shell
 
 Meerdere programma's delen de terminal om met jou te communiceren. Het
-"hoofdprogramma" dat je als eerste ziet heet de *shell*: het is het
+"hoofdprogramma" dat je als eerste ziet heet de :def:`shell`: het is het
 programma die je commando's zal herkennen en uitvoeren.
 
 Aan het begin heb je een soort mini-teksteditor voor maar 1 regel
@@ -237,7 +237,7 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
    sessie.
 
    Zodra je wel een commandolijn beschikt naast het programma die je
-   wil beëindigen, moet je zijn *proces identificatinummer* weten, ook
+   wil beëindigen, moet je zijn :def:`proces identificatienummer` weten, ook
    "PID" genoemd. Dit haal je door het commando ":program:`ps x`", dat een
    lijst aangeeft van alle processen die nu draaien van je op het
    systeem. Het identificatienummer is dan te vinden in de eerste
@@ -298,7 +298,7 @@ Informatie over commando's
 - om te weten wat een bepaald commando doet: gebruik dan
   ":program:`man`". Dit is een interface naar de zogenaamde "online
   Unix manual": een collectie tekstpagina's en artikelen, ook
-  *manpages* genoemd. De meeste commando's hebben allemaal een eigen
+  :def:`manpages` genoemd. De meeste commando's hebben allemaal een eigen
   pagina in de manual.
 
   Tik dus in: :program:`man man` :kbd:`Enter`
@@ -384,7 +384,7 @@ programma af te sluiten.
 
 Door |ps(1)|_ heb je waarschijnlijk veel andere programma's zien draaien
 die je misschien had verwacht. Een Unix systeem heeft vaak tientallen
-*processen* draaien in de achtergrond.
+:def:`processen` draaien in de achtergrond.
 
 Het volgende plaatje laat zien hoe je Unix systeem eruit ziet "van binnen":
 
@@ -452,7 +452,7 @@ Besturingssystemen):
 - een proces "van binnen" vervangen ("exec" in zijn eigen code);
 - een proces "van binnen" beëindigen ("exit" in zijn eigen code);
 - met andere processen communiceren "van binnen" ("read"/"write" in zijn eigen code);
-- een *signaal* sturen van een proces naar zichzelf of naar een ander process.
+- een :def:`signaal` sturen van een proces naar zichzelf of naar een ander process.
 
 Bijvoorbeeld, als je een commando intikt in een shell, gaat de shell
 zichzelf dupliceren met "fork", dan in de nieuwe kopie van zichzelf,

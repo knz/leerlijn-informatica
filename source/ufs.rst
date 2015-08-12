@@ -14,7 +14,7 @@ Soorten bestandssysteem
 .. index:: bestandssysteem
 .. index:: filesystem
 
-Een *bestandssysteem* (Engels: *filesystem*) is een opslagformaat
+Een :def:`bestandssysteem` (Engels: :def:`filesystem`) is een opslagformaat
 voor bestanden en mappen, die door een besturingssysteem wordt
 gebruikt om de data te organiseren in een vast opslagmedium,
 bijvoorbeeld een harde schijf.
@@ -54,10 +54,10 @@ Bestandssysteem aankoppelen vanaf de commandolijn
 
 .. index:: mount
 
-*"Mounten"* is het gangbare woord voor het beschikbaar maken en
+:def:`"Mounten"` is het gangbare woord voor het beschikbaar maken en
 aankoppelen van opslagmedia voor een unix besturingssysteem.
 
-Een *mountpoint* is een map waarop een bestandssysteem kan worden
+Een :def:`mountpoint` is een map waarop een bestandssysteem kan worden
 gemount. Voordat een bestandssysteem kan worden gemount, moet het
 mountpoint als map bestaan. Zodra een bestandssysteem is gemount
 op een mountpoint, is die map bezet door dat bestandssysteem.

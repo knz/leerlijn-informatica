@@ -16,8 +16,8 @@ Wat je absoluut moet weten
 .. index:: drijvende kommagetal
 .. index:: afrondfout
 
-- "Zwevendekommagetallen" (soms "drijvende kommagetallen") heten
-  in het Engels *floating point numbers* (afgekort "FP").
+- :def:`Zwevendekommagetallen` (soms "drijvende kommagetallen") heten
+  in het Engels :def:`floating point numbers` (afgekort "FP").
 
 - Een zwevendekommagetal is een *benadering* van een (wiskundige) reëel getal.
 
@@ -27,8 +27,8 @@ Wat je absoluut moet weten
   .. index:: exponent
 
   - het teken (+1 of -1)
-  - een eerst geheel getal, de *mantisse*
-  - een tweede geheel getal, de *exponent*
+  - een eerst geheel getal, de :def:`mantisse`
+  - een tweede geheel getal, de :def:`exponent`
 
 - De *waarde* *r* van een zwevende kommagetal met onderdelen
   :math:`(s, m, e)` in grondtal *b* is:
@@ -48,7 +48,7 @@ Wat je absoluut moet weten
 - Sommige reële getallen kennen geen exacte codering als
   zwevendekommagetal (bijvoorbeeld :math:`\pi`). Wanneer z'n reëel
   getal word geconverteerd naar een zwevendekommagetal,
-  ontstaat een *afrondfout*.
+  ontstaat een :def:`afrondfout`.
 
 - **Door afrondfouten is het vaak onverstandig om
   zwevendekommagetallen direct met elkaar te vergelijken.** In plaats
@@ -64,7 +64,7 @@ Wat je absoluut moet weten
 
   .. index:: NaN
 
-  - *NaN* (Engels: "Not A Number"), het speciaal resultaat van een
+  - :def:`NaN` (Engels: :def:`Not A Number`), het speciaal resultaat van een
     wiskundige berekening die in de wiskunde geen resultaat
     kent. Bijvoorbeeld ``sqrt(-1)``, ``log(-0)`` of 0/0.
 

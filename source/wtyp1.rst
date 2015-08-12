@@ -123,10 +123,10 @@ Harde spaties
 Wat zijn harde spaties?
 ```````````````````````
 
-In de computerwereld is de harde spatie (Engels: *non-breaking space*) een speciaal karakter dat
-gebruikt kan worden in plaats van een normale spatie om te voorkomen
-dat een tekst aan het eind van een regel op de plaats van de spatie
-automatisch wordt afgebroken.
+In de computerwereld is de :def:`harde spatie` (Engels: :def:`non-breaking
+space`) een speciaal karakter dat gebruikt kan worden in plaats van
+een normale spatie om te voorkomen dat een tekst aan het eind van een
+regel op de plaats van de spatie automatisch wordt afgebroken.
 
 In HTML is de code voor de harde spatie ``&nbsp;``
 
@@ -158,8 +158,8 @@ Overhang in wiskundige formules
 .. index:: overhang (typografie)
 .. index:: kerning
 
-In gewone tekst zorgt LaTeX automatisch voor overhang (Engels:
-*kerning*), het dichter bijeenschrijven van letters naargelang hun
+In gewone tekst zorgt LaTeX automatisch voor :def:`overhang` (Engels:
+:def:`kerning`), het dichter bijeenschrijven van letters naargelang hun
 vorm het toelaat. Een voorbeeld van overhang is tussen **f** en **i**,
 dat geeft ":math:`\text{fi}`" (zie hoe de f en de i zijn samengevoegd,
 de "i" heeft zijn punt verloren).
@@ -193,10 +193,10 @@ Streepjes
 .. index:: gedachtestreepje
 .. index:: kastlijntje
 
-- een klein streepje (Engels: *hyphen*) gebruik je tussen
+- een :def:`klein streepje` (Engels: :def:`hyphen`) gebruik je tussen
   woordgroepen, bijvoorbeeld "daddy-long-legs",
 
-- een gedachtestreepje (Engels: *en dash*) is langer dan een klein
+- een :def:`gedachtestreepje` (Engels: :def:`en dash`) is langer dan een klein
   streepje maar korter dan een kastlijntje. Je schrijft het in HTML
   met ``&ndash;``, in LaTeX met "``--``". Dit gebruik je:
 
@@ -210,7 +210,7 @@ Streepjes
     Indian War (1754–1763) was fought in western Pennsylvania and
     along the present US–Canadian border (Edwards, pp. 81–101)."
 
-- een kastlijntje (Engels: *em dash*) is langer dan een
+- een :def:`kastlijntje` (Engels: :def:`em dash`) is langer dan een
   gedachtestreepje.  Je schrijft het in HTML met ``&mdash;``, in LaTeX
   met "``---``". Dit gebruik je:
 

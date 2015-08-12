@@ -19,6 +19,7 @@ for fn in glob.glob('source/*.rst'):
 print("""
 .. THIS FILE WAS AUTOMATICALLY GENERATED
 .. MANUAL MODIFICATIONS WILL BE LOST
+.. role:: def(emphasis)
 """)
 
 for gl in "sudtwx":
