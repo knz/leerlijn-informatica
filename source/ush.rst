@@ -3,7 +3,7 @@
 |USH| – Unix shell
 ==================
 
-:Author: Raphael ‘kena’ Poss
+:Auteur: Raphael ‘kena’ Poss
 
 .. contents:: Inhoud
    :local:
