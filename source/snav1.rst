@@ -3,6 +3,8 @@
 |SNAV1| – Efficiënte codenavigatie (basis)
 =============================================
 
+:Auteur: Raphael ‘kena’ Poss
+
 .. contents:: Inhoud
    :local:
 
