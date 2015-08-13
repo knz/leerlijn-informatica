@@ -150,6 +150,41 @@ Gebruik in Emacs
    - van definitie naar alle gbruiken: :kbd:`C-c s c` (voor functies)
      en :kbd:`C-c s t`
 
+(Zelf)evaluatie
+---------------
+
+1. Je hebt een brondcodebestand open gemaakt in je teksteditor om te
+   vinden waar de functie :code:`get_buffer_len()` gedefinieerd is.
+   Echter levert :kbd:`M-.` (Emacs) of :kbd:`Ctrl+]` (Vim) geen
+   resultaten op terwijl je zeker bent dat de functie ergens
+   gedefinieerd is. Wat gaat mis?
+
+   .. admonition:: Oplossing
+      :class: toggle
+
+      Je bent vergeten :program:`ctags` of :program:`etags` te draaien.
+
+2. Je probeert een softwarepakket te bouwen en krijgt een foutmelding
+   "``fits_imaxint.c: 12: function arguments for 'mpfr_init2' do not
+   match prototype``" tijdens de compilatie van
+   :file:`fits_imaxint.c`. Hoe onderzoek je dit?
+
+   .. admonition:: Oplossing
+      :class: toggle
+
+      1. Eerst :program:`ctags` of :program:`etags` draaien om de code te
+         inventariseren.
+   
+      2. Bestand :file:`fits_imaxint.c` openen in tekseditor.
+   
+      3. Cursor plaatsen op regel 12, op de naam ":code:`mpfr_init2`"
+   
+      4. :kbd:`M-.` (Emacs) of :kbd:`Ctrl+]` (Vim) om te vinden
+         waar :code:`mpfr_init2` gedefinieerd is
+   
+      5. de definitie vergelijken met regel 12 in :file:`fits_imaxint.c`
+         om te zien welk argument fout is.
+
 Verder inlezen
 --------------
 
