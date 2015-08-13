@@ -475,4 +475,4 @@ Verder inlezen
 
 - GNU project. `Bash Reference Manual`__.
 
-  http://www.gnu.org/software/bash/manual/bash.html
+  .. __: http://www.gnu.org/software/bash/manual/bash.html
