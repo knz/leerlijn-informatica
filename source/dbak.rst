@@ -195,8 +195,9 @@ Versiebeheersoftware bewaart de data en eigenaarinformatie niet.
 
 Om een exacte kopie te maken van een unix bestandssysteem, kan je een
 echte back-up programma gebruiken (zie boven), of eventueel kun je de
-bestanden archiveren met |tar(1)|_ (zie |UAR|_) waardoor deze
-eigenschappen ook goed worden opgeslagen.
+bestanden archiveren met :program:`tar -p ...` (:program:`-p` bewaart
+de toegangsrechten, zie ook |UAR|_ voor het gebruik van |tar(1)|_)
+waardoor deze eigenschappen ook goed worden opgeslagen.
 
 (Zelf)evaluatie
 ---------------
@@ -231,5 +232,6 @@ eigenschappen ook goed worden opgeslagen.
 
       De toegangsrechten zijn niet goed gekopieerd door Dropbox.
 
-      Maak een |tar(1)|_ archief van je programma en stuur het naar je
-      vriend.  Eventueel kan je het tar archief ook delen via Dropbox.
+      Maak een archief van je programma met :program:`tar -p ...` en
+      stuur het naar je vriend.  Eventueel kan je het tar archief ook
+      delen via Dropbox.
