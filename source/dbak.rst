@@ -51,7 +51,7 @@ regelen. We maken verder een onderscheid tussen:
 - :def:`versiebeheerprogramma's`, die lokaal meerdere versies van een map
   bijhouden, met eventueel synchronisatie met andere computers.
 
-In de praktijk worden alle 3 soorten programma's tegelijk gebruikt, 
+In de praktijk worden alle 3 soorten programma's tegelijk gebruikt,
 voor verschillende soorten documenten:
 
 ======================= ========================================
@@ -119,7 +119,7 @@ Bestandssynchronisatie
 
   - SURFdrive__ (opslag in Nederland - **je krijgt daar als UvA student
     automatisch een account**)
-  
+
     .. __: http://surfdrive.surf.nl/
 
   - Dropbox__ (opslag in de VS)
@@ -175,10 +175,28 @@ en scripties die je erbij zal moeten inleveren.
 
 Vaak kun je ze koppelen aan een aandere computerserver die als
 :def:`opslagplaats op afstand` (Engels: :def:`remote repository`) zal
-spelen en eventueel back-ups zal regelen voor je repositories. 
+spelen en eventueel back-ups zal regelen voor je repositories.
 
-Bijvoorbeeld op de UvA wordt je uitgenodigd op GitLab: 
+Bijvoorbeeld op de UvA wordt je uitgenodigd op GitLab:
 https://gitlab-fnwi.uva.nl/ — het gebruik daarvan leer je later met |SGIT1|_.
+
+Pas op je bestandseigenschappen!
+--------------------------------
+
+Op unixsystemen heeft ieder bestand belangrijke eigenschappen naast
+zijn naam: laatste wijzingingsdatum, aanmaakdatum en ook
+eigenaarinformatie en **toegangsrechten**. Vooral de toegangsrechten
+zijn belangrijk omdat ze bepalen of een bestand draaibaar (Engels:
+:def:`executable`) is.
+
+**Bestandssynchronisatieprogramma's gemaakt om ook te werken met
+Windows, bv. Dropbox, bewaren deze eigenschappen niet goed.**
+Versiebeheersoftware bewaart de data en eigenaarinformatie niet.
+
+Om een exacte kopie te maken van een unix bestandssysteem, kan je een
+echte back-up programma gebruiken (zie boven), of eventueel kun je de
+bestanden archiveren met |tar(1)|_ (zie |UAR|_) waardoor deze
+eigenschappen ook goed worden opgeslagen.
 
 (Zelf)evaluatie
 ---------------
@@ -190,17 +208,28 @@ https://gitlab-fnwi.uva.nl/ — het gebruik daarvan leer je later met |SGIT1|_.
       :class: toggle
 
       1. externe harde of SSD schijf aanschaffen (of eventueel
-         bestaande schijf hergebruiken) en echte back-up programma
-         inschakelen en configureren voor het hele systeem.
+	 bestaande schijf hergebruiken) en echte back-up programma
+	 inschakelen en configureren voor het hele systeem.
 
       2. eventueel het clientprogramma van de
-         bestandssynchronisatiediensten (SURFdrive, Dropbox, e.d.)
-         waar je al een account hebt installeren, en in het
-         achtergrond laten synchroniseren.
+	 bestandssynchronisatiediensten (SURFdrive, Dropbox, e.d.)
+	 waar je al een account hebt installeren, en in het
+	 achtergrond laten synchroniseren.
 
       3. voor nieuwe programmeerprojecten, verslagen, scripties etc
-         een versiebeheerprogramma zoals Git inschakelen, eventueel
-         met behulp van GitLab__.
+	 een versiebeheerprogramma zoals Git inschakelen, eventueel
+	 met behulp van GitLab__.
 
-         .. __: https://gitlab-fnwi.uva.nl/
+	 .. __: https://gitlab-fnwi.uva.nl/
 
+2. Je hebt je eigen programma gemaakt en wil hem delen met een
+   vriend. Je plaats hem in je Dropbox :file:`Shared` map. Echter zegt
+   je vriend dat het niet goed werkt. Wat is er aan de hand?
+
+   .. admonition:: Oplossing
+      :class: toggle
+
+      De toegangsrechten zijn niet goed gekopieerd door Dropbox.
+
+      Maak een |tar(1)|_ archief van je programma en stuur het naar je
+      vriend.  Eventueel kan je het tar archief ook delen via Dropbox.
