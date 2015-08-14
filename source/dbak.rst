@@ -190,8 +190,8 @@ zijn belangrijk omdat ze bepalen of een bestand draaibaar (Engels:
 :def:`executable`) is.
 
 **Bestandssynchronisatieprogramma's gemaakt om ook te werken met
-Windows, bv. Dropbox, bewaren deze eigenschappen niet goed.**
-Versiebeheersoftware bewaart de data en eigenaarinformatie niet.
+Windows (Dropbox enz.), bewaren deze eigenschappen niet goed.**
+Versiebeheersoftware bewaart de data en eigenaarinformatie ook niet.
 
 Om een exacte kopie te maken van een unix bestandssysteem, kan je een
 echte back-up programma gebruiken (zie boven), of eventueel kun je de
