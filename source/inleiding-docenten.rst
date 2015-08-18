@@ -297,8 +297,8 @@ Dankwoord
 
 De oprichter van dit initiatief is Robert van Wijk.
 
-Robert van Wijk, Rex Valkering, Floris Kroon en Raphael Poss hebben de
-eerste implementatiestrategie ontwikkeld.
+Robert van Wijk, Rex Valkering, Koen Koning, Floris Kroon en Raphael
+Poss hebben de eerste implementatiestrategie ontwikkeld.
 
 De lijst vaardigheden is verder ontwikkeld door de volgende
 deelnemers:
@@ -312,7 +312,7 @@ Robert van Wijk      |SGIT1|_ |SGIT2|_ |WBIB1|_ |WBIB2|_ |WPRE1|_
 Andy Pimentel        |DSTAT1|_ 
 Edwin Steffens       |UNET|_ |XHIST+|_
 Floris Kroon         |UCMD|_ 
-Mark Makkes          |USRV2+|_ |DCODE|_
+Marc Makkes          |USRV2+|_ |DCODE|_
 Merijn Verstraaten   |USRV1|_ |WTYP1|_
 Raphael Poss         |SDOC2+|_ |SNAV1|_ |SNAV2|_ |TPROF1|_ |TPROF2+|_
                      |USH|_ |UAR|_ |UFS+|_ |URE1|_ |URE2+|_ |DFP+|_
@@ -323,3 +323,29 @@ Roeland Douma        |DBAK|_
 Taddeüs Kroes        |SDOC1|_
 Toto van Inge        |XSTARS+|_
 ==================== ==========================================
+
+Met extra dank aan de volgende personen voor hun commentaren,
+suggesties, feedback and verdere directe en indirecte bijdragen:
+
+Ana-Lucia Varbanescu,
+Andy Pimentel,
+Cees de Laat,
+Edwin Steffens,
+Erik Kooistra, 
+Floris Kroon,
+José Lagerberg,
+Karel van der Veldt,
+Koen Koning,
+Marc Makkes,
+Merijn Verstraaten,
+Mike Lankamp,
+Ralph Koning,
+Reggie Cushing,
+Robert Belleman,
+Robin van Vries, 
+Roeland Douma,
+Roy Bakker,
+Simon Polstra,
+Taddeüs Kroes,
+Toto van Inge,
+en veel anderen.
