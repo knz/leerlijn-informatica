@@ -106,11 +106,6 @@ studeren in de Informatica (MSc CS of dergelijk).
      - Snel van gebruik van struct/functie naar definitie kunnen navigeren
        binnen een broncodebestand
 
-..   * - |SNAV2|_
-..     - Efficiënte codenavigatie (adv)
-..     - Alle uses van struct of klasse vinden in project; snel functies,
-..       methodes of klassen hernoemen door een heel project
-
    * - |WBIB1|_
      - Refereren (basis)
      - Gebruik van BibTeX met template
