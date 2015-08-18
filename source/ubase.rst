@@ -68,7 +68,7 @@ dan ":program:`xterm`" in. Op Linux (maar niet andere Unixsystemen) kun je
 ook toegang krijgen tot een volscherm terminal door :kbd:`Ctrl+Alt+F1`
 tegelijk te drukken op het toetsenbord; daar moet je opnieuw een
 sessie openen door je gebruikersnaam en wachtwoord in te tikken. Je
-kunt terug naar de grafische omgeving door :kbd:`Alt+F7`.
+kunt terug naar de grafische omgeving met :kbd:`Alt+F7`.
 
 Een terminal ziet er ongeveer zo uit:
 
@@ -90,13 +90,13 @@ Shell en programma's
 
 Meerdere programma's delen de terminal om met jou te communiceren. Het
 "hoofdprogramma" dat je als eerste ziet heet de :def:`shell`: het is het
-programma die je commando's zal herkennen en uitvoeren.
+programma dat je commando's zal herkennen en uitvoeren.
 
 Aan het begin heb je een soort mini-teksteditor voor maar 1 regel
 tekst, voor je commando. Hier kan je je eerste commando editen: de
 lettertoetsen om tekst toe te voegen, pijltjes te navigeren, maar ook:
 
-- :kbd:`Ctrl+A` om te navigeren naar het begin van de lijn,
+- :kbd:`Ctrl+A` om te navigeren naar het begin van de regel,
 - :kbd:`Ctrl+E` naar het eind,
 - :kbd:`Alt+F` (of :kbd:`Esc`, dan :kbd:`F`) naar het volgende woord,
 - :kbd:`Alt+B` (of :kbd:`Esc`, dan :kbd:`B`) naar het vorige woord.
@@ -104,7 +104,7 @@ lettertoetsen om tekst toe te voegen, pijltjes te navigeren, maar ook:
 
 Zodra je een commando valideert met de :kbd:`Enter` toets, zal de shell
 zoeken naar de betekenis van je commando, en als het een programma is
-zal de shell een nieuwe process aanmaken om je programma te
+zal de shell een nieuw proces aanmaken om je programma te
 draaien. Zodra dit gebeurt, geeft de shell tijdelijk controle van de
 terminal aan het nieuwe programma, totdat het programma klaar is.
 
@@ -121,21 +121,21 @@ controle over je terminal en zal de shell wachten. Je kunt pas een
 commando opnieuw intikken als het vorige commando klaar is.
 
 Een terminal en een shell zijn de eenvoudigste interface naar een
-Unix systeem. Ze vormen een soort sequentiële interactieplan, waar de
+Unix systeem. Ze vormen een soort sequentieel interactieplan, waar de
 shell en commando's om en om de terminal met jou delen.
 
 In... maar ook uit!
 ````````````````````
 
 Veel introductiecursussen en documentaties laten zien hoe je
-programma's kunt opstarten, en dingen ermee doen. Wel leuk, maar onze
-ervaring als studenten is dat het hoofdprobleem is altijd: "hoe kom ik
+programma's kunt opstarten, en dingen ermee kunt doen. Wel leuk, maar onze
+ervaring als studenten is dat het hoofdprobleem altijd is: "hoe kom ik
 terug naar een bekende situatie?". Stel je voor: je hebt een programma
 geopend, en je weet niet hoe je hem kunt afsluiten. Wat dan?
 
 Vaak werkt de :kbd:`Esc` toets *niet*. De toetscombinatie :kbd:`Alt+F4` ook
-niet. Dan op een terminal is er natuurlijk geen kleine kruis die je
-kunt klikken met je muis, of vinger op een touchscherm.
+niet. Dan op een terminal is er natuurlijk geen klein kruis waarop je
+kunt klikken met je muis, of vinger op een touchscreen.
 
 .. index:: Ctrl-D (invoer afsluiten)
 .. index:: SIGHUP
@@ -149,7 +149,7 @@ kunt klikken met je muis, of vinger op een touchscherm.
 
 Op Unix zijn er meerdere manieren een programma af te sluiten:
 
-1. als je programma een overzichtelijk interface heeft met duidelijk
+1. als je programma een overzichtelijke interface heeft met duidelijk
    aanwijzing van hoe je hem kunt afsluiten, gebruik dan dat.
 
 2. als je programma een soort commandolijn heeft waar je commando's
@@ -182,7 +182,7 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
    NB: De meeste commando's die ":program:`exit`" of ":program:`quit`" ondersteunen
    kunnen ook worden afgesloten door :kbd:`^D`.
 
-4. als :kbd:`^D` het niet doet, kun je een "geweldadigere" manier
+4. als :kbd:`^D` het niet doet, kun je een "gewelddadigere" manier
    gebruiken: de toetscombinatie :kbd:`Ctrl+C`, ook geschreven als
    :kbd:`^C`. Het betekent "een signaal sturen aan het proces om zich af
    te sluiten", zonder te veel vragen te stellen. Het werkt met bijna
@@ -228,7 +228,7 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
    huidige programma pauzeren, sturen naar de achtergrond, en de shell
    met commandolijn die erachter aan het wachten was terug naar de
    voorgrond plaatsen". Sommige programma's die niet op :kbd:`^C`
-   reageren kunnen wel worden geplaatst naar de achtergrond met
+   reageren kunnen wel naar de achtergrond worden geplaatst met
    :kbd:`^Z`.
 
    Als :kbd:`^Z` het niet doet, kun je ook een andere terminal openen op
@@ -237,15 +237,15 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
    sessie.
 
    Zodra je wel een commandolijn beschikt naast het programma die je
-   wil beëindigen, moet je zijn :def:`proces identificatienummer` weten, ook
-   "PID" genoemd. Dit haal je door het commando ":program:`ps x`", dat een
-   lijst aangeeft van alle processen die nu draaien van je op het
+   wil beëindigen, moet je zijn :def:`procesidentificatienummer` weten, ook
+   "PID" genoemd. Die vind je door het commando ":program:`ps x`", dat een
+   lijst geeft van al jouw processen die nu draaien op het
    systeem. Het identificatienummer is dan te vinden in de eerste
-   column.
+   kolom.
 
    Met het PID kun je dan het commando :program:`kill` intikken, gevolgd door
    een spatie, dan het PID, dan :kbd:`Enter`. Dit stuurt hetzelfde signaal
-   als :kbd:`^C` maar dan ook zelfs als het proces de toetscombinatie
+   als :kbd:`^C` maar dan ook als het proces de toetscombinatie
    heeft uitgeschakeld.
 
    (NB: het was trouwens niet de hele waarheid: alleen het commando
@@ -342,7 +342,7 @@ Informatie over commando's
 
   Misschien past de tekst van het programma niet volledig binnen je
   terminal. Als je terminal wordt weergegeven in een grafische omgeving,
-  beschik je misschien een scrollbar. (Dit is een luxe.) Zo niet, kan je
+  beschik je misschien over een scrollbar. (Dit is een luxe.) Zo niet, kan je
   het woord ":program:`|more`" toevoegen aan het eind van je commandolijn,
   bijvoorbeeld::
 
@@ -351,14 +351,14 @@ Informatie over commando's
   Dit werkt op alle Unix systemen, ongeacht de omgeving waar je een
   terminal hebt.
 
-Naast die opties bestaat er nog een bijzondere hulp-systeem, die heet
+Naast die opties bestaat er nog een bijzonder hulp-systeem, die heet
 :program:`info`. Weinig programma's maken gebruik van |info(1)|, maar voor de
 enkele programma's die er wel in staan, is de documentatie daar zeer
 uitgebreid en vaak van zeer hoge kwaliteit. Je hoeft het nu niet te
 leren gebruiken, maar onthoud hem voor later, voornamelijk voor je
 vakken over compiler/vertalerbouw.
 
-In je web browser
+In je webbrowser
 ``````````````````
 
 Je wordt aangeraden om de volgende bookmarks bij te houden in je
@@ -404,19 +404,19 @@ ouder-kind relatie in een boomstructuur. Je kunt deze structuur
 bekijken door het programma |pstree(1)|_ te draaien.
 
 Hiernaast *communiceren* processen met elkaar (groene pijlen in het
-plaatje). Bijvoorbeeld, communiceert de shell (voor de commandolijn)
+plaatje). Bijvoorbeeld, de shell communiceert (voor de commandolijn)
 met de terminal. Alle commando's opgestart door de shell communiceren
 ook met de terminal.
 
 Hier moet je letten op het volgende:
 
   *Als een programma wordt afgesloten, worden zijn kind-programma's
-  (en kleinkinderen) niet automatisch afgesloten. Echter, worden alle
-  programma's die met hem communiceren geïnformeerd dat de
+  (en kleinkinderen) niet automatisch afgesloten. Echter, alle
+  programma's die met hem communiceren worden geïnformeerd dat het
   communicatiekanaal afgesloten wordt.*
 
-Voor de meeste programma's, als hun communicatiekanaal wordt
-afgesloten eindigen ze zelf. Dit is de reden waarom alle programma's
+Voor de meeste programma's geldt dat als hun communicatiekanaal wordt
+afgesloten, ze zelf ook eindigen. Dit is de reden waarom alle programma's
 binnen je sessie automatisch eindigen als je je terminal afsluit.
 
 Maar als een programma niet communiceert met de terminal, is het
@@ -588,7 +588,7 @@ Anders:
   modi voor interactie: een "controle" modus en een "invoer" modus. Je
   wordt er een beetje schizofreen van. In de "controlemodus" van
   :program:`vi` tik je "commando's" om operaties uit te voeren op de tekst:
-  tekst zoeken, verplaatsen, vervangen, etc. In tegenstelling met
+  tekst zoeken, verplaatsen, vervangen, etc. In tegenstelling tot
   :program:`emacs` zijn de commando's van :program:`vi`/:program:`vim` redelijk logisch te
   onthouden. Ook heeft :program:`vi` meestal geen toets *combinatie* nodig,
   waar je met meerdere vingers tegelijk moet duwen op je toetsenbord.
@@ -596,7 +596,7 @@ Anders:
 - Emacs (:program:`emacs`): werkt op basis van zijn eigen besturingssysteem,
   geprogrammeerd in het eerbiedwaardige programmeertaal LISP. Emacs is
   dus heel krachtig met heel veel functionaliteit, maar dus ook
-  wat ingewikkelder goed te leren gebruiken. Emacs maakt uigebreid
+  wat ingewikkelder goed te leren gebruiken. Emacs maakt veel
   gebruik van toetscombinaties.
 
 Om meer erover te weten:
@@ -644,6 +644,8 @@ Naar controlemodus  :kbd:`Esc`     :kbd:`M-x`
         top
         # evt ook:
         top -o cpu
+        # of, grafisch wat aantrekkelijker (moet mogelijk wel apart geïnstalleerd worden):
+        htop
 
 2. Wat zijn de standaard toetscombinaties om de cursor naar het begin
    en naar het eind van de huidige regel te verplaatsen? (in een shell
@@ -685,8 +687,8 @@ Naar controlemodus  :kbd:`Esc`     :kbd:`M-x`
       Twee (of meer als andere instanties van |sleep(1)|_ eerder zijn opgestart).
 
 6. Je draait het commando ``sleep 100&`` in je terminal, dan sluit je
-   je terminal af. Je maakt dan weer een nieuw terminal open, en draai
-   dan |ps(1)|_. Is het programma |sleep(1)|_ steeds actief?
+   je terminal af. Je maakt dan weer een nieuwe terminal open, en dan draai
+   je |ps(1)|_. Is het programma |sleep(1)|_ steeds actief?
 
    .. admonition:: Oplossing
       :class: toggle
@@ -702,6 +704,7 @@ Naar controlemodus  :kbd:`Esc`     :kbd:`M-x`
       :class: toggle
 
       Vi: ``:q!``
+      Noot: het uitroepteken zorgt ervoor dat je wijzigingen niet opgeslagen worden! Gebruik om op te slaan :w
 
       Emacs: :kbd:`Ctrl-X Ctrl-C`
 
