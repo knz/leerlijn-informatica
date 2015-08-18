@@ -34,7 +34,7 @@ talstelsel.
 Een :def:`positiestelsel` (:def:`positional notation` in het Engels) is een
 talstelsel waar de representatie van getallen opgebouwd wordt door de
 cijfers te lezen of schrijven in een vaste richting. Dit is de meest
-gangbare soort talstelsel. Deze onderscheid bestaat omdat bv. romeinse
+gangbare soort talstelsel. Dit onderscheid bestaat omdat bijvoorbeeld romeinse
 getallen geen positiestelsel vormen.
 
 In het dagelijks leven ben je al gewend aan 3 positiestelsels: 10, 12
@@ -43,7 +43,7 @@ dat de hoeveelheden seconden in "48 seconden + 30 seconden"
 vaker weergegeven wordt als "1:18" dan "78".
 
 In de informatica zijn 3 extra positiestelsels belangrijk: 2 (binair), 8
-(octaal) en 16 (hexadecimaal). Daarmee zijn hoeveelheiden in
+(octaal) en 16 (hexadecimaal). Daarmee zijn hoeveelheden in
 programma's en verschillende tools uitgedrukt.
 
 Onderliggende wiskunde
@@ -81,10 +81,10 @@ Met grondtal *b* wordt de waarde van een rij cijfers bepaald als volgt:
      w = \sum_{i=0}^k c_ib^i
 
 In de volgende voorbeelden zijn de *waardes* geschreven als
-:math:`n_{10}` (representatie met grondtal 10), bijvoorbeeld we
-schrijven de waarde van "honderd en trieentwintig" als :math:`123_{10}`.
+:math:`n_{10}` (representatie met grondtal 10), we
+schrijven bijvoorbeeld de waarde van "honderddrieentwintig" als :math:`123_{10}`.
 
-Bijvoorbeeld, met :math:`b = 10_{10}`, het getal geschreven als "456" heeft
+Bijvoorbeeld, met :math:`b = 10_{10}`, heeft het getal geschreven als "456"
 :math:`c_2 = 4_{10}, c_1 = 5_{10}, c_0 = 6_{10}` en zijn waarde is dus:
 
 .. math::
@@ -95,7 +95,7 @@ Bijvoorbeeld, met :math:`b = 10_{10}`, het getal geschreven als "456" heeft
      & = 456_{10}
    \end{array}
 
-Hetzelfde representatie "456", geïnterpreteerd met grondtal :math:`8_{10}`, heeft dan als waarde:
+Dezelfde representatie "456", geïnterpreteerd met grondtal :math:`8_{10}`, heeft dan als waarde:
 
 .. math::
 
@@ -120,13 +120,13 @@ En met grondtal :math:`2_{10}`:
 .. admonition:: Antwoord
    :class: toggle
 
-   Het getal "456" is niet een geldige representatie in grondtal 2, omdat
-   dit positiestelsel maar 2 cijfers heeft!
+   Het getal "456" is geen geldige representatie in grondtal 2, omdat
+   dit positiestelsel maar 2 cijfers (0 en 1) heeft!
 
 Van waarde naar representatie
 `````````````````````````````
 
-De representatie van een waarde *w* wordt berekend met de volgende formule:
+De representatie van een waarde *w*  wordt berekend met de volgende formule:
 
 .. math::
 
@@ -153,7 +153,7 @@ De representatie van :math:`123_{10}` met grondtal 2 is dus :math:`1111011_2`.
 Notaties in de informatica
 --------------------------
 
-De programmeertal C (en zijn opvolgers inclusief Java, JavaScript en
+De programmeertal C (en zijn opvolgers als Java, JavaScript en
 veel anderen) heeft de volgende notaties standaard gemaakt:
 
 - voor grondtal 2 (binaire) representaties:  "0b" en dan de representatie, bijvoorbeeld "0b1111011"
@@ -240,8 +240,8 @@ volgende tabellen uit zijn hoofd te leren:
   :math:`2^{10}` 1024                  0b10000000000     0x400
   :math:`2^{16}` 65536                 0b100000000000000 0x10000
   :math:`2^{20}` ongeveer 1 miljoen                      0x100000
-  :math:`2^{24}` ongeveer 16 miljioen                    0x1000000
-  :math:`2^{32}` ongeveer 4 miljiard                     0x100000000
+  :math:`2^{24}` ongeveer 16 miljoen                    0x1000000
+  :math:`2^{32}` ongeveer 4 miljard                     0x100000000
   ============== ===================== ================= ===============
 
 - een :def:`bit` is een cijfer met grondtal 2 (0 of 1).
@@ -299,7 +299,7 @@ Conversies in de programmeertaal C
       48 (of 6 bytes), want 65535 = :math:`2^{16}-1` en dit heeft 16
       bits (2 bytes) nodig voor zijn representatie.
 
-5. Schrijf voor jezelf een programma die als invoerparameters een
+5. Schrijf voor jezelf een programma dat als invoerparameters een
    positief decimaal getal *N* en een nieuwe grondgetal *b* accepteert
    (:math:`2 \leq b \leq 36`), en die de representatie van *N* met
    grondgetal *b* uitvoert. Je oplossing moet goed werken voor de
