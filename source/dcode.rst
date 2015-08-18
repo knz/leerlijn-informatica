@@ -300,7 +300,7 @@ Conversies in de programmeertaal C
       bits (2 bytes) nodig voor zijn representatie.
 
 5. Schrijf voor jezelf een programma dat als invoerparameters een
-   positief decimaal getal *N* en een nieuwe grondgetal *b* accepteert
+   positief decimaal getal *N* en een nieuw grondtal *b* accepteert
    (:math:`2 \leq b \leq 36`), en die de representatie van *N* met
    grondgetal *b* uitvoert. Je oplossing moet goed werken voor de
    waardes 4294967295 (op een 32-bit computer) en 18446744073709551615
