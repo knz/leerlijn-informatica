@@ -53,10 +53,10 @@ worden. Behalve de onderwerpen die nu al bij PAV aan bod komen, zou
 meer aandacht voor gebruik van bijvoorbeeld figuren, formules en
 beamer waardevol kunnen zijn.
 
-Tevens zijn meerdere vaardigheden verwacht als vooreis voor
-vervolgopleidingen, denk aan bv. het automatisch verzamelen van
-statistische metingen van het gedrag van een programma, helaas nemen
-we vaak waar dat een significant deel van deze vaardigheden ontbreken
+Tevens worden andere vaardigheden verwacht als eis voor
+vervolgopleidingen, denk aan bijvoorbeeld het automatisch verzamelen van
+statistische metingen van het gedrag van een programma. Helaas nemen
+we vaak waar dat een groot deel van deze vaardigheden ontbreekt
 bij een significant deel van de gediplomeerde studenten.
 
 De leerlijn
@@ -68,7 +68,7 @@ vaardigheden: databeheer (D), de unixomgeving (U), omgaan met broncode
 (S), programmeerapparatuur (T), technieken voor wetenschappelijke
 communicatie (W) en achtergrondkennis van de informatica (X).
 
-Een volle overzicht van de voorgestelde vaardigheden is terug te vinden in de
+Een volledig overzicht van de voorgestelde vaardigheden is terug te vinden in de
 :doc:`Inleiding voor studenten <inleiding-studenten>`.
 
 Deze vaardigheden behoren niet direct tot het programmeren, maar zijn
@@ -77,9 +77,8 @@ twee jaren van de bacheloropleiding informatica en behandelt de
 vaardigheden wanneer ze optimaal aansluiten bij de op dat moment
 behandelde vakinhoud.
 
-Het is de bedoeling dat de beschrijving van ieder vaardigheid
-gecommuniceerd aan studenten ruimte maakt voor twee soorten
-benaderingen tijdens de studie:
+Het is de bedoeling dat de beschrijving van iedere vaardigheid 
+ruimte maakt voor twee soorten benaderingen tijdens de studie:
 
 - een "minimale investering" moet duidelijk worden beschreven door
   middel van duidelijke toetsingcriteria, en eventueel direct
@@ -87,11 +86,11 @@ benaderingen tijdens de studie:
 
 - een "extra mijlpaal" dimensie kan aspecten van de vaardigheid
   beschrijven die niet strikt vereist zijn aan het eind van de studie
-  maar de kans geeft aan nieuwsgierige studenten om zich verder in te
-  diepen, met duidelijke uitleg van de voordelen behaald door de
+  maar de kans geven aan nieuwsgierige studenten om zich verder te
+  verdiepen, met duidelijke uitleg van de voordelen behaald door de
   vaardigheid.
 
-Ieder beschrijving van een vaardigheden is ook verder geformuleerd om
+Iedere beschrijving van een vaardigheid is ook verder geformuleerd om
 te voldoen aan de volgende randvoorwaarden:
 
 - Het is gericht op de praktijk en bedoeld om te oefenen.
@@ -103,9 +102,9 @@ In het curriculum
 -----------------
 
 De leerlijn zal bestaan uit zelfstandig werk met terugblikken tijdens
-PAV of tijdens de relevante vakken. Ieder vaardigheid wordt
+PAV of tijdens de relevante vakken. Iedere vaardigheid wordt
 gepresenteerd in een of meer modules die elk initieel tussen een en
-twee uur zelfstudie vereisen. Er wordt beoogd dat ieder vaardigheid
+twee uur zelfstudie vereisen. Er wordt beoogd dat iedere vaardigheid
 verder automatisch wordt ontwikkeld door de natuurlijke loop van de opleiding.
 
 In de hoorcolleges, in de computerpractica en binnen het practicum
@@ -171,10 +170,10 @@ De volgende vragen kunnen dan ontstaan:
   de moeite nemen?*
 
   - voor de geïnteresseerde studenten: met begeleiding kunnen ze dus
-    deze vaardigheden sneller leren, en kunnen ze focusen op de
-    onderwerpen geselecteerd als belangrijker door meer ervaren
-    experten (docenten en oudere studenten). Die nieuwe kader leidt
-    dus sneller tot hetzelfde resultaat; dit is een redenatie dat de
+    deze vaardigheden sneller leren, en kunnen ze focussen op de
+    onderwerpen die als belangrijker zijn geselecteerd door 
+    experts (docenten en oudere studenten). Dit nieuwe kader leidt
+    dus sneller tot hetzelfde resultaat; dit is een redenatie die de
     betere studenten snel zullen begrijpen.
 
   - voor de ongeïnteresseerde studenten: er moet verder een
@@ -182,8 +181,8 @@ De volgende vragen kunnen dan ontstaan:
     ongeïnteresseerd, maar open voor het leren; en studenten *actief*
     ongeïnteresseerd, die hun diploma willen halen met minimale
     hoeveelheid werk. (NB: deze kenschetsing is van hun gedrag, niet van hun
-    persoonlijkheid; gedragen kunnen snel evolueren over tijd en soms
-    zelfs over zeer korte periodes, bv van een vak naar een ander).
+    persoonlijkheid; gedrag kan snel evolueren over tijd en soms
+    zelfs over zeer korte periodes, bijvoorbeeld van een vak naar een ander).
 
     Voor "a priori" ongeïnteresseerden ligt de verantwoordelijkheid om
     de stof levendig en interessant te maken bij de docenten, maar
@@ -217,7 +216,7 @@ universiteiten.
 
 De beschrijving van de voorgestelde vaardigheden zal dus worden
 gepubliceerd als zelfstandige, openbare website, en tegelijk
-beschikbaar als PDF boekje voor studenten die graag een papierekopie
+beschikbaar als PDF boekje voor studenten die graag een papieren kopie
 willen. Het is de bedoeling dat deze website beschikbaar voor de
 studenten wordt gemaakt aan het begin van de studie, en dat ze eraan
 kunnen blijven refereren tijdens de loop van de opleiding en eventueel
@@ -271,7 +270,7 @@ onderwijszalen langer gebruikt worden, met de bijbehorende kosten.
 
 Voor de studenten zijn de extra inspanningen om de vaardigheden te leren
 makkelijk te verwaarlozen door de verwante productiviteits- en
-kwaliteitswinsten daarmee ontwikkeld.
+kwaliteitswinsten. 
 
 Eigenaarschap en onderhoud
 --------------------------
@@ -296,7 +295,7 @@ onderhoud.
 Dankwoord
 ---------
 
-De oprichter van deze initiatief is Robert van Wijk.
+De oprichter van dit initiatief is Robert van Wijk.
 
 Robert van Wijk, Rex Valkering, Floris Kroon en Raphael Poss hebben de
 eerste implementatiestrategie ontwikkeld.
