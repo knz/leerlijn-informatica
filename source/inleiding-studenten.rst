@@ -10,13 +10,13 @@ Inleiding
 ---------
 
 Elke professionele kok weet dat je de handgreep van een hete pan niet
-direct met je hand pakt. Echter is er geen vak "handgreep beheren" in
+direct met je hand pakt. Er is echter geen vak "handgreep beheren" in
 een koksopleiding. Dit is een vaardigheid die wordt ontwikkeld tijdens
-alle activiteiten in de koksopleiding.
+andere activiteiten in de koksopleiding.
 
-De **leerlijn informaticavaardigheden** is een dergelijk verzamelingen
-van basisvaardigheden verwacht van *alle* BSc informaticastudenten aan het
-eind van hun studie. Het zijn technieken, kennis, methodes en
+De **leerlijn informaticavaardigheden** is een dergelijke verzameling
+van basisvaardigheden die verwacht wordt van *alle* BSc informaticastudenten aan het
+eind van hun studie. Denk aan technieken, kennis, methodes en
 referenties die van toepassing kunnen zijn in alle vakgebieden binnen
 de informatica en in elke informaticabaan na de studie.
 
@@ -28,10 +28,10 @@ en assistenten om een paar hoofdstukken te bestuderen.
 
 .. __: _static/LeerlijnInformaticavaardigheden.pdf
 
-Elk hoofdstuk betekent tussen 15min en 2 uur zelfstudie, plus af en toe
+Elk hoofdstuk betekent tussen 15 minuten en 2 uur zelfstudie, plus af en toe
 opnieuw oefenen of toepassen tijdens de rest van je studie.  Alle
 vaardigheden in de leerlijn zijn letterlijk de moeite waard: elk
-studieuur die je erin zal investeren betaalt zich terug in
+studieuur dat je erin investeert betaalt zich terug in
 productiviteits- en kwaliteitswinsten: **hogere cijfers in minder uren
 werk.**
 
@@ -69,9 +69,9 @@ De leerlijn vaardigheden is gesplitst in 6 banen:
 Op elke baan heeft iedere vaardigheid een kenmerk die met de letter
 van zijn baan begint.
 
-Alle vaardigheden behoren bij het gewenste profiel van een
+Alle vaardigheden behoren tot het gewenste profiel van een
 gediplomeerde student Informatica, behalve de vaardigheden met een "+"
-in de kenmerk, die alleen behoren bij studenten die verder willen
+in de kenmerk, die zijn voor studenten die verder willen
 studeren in de Informatica (MSc CS of dergelijk).
 
 
@@ -108,7 +108,7 @@ studeren in de Informatica (MSc CS of dergelijk).
 
    * - |SNAV2|_
      - Efficiënte codenavigatie (adv)
-     - Alle uses van struct of klas vinden in project; snel functies
+     - Alle uses van struct of klasse vinden in project; snel functies,
        methodes of klassen hernoemen door een heel project
 
    * - |WBIB1|_
