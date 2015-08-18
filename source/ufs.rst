@@ -24,6 +24,9 @@ Welke bestandssystemen bestaan er?
 
 .. index:: Ext4, UFS, HFS+, UDF, FAT32, ISO9660, NTFS, ExFAT
 
+De volgende bestandssystemen worden "standaard" ingesteld in
+de meeste computers:
+
 ========== =======================================
 Naam       Wordt gebruikt met
 ========== =======================================
@@ -37,6 +40,17 @@ NTFS_      Harde schijven op Windows
 ExFAT_     Nieuwere USB sticks en geheugenkaartjes
 ========== =======================================
 
+De volgende bestandssystemen zijn ook beschikbaar en hebben
+verder interessante technische voordelen:
+
+========== =======================================
+Naam       Wordt gebruikt met
+========== =======================================
+XFS_       Goed voor mediabestanden en file servers
+ZFS_       Goed voor gemengde gebruik
+Btrfs_     Goed voor grote databases
+========== =======================================
+
 (Gebruik eventueel de links in de eerste kolom in deze tabel om meer
 informatie over ieder bestandssysteem te krijgen.)
 
@@ -48,6 +62,9 @@ informatie over ieder bestandssysteem te krijgen.)
 .. _ISO9660: https://en.wikipedia.org/wiki/ISO_9660
 .. _NTFS: https://en.wikipedia.org/wiki/NTFS
 .. _ExFAT: https://en.wikipedia.org/wiki/ExFAT
+.. _XFS: https://en.wikipedia.org/wiki/XFS
+.. _ZFS: https://en.wikipedia.org/wiki/ZFS
+.. _Btrfs: https://en.wikipedia.org/wiki/Btrfs
 
 Bestandssysteem aankoppelen vanaf de commandolijn
 -------------------------------------------------
@@ -171,16 +188,16 @@ In de volgende tabel, "R" betekent "kan alleen lezen" en "R/W"
 betekent "kan lezen en schrijven". Een sterretje
 betekent dat extra stuurprogramma's nodig zijn.
 
-=================== ======= === ===== ===== === ==== ===== =====
-Besturingssysteem   ISO9660 UDF FAT32 ExFAT UFS HFS+ NTFS  Ext4
-=================== ======= === ===== ===== === ==== ===== =====
-Linux (desktop)     R/W     R/W R/W   R/W*  R/W R/W* R/W*  R/W
-Linux (Android)     R/W     R/W R/W   R/W*  R/W R/W* R     R/W
-FreeBSD             R/W     R/W R/W   R/W*  R/W R*   R/W*  R/W
-OS X                R/W     R/W R/W   R/W       R/W  R     R/W*
+=================== ======= === ===== ===== === ==== ===== ==== ==== ==== =====
+Besturingssysteem   ISO9660 UDF FAT32 ExFAT UFS HFS+ NTFS  Ext4 XFS  ZFS  Btrfs
+=================== ======= === ===== ===== === ==== ===== ==== ==== ==== =====
+Linux (desktop)     R/W     R/W R/W   R/W*  R/W R/W* R/W*  R/W  R/W  R/W* R/W
+Linux (Android)     R/W     R/W R/W   R/W*  R/W R/W* R     R/W  R/W*      R/W*
+FreeBSD             R/W     R/W R/W   R/W*  R/W R*   R/W*  R/W  R    R/W
+OS X                R/W     R/W R/W   R/W       R/W  R     R/W* R*   R/W*
 Windows Vista+      R/W     R/W R/W   R/W            R/W   R*
 Windows NT+         R           R/W                  R/W
-=================== ======= === ===== ===== === ==== ===== =====
+=================== ======= === ===== ===== === ==== ===== ==== ==== ==== =====
 
 Waarom bestaan er zoveel bestandssystemen?
 ````````````````````````````````````````````
@@ -301,3 +318,14 @@ van een block device als parameter.
 
       .. warning:: Goed opletten dat het commando de goede block devicenaam heeft,
          anders zal het de inhoud van een andere schijf wissen!
+
+Verder inlezen
+--------------
+
+- Wikipedia. `Comparison of File Systems`__. Accessed August 2015.
+
+  .. __: https://en.wikipedia.org/wiki/Comparison_of_file_systems
+
+- C2 Wiki. `File System Alternatives`__. Accessed August 2015.
+
+  .. __: http://c2.com/cgi/wiki?FileSystemAlternatives
