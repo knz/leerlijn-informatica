@@ -240,8 +240,8 @@ volgende tabellen uit zijn hoofd te leren:
   :math:`2^{10}` 1024                  0b10000000000     0x400
   :math:`2^{16}` 65536                 0b100000000000000 0x10000
   :math:`2^{20}` ongeveer 1 miljoen                      0x100000
-  :math:`2^{24}` ongeveer 16 miljoen                    0x1000000
-  :math:`2^{32}` ongeveer 4 miljard                     0x100000000
+  :math:`2^{24}` ongeveer 16 miljoen                     0x1000000
+  :math:`2^{32}` ongeveer 4 miljard                      0x100000000
   ============== ===================== ================= ===============
 
 - een :def:`bit` is een cijfer met grondtal 2 (0 of 1).
