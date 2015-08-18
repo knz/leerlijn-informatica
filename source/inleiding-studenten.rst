@@ -71,7 +71,7 @@ van zijn baan begint.
 
 Alle vaardigheden behoren tot het gewenste profiel van een
 gediplomeerde student Informatica, behalve de vaardigheden met een "+"
-in de kenmerk, die zijn voor studenten die verder willen
+in zijn kenmerk, die zijn voor studenten die verder willen
 studeren in de Informatica (MSc CS of dergelijk).
 
 
