@@ -106,10 +106,10 @@ studeren in de Informatica (MSc CS of dergelijk).
      - Snel van gebruik van struct/functie naar definitie kunnen navigeren
        binnen een broncodebestand
 
-   * - |SNAV2|_
-     - Efficiënte codenavigatie (adv)
-     - Alle uses van struct of klasse vinden in project; snel functies,
-       methodes of klassen hernoemen door een heel project
+..   * - |SNAV2|_
+..     - Efficiënte codenavigatie (adv)
+..     - Alle uses van struct of klasse vinden in project; snel functies,
+..       methodes of klassen hernoemen door een heel project
 
    * - |WBIB1|_
      - Refereren (basis)
@@ -334,7 +334,7 @@ op vakopdrachten om je te motiveren.
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
 | Blok 3   | Numerical recipes      |           |           |           |            | |DFP+|_     |             |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+
-| Blok 4   | Gfx & game tech        |           |           | |SNAV2|_  |            |             |             |
+| Blok 4   | Gfx & game tech        |           |           |           |            |             |             |
 |          +------------------------+-----------+-----------+-----------+------------+-------------+-------------+
 |          | Beeldbewerken          |           |           |           |            |             |             |
 +----------+------------------------+-----------+-----------+-----------+------------+-------------+-------------+

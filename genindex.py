@@ -25,7 +25,9 @@ with open("source/inleiding-studenten.rst") as f:
             break;
     lines = []
     for line in f:
-        lines.append(line)
+        line = line.strip()
+        if not line.startswith(".."):
+            lines.append(line)
 
     for m in vre.finditer(''.join(lines)):
         p = m.group(1).lower().replace('+','')
