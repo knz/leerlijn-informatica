@@ -5,6 +5,20 @@
 
 {% set script_files = script_files + ["_static/custom.js"] %}
 
+{% block haikurel2 %}
+{%- if pagename != "search" %}
+<div id="searchbox" style="display:none" role="search">
+    <form class="search" action="{{ pathto('search') }}" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Zoeken" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+{%- endif %}
+{% endblock %}
+
 {% block footer %}
 <div class="footer" role="contentinfo">
   <a href="http://creativecommons.org/licenses/by-sa/3.0/nl/">

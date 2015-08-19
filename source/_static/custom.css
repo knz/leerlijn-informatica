@@ -18,6 +18,12 @@ div.icontainer .head.open:after {
     content: " (verbergen)";
 }
 
+#searchbox {
+  float: right;
+  position: fixed;
+  right: 2em;
+}
+
 pre,
 code,
 kbd,
