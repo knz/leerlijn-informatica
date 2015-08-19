@@ -65,7 +65,7 @@ De leerlijn
 De doelstelling van de leerlijn informaticavaardigheden is het
 structureren en verdiepen van het onderwijs in vijf groepen
 vaardigheden: databeheer (D), de unixomgeving (U), omgaan met broncode
-(S), programmeerapparatuur (T), technieken voor wetenschappelijke
+(S), programmeergereedschap (T), technieken voor wetenschappelijke
 communicatie (W) en achtergrondkennis van de informatica (X).
 
 Een volledig overzicht van de voorgestelde vaardigheden is terug te vinden in de

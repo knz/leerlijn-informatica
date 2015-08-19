@@ -55,7 +55,7 @@ De leerlijn vaardigheden is gesplitst in 6 banen:
    Omgaan met broncode
 
 **T** (:ttitle:`"Tools"`)
-   Omgaan met programmeerapparatuur
+   Omgaan met programmeergereedschap
 
 **U** (:utitle:`"Unix"`)
    Omgaan met de Unix commando- en procesomgeving
