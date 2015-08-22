@@ -59,34 +59,36 @@ Richtlijnen voor het structureren
 - Neem het volgende advies van Simon Peyton-Jones, een heel belangrijke
   wetenschapper en competent docent in de informatica:
 
-   When writing slides remember that people can read and take in only
-   very little information. Six or seven "things" on one slide is
-   quite enough.
+  .. pull-quote::
 
-   Slides shouldn't repeat what you plan to say, but they should
-   emphasise it; don't waste visual bandwidth on things you are also
-   going to say. People who copy their paper onto slides and then read
-   from them are immensely irritating. You should plan to talk ABOUT
-   what's on your slides, not read it. (This may mean you need
-   separate notes to remind you of what you want to say.)
+     When writing slides remember that people can read and take in only
+     very little information. Six or seven "things" on one slide is
+     quite enough.
 
-   It is conventional to start with a contents slide, giving the
-   outline of your talk. Don't. It takes a precious minute to talk
-   through it, and your audience won't understand it till
-   later. Certainly never include such trivia as "introduction",
-   "conclusion". These are understood as a necessary part of every
-   talk.
+     Slides shouldn't repeat what you plan to say, but they should
+     emphasise it; don't waste visual bandwidth on things you are also
+     going to say. People who copy their paper onto slides and then read
+     from them are immensely irritating. You should plan to talk ABOUT
+     what's on your slides, not read it. (This may mean you need
+     separate notes to remind you of what you want to say.)
 
-   On the other hand, about a third of the way through, it can be
-   quite helpful to draw breath with a slide which says "This is
-   what I have discussed so far, and now I'm going on to cover these
-   areas", or some such. This can help to re-orient your audience,
-   and make it clear that this is the moment to ask questions if they
-   are lost already. Another way to add signposts is to begin each
-   section of your talk with a slide containing only the title of the
-   section.
+     It is conventional to start with a contents slide, giving the
+     outline of your talk. Don't. It takes a precious minute to talk
+     through it, and your audience won't understand it till
+     later. Certainly never include such trivia as "introduction",
+     "conclusion". These are understood as a necessary part of every
+     talk.
 
-   -- Simon Peyton-Jones, `How to give a good research talk`_, 1993
+     On the other hand, about a third of the way through, it can be
+     quite helpful to draw breath with a slide which says "This is
+     what I have discussed so far, and now I'm going on to cover these
+     areas", or some such. This can help to re-orient your audience,
+     and make it clear that this is the moment to ask questions if they
+     are lost already. Another way to add signposts is to begin each
+     section of your talk with a slide containing only the title of the
+     section.
+
+     — Simon Peyton-Jones, `How to give a good research talk`_, 1993
 
 Simpele animaties
 -----------------
