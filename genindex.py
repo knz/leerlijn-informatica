@@ -15,8 +15,8 @@ print("""
 .. toctree::
    :maxdepth: 2
 
-   inleiding-docenten
    inleiding-studenten
+   inleiding-docenten
 """)
 
 with open("source/inleiding-studenten.rst") as f:

@@ -2,6 +2,10 @@ body{
     font-family: "Open Sans","Lucida Grande","Lucida Sans Unicode","Geneva","Verdana",sans-serif;
 }
 
+.pull-quote {
+    font-style: oblique;
+}
+
 iframe{    
     border: none;
     width: 100%;
@@ -16,6 +20,22 @@ div.icontainer .head:after {
 
 div.icontainer .head.open:after {
     content: " (verbergen)";
+}
+
+.center p {
+    width: 100%;
+    text-align: center;
+}
+
+.edito {
+    background: solid white;
+    width: 35%;
+    font-size: 75%;
+    float: right;
+    border: 5px double;
+    border-radius: 1em;
+    padding: 5px;
+    margin-left: 1em;
 }
 
 #searchbox {
