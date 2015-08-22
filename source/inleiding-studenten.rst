@@ -15,10 +15,11 @@ een koksopleiding. Dit is een vaardigheid die wordt ontwikkeld tijdens
 andere activiteiten in de koksopleiding.
 
 De **leerlijn informaticavaardigheden** is een dergelijke verzameling
-van basisvaardigheden die verwacht wordt van *alle* BSc informaticastudenten aan het
-eind van hun studie. Denk aan technieken, kennis, methodes en
-referenties die van toepassing kunnen zijn in alle vakgebieden binnen
-de informatica en in elke informaticabaan na de studie.
+van basisvaardigheden die verwacht worden van *alle* BSc
+informaticastudenten aan het eind van hun studie. Denk aan technieken,
+kennis, methodes en referenties die van toepassing kunnen zijn in alle
+vakgebieden binnen de informatica en in alle werkzaamheden na de
+studie.
 
 Deze website, die je ook als `PDF document`__ kunt downloaden, geeft een
 overzicht en gedetailleerde beschrijving voor elke vaardigheid in de
