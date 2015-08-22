@@ -736,3 +736,7 @@ Verder inlezen
 - Machtelt Garrels. `Introduction to Linux - a Hands on Guide`__. 2008.
 
   .. __: http://tldp.org/LDP/intro-linux/html/index.html
+
+- Linus Akesson. `The TTY demistified`__. 2008.
+
+  .. __: http://www.linusakesson.net/programming/tty/

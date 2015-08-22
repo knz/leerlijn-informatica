@@ -1,10 +1,10 @@
-Leerlijn Informaticavaardigheden
-================================
+Overzicht
+=========
 
-Dit is het handboek van de leerlijn informaticavaardigheden, een
-dwarslopend curriculum voor BSc Informaticastudenten.
+Dit is het handboek van de **leerlijn informaticavaardigheden (LIV)**,
+een dwarslopend aanvulling voor het curriculum van informaticastudenten.
 
-Copyright © 2015, Universiteit van Amsterdam.
+Copyright © 2015, Docenten en docentassistenten Informatica van de Universiteit van Amsterdam.
 
 Documentversie: |release|.
 
@@ -19,7 +19,7 @@ voorwaarden van naamsvermelding en gelijkdelen van veranderde materiaal.
 .. _`CC-BY-SA`: http://creativecommons.org/licenses/by-sa/3.0/nl/
 
 De brondcode voor deze handleiding wordt hier bijgehouden:
-https://gitlab-fnwi.uva.nl/inf-leervaardigheden/handleiding
+https://gitlab-fnwi.uva.nl/liv/handleiding
 
 Navigatie
 =========
