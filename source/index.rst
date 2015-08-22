@@ -28,4 +28,3 @@ Navigatie
 * :ref:`search`
 
 .. include:: toctree.d
-
