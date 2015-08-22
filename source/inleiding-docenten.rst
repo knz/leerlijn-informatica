@@ -15,6 +15,12 @@ maar daarna vindt er weinig of geen herhaling plaats en er wordt na
 zekere tijd simpelweg aangenomen dat de studenten deze vaardigheden
 beheersen.
 
+De **leerlijn informaticavaardigheden (LIV)** is een voorgestelde
+aanvulling voor het curriculum van informaticastudenten. De LIV vormt
+geen afzonderlijk vak; het is een **verzameling van aanvullende
+leermaterialen** die kan worden geïntegreerd of gelinkt vanaf de
+bestaande vakken en indirect getoetst door de bestaande vakopdrachten.
+
 .. contents:: Inhoud
    :local:
 
@@ -77,19 +83,6 @@ twee jaren van de bacheloropleiding informatica en behandelt de
 vaardigheden wanneer ze optimaal aansluiten bij de op dat moment
 behandelde vakinhoud.
 
-Het is de bedoeling dat de beschrijving van iedere vaardigheid 
-ruimte maakt voor twee soorten benaderingen tijdens de studie:
-
-- een "minimale investering" moet duidelijk worden beschreven door
-  middel van duidelijke toetsingcriteria, en eventueel direct
-  gerelateerd aan straf- of bonuspunten in de behorende vakopdrachten;
-
-- een "extra mijlpaal" dimensie kan aspecten van de vaardigheid
-  beschrijven die niet strikt vereist zijn aan het eind van de studie
-  maar de kans geven aan nieuwsgierige studenten om zich verder te
-  verdiepen, met duidelijke uitleg van de voordelen behaald door de
-  vaardigheid.
-
 Iedere beschrijving van een vaardigheid is ook verder geformuleerd om
 te voldoen aan de volgende randvoorwaarden:
 
@@ -147,7 +140,7 @@ Stimulansen, beloning en verwachte studiehouding
 ------------------------------------------------
 
 De leerlijn zal niet worden gepresenteerd als verplicht en
-toetsbaar, echter verwacht en aanvullend. 
+toetsbaar, echter verwacht en aanvullend.
 
 De volgende vragen kunnen dan ontstaan:
 
@@ -155,7 +148,7 @@ De volgende vragen kunnen dan ontstaan:
   studenten daar extra studiepunten voor zonder de huidige vakken te
   verminken?*
 
-  De afspraak met de studenten is dat ieder studieuur bestemd deze
+  De afspraak met de studenten is dat ieder studieuur bestemd aan deze
   vaardigheden zich terugbetaalt over de loop van een jaar door
   meetbare winsten in productiviteit (minder uren werk voor dezelfde
   cijfers) en kwaliteit (hogere cijfers voor dezelfde hoeveelheid
@@ -171,7 +164,7 @@ De volgende vragen kunnen dan ontstaan:
 
   - voor de geïnteresseerde studenten: met begeleiding kunnen ze dus
     deze vaardigheden sneller leren, en kunnen ze focussen op de
-    onderwerpen die als belangrijker zijn geselecteerd door 
+    onderwerpen die als belangrijker zijn geselecteerd door
     experts (docenten en oudere studenten). Dit nieuwe kader leidt
     dus sneller tot hetzelfde resultaat; dit is een redenatie die de
     betere studenten snel zullen begrijpen.
@@ -270,7 +263,7 @@ onderwijszalen langer gebruikt worden, met de bijbehorende kosten.
 
 Voor de studenten zijn de extra inspanningen om de vaardigheden te leren
 makkelijk te verwaarlozen door de verwante productiviteits- en
-kwaliteitswinsten. 
+kwaliteitswinsten.
 
 Eigenaarschap en onderhoud
 --------------------------
@@ -309,9 +302,9 @@ Persoon              Vaardigheden
 Robert van Wijk      |SGIT1|_ |SGIT2|_ |WBIB1|_ |WBIB2|_ |WPRE1|_
                      |WPRE2|_ |WFIG1|_ |WFIG2+|_ |WMATH1|_ |WMATH2|_
                      |TDBG1|_ |TDBG2+|_ |DAUTO1|_ |UBASE|_
-Andy Pimentel        |DSTAT1|_ 
+Andy Pimentel        |DSTAT1|_
 Edwin Steffens       |UNET|_ |XHIST+|_
-Floris Kroon         |UCMD|_ 
+Floris Kroon         |UCMD|_
 Marc Makkes          |USRV2+|_ |DCODE|_
 Merijn Verstraaten   |USRV1|_ |WTYP1|_
 Raphael Poss         |SDOC2+|_ |SNAV1|_ |SNAV2|_ |TPROF1|_ |TPROF2+|_
@@ -327,14 +320,18 @@ Toto van Inge        |XSTARS+|_
 Met extra dank aan de volgende personen voor hun commentaren,
 suggesties, feedback and verdere directe en indirecte bijdragen:
 
+Adam Belloum,
+Alyssa Milburn,
 Ana-Lucia Varbanescu,
 Andy Pimentel,
 Cees de Laat,
+Clemens Grelck,
 Edwin Steffens,
-Erik Kooistra, 
+Erik Kooistra,
 Floris Kroon,
 José Lagerberg,
 Karel van der Veldt,
+Karst Koymans,
 Koen Koning,
 Marc Makkes,
 Merijn Verstraaten,
@@ -342,8 +339,9 @@ Merlijn Wajer,
 Mike Lankamp,
 Ralph Koning,
 Reggie Cushing,
+Rex Valkenburg,
 Robert Belleman,
-Robin van Vries, 
+Robin de Vries,
 Roeland Douma,
 Roy Bakker,
 Simon Polstra,
