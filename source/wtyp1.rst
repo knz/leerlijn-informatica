@@ -202,13 +202,21 @@ Streepjes
 
   - in het Engels of het Nederlands, *met spaties eromheen*, ter
     afscheiding van een tussenzin of voor het aangeven van een
-    onverwachte wending. Bijvoorbeeld: "Toen ze ten slotte ter plaatse
-    kwamen, vonden ze het vertrek leeg – de vogel was gevlogen."
+    onverwachte wending. Bijvoorbeeld:
+
+    .. pull-quote::
+
+       "Toen ze ten slotte ter plaatse
+       kwamen, vonden ze het vertrek leeg – de vogel was gevlogen."
 
   - in het Engels, *zonder spaties eromheen*, om afstandsbereiken te
-    markeren, bijvoorbeeld tussen jaren of bladzijden: "The French and
-    Indian War (1754–1763) was fought in western Pennsylvania and
-    along the present US–Canadian border (Edwards, pp. 81–101)."
+    markeren, bijvoorbeeld tussen jaren of bladzijden:
+
+    .. pull-quote::
+
+       "The French and
+       Indian War (1754–1763) was fought in western Pennsylvania and
+       along the present US–Canadian border (Edwards, pp. 81–101)."
 
 - een :def:`kastlijntje` (Engels: :def:`em dash`) is langer dan een
   gedachtestreepje.  Je schrijft het in HTML met ``&mdash;``, in LaTeX
@@ -216,14 +224,23 @@ Streepjes
 
   - in het Nederlands, *met spaties eromheen*, ter afscheiding van een
     tussenzin of voor het aangeven van een onverwachte
-    wending. Bv. "Gij — niet op mijn verzoek — ontwoekerd aan de zee."
+    wending. Bijvoorbeeld:
+
+    .. pull-quote::
+
+       "Gij — niet op mijn verzoek — ontwoekerd aan de zee."
 
   - in het Engels, *zonder spaties eromheen*, ter afscheiding van een
-    tussenzin of voor het aangeven van een onverwachte wending. Bv. "A
-    flock of sparrows—some of them juveniles—alighted and sang."
+    tussenzin of voor het aangeven van een onverwachte wending. Bijvoorbeeld:
+
+    .. pull-quote::
+
+       "A flock of sparrows—some of them juveniles—alighted and sang."
 
   - in het Engels, om de bron van een citaat te
     vermelden. Bijvoorbeeld:
+
+    .. pull-quote::
 
         "Seven social sins: politics without principles, wealth
         without work, pleasure without conscience, knowledge without
