@@ -126,7 +126,7 @@ makkelijk terug kunt vinden:
    $ git commit –m "Bericht"
 
 Er is ook een manier om alle bestanden die door git gevolgd worden in
-één keer te commiten, door de flag :program:`--all`, of :program:`-a`
+één keer te commiten, door de flag :program:`--all`, of :program:`-a`
 toe te voegen tijdens het committen. Dit treft dus alle bestanden die
 een keer in een vorige commit aan de repository zijn toegevoegd en nu
 zijn aangepast:
