@@ -38,10 +38,20 @@ div.icontainer .head.open:after {
     margin-left: 1em;
 }
 
-#searchbox {
-  float: right;
-  position: fixed;
-  right: 2em;
+#toprightbox {
+    float: right;
+    margin-top: .8em;
+    margin-right: 5px;
+    align: right;
+}
+
+div.header img.rightlogo {
+    margin-top: .8em;
+}
+
+#google_translate_element {
+    padding-top: 5px;
+    width: 100%;
 }
 
 pre,
@@ -101,10 +111,6 @@ a .utitle {
 
 .toggle .admonition-title.open:after {
     content: " (verbergen)";
-}
-
-div.header img.rightlogo {
-    padding: 1em;
 }
 
 .kbd {

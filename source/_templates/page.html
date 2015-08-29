@@ -3,21 +3,24 @@
 {% set css_files = css_files + ["//fonts.googleapis.com/css?family=Iceberg",
                                 "_static/custom.css"] %}
 
-{% set script_files = script_files + ["_static/custom.js"] %}
+{% set script_files = script_files + ["http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
+        "_static/custom.js"] %}
 
-{% block haikurel2 %}
+{%- block logopost %}
+<div id="toprightbox">
 {%- if pagename != "search" %}
-<div id="searchbox" style="display:none" role="search">
-    <form class="search" action="{{ pathto('search') }}" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Zoeken" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
+<div id="searchbox" role="search">
+<form class="search" action="{{ pathto('search') }}" method="get">
+  <input type="text" name="q" />
+  <input type="submit" value="Zoeken" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
 {%- endif %}
-{% endblock %}
+<div id="google_translate_element"></div>
+</div>
+{%- endblock %}
 
 {% block footer %}
 <div class="footer" role="contentinfo">
@@ -40,5 +43,9 @@
   ga('set', 'forceSSL', true); // Toelichting CBP: Gebruik altijd https voor Google Analytics
   ga('set', 'anonymizeIp', true);// Toelichting CBP: Zet de IP-maskering aan
   ga('send', 'pageview');
+
+  function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'nl', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: true}, 'google_translate_element');
+  }
 </script>
 {% endblock %}
