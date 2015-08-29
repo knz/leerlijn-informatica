@@ -28,7 +28,7 @@ div.icontainer .head.open:after {
 }
 
 .edito {
-    background: solid white;
+    background-color: white;
     width: 35%;
     font-size: 75%;
     float: right;

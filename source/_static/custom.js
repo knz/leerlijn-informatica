@@ -6,7 +6,7 @@ $(document).ready(function() {
             "<div class='icontainer'>" +
                 "<span class='head'>Bonus: definitie uit de " +
                 "<a href='http://www.catb.org/jargon/html/index.html'>Jargon File</a></span><br/>" +
-                "<iframe id='fortune' src='//csa.science.uva.nl/fortune/fortune.cgi' /></div>" );
+                "<iframe id='fortune' src='/fortune/fortune.cgi' /></div>" );
 
         ifr = $("#fortune");
         ifr.height("3em");

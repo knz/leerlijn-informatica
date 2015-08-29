@@ -47,7 +47,7 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
 upload: latexpdf html
-	rsync -e "ssh -p 10022" -P -c -rvz --delete $(BUILDDIR)/html/ kena@csa.science.uva.nl:/home/kena/www/inf-leervaardigheden
+	rsync -e "ssh -p 10022" -P -c -rvz --delete $(BUILDDIR)/html/ kena@csa.science.uva.nl:/home/kena/www/liv
 
 common: source/common.d source/toctree.d
 
