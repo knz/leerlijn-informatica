@@ -42,6 +42,7 @@ punt              period, dot      ``.``              .
 puntcomma         semicolon        ``;``              ;
 dubbele punt      colon            ``:``              :
 koppelteken       hyphen           ``-``              \-
+minteken          minus sign       ``$-$``            −
 aanhalingstekens  quotes,
                   quotation marks  zie onder          “ ” ‘ ’
 accolade          curly brace      ``\{``             { }
@@ -50,8 +51,8 @@ rond haakje       parenthesis      ``()``             ()
 recht haakje      square bracket   ``[]``             []
 shuine streep     slash            ``/``              /
 backslash         backslash        ``\textbackslash`` \\
-gedachtestreepje  en dash          zie onder          –
-kastlijntje       em dash          zie onder          —
+gedachtestreepje  en dash          ``--``             –
+kastlijntje       em dash          ``---``            —
 beletselteken     ellipsis         ``...``            …
 ================= ================ ================== ====
 
@@ -247,6 +248,30 @@ Streepjes
         character, commerce without morality, science without
         humanity, and worship without sacrifice."
         —Mahatma Gandhi
+
+Mintekens zijn geen koppeltekens
+--------------------------------
+
+Een netjes geschreven negatief getal schrijf je niet met een koppelteken!
+
+Er wordt een verschil gemaakt tussen “:math:`\text{-3}`” (fout) en “:math:`-3`”
+(goed). Merk hoe een minteken net hoger en langer is dan een
+koppelteken.
+
+Het is ook geen kastlijntje en geen gedachtestreeptje:
+
+==================== =====================
+LaTeX                Resultaat
+==================== =====================
+``-3``               :math:`\text{-3}`   (koppelteken, fout)
+``--3``              :math:`\text{--3}`  (gedachtestreeptje, fout)
+``---3``             :math:`\text{---3}` (kastlijntje, fout)
+``$-3$``             :math:`-3` (minteken, goed)
+==================== =====================
+
+Merk hoe de minteken een stuk dikker is dan het gedachtestreeptje.
+
+Kortom, in LaTeX gebruik je altijd de "math mode" (tussen ``$``) voor getallen.
 
 (Zelf)evaluatie
 ---------------
