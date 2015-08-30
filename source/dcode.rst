@@ -246,7 +246,8 @@ volgende tabellen uit zijn hoofd te leren:
 
 - een :def:`bit` is een cijfer met grondtal 2 (0 of 1).
 - een :def:`byte` is een groep van 8 bits.
-- een :def:`nibble` is een groep van 4 bits. Ieder hexadecimaal cijfer is gecodeerd met precies 1 nibble.
+- een :def:`nibble` is een groep van 4 bits. Ieder hexadecimaal cijfer
+  is gecodeerd met precies 1 nibble.
 
 Conversies in de programmeertaal C
 ----------------------------------
@@ -255,9 +256,11 @@ Conversies in de programmeertaal C
 
   - in grondtal 10: |atoi(3)|_, |atol(3)|_
 
-  - in grondtal *n* met :math:`2 \leq n \leq 36`: |strtol(3)|_, |strtoul(3)|_, |strtoimax(3)|_, |strtoumax(3)|_.
+  - in grondtal *n* met :math:`2 \leq n \leq 36`: |strtol(3)|_,
+    |strtoul(3)|_, |strtoimax(3)|_, |strtoumax(3)|_.
 
-- conversie van waarde naar representatie in grondtal 8 of 16: |printf(3)|_, |snprintf(3)|_:
+- conversie van waarde naar representatie in grondtal 8 of 16:
+  |printf(3)|_, |snprintf(3)|_:
 
   .. code-block:: c
 
@@ -265,6 +268,149 @@ Conversies in de programmeertaal C
      printf("%#x\n", 123); // produceerd 0x7b
      printf("%o\n", 123);  // produceert 173
      printf("%#o\n", 123); // produceert 0173
+
+Negatieve getallen en 2-complement
+----------------------------------
+
+Met *N* bits weet je al dat je een waarde tussen 0 en :math:`2^N-1` kunt
+coderen, van 000...0 tot/met 111...111. Hoe kan je dan met *N* bits ook
+negatieve getallen coderen?
+
+Naive codering en wenselijke eigenschappen
+``````````````````````````````````````````
+
+Een mogelijke eenvoudige manier is om een bit te gebruiken als teken en dan
+:math:`N-1` bits als waarde. Bijvoorbeeld met 3 bits:
+
+========== =========
+Codering   Waarde
+========== =========
+000        0
+001        1
+010        2
+011        3
+100        -0
+101        -1
+110        -2
+111        -3
+========== =========
+
+Echter wordt deze manier amper gebruikt, omdat het de volgende
+wenselijke eigenschappen breekt:
+
+1. 1 opgeteld met de codering van een negatief getal moet ook 1
+   optellen bij zijn waarde. In de codering hierboven werkt dit niet,
+   want ":math:`110+1`" (:math:`-2+1`) geeft 111 (:math:`-3`), niet
+   101 (:math:`-1`).
+
+2. aftrekken van een positief getal moet het goede negatieve waarde
+   bereiken.  Hier werkt dit ook niet, want ":math:`010-011`"
+   (:math:`2-3`) geeft 100 (:math:`-0`), niet 101 (:math:`-1`).
+
+2-complement definitie
+``````````````````````
+
+.. index:: two's complement
+.. index:: 2-complement
+
+Er wordt dus echter de :def:`2-complement` notatie gebruikt (Engels:
+:def:`two's complement`). Dit werkt als volgt voor *N* bits:
+
+- 1 bit wordt gebruikt als teken;
+- voor een getal :math:`x\leq 0`, is de tekenbit 0, dan coderen de andere :math:`N-1` bits gewoon
+  het getal;
+- voor een getal :math:`x<0`, is de teken 1, dan coderen de andere
+  :math:`N-1` bits de waarde van :math:`2^{N-1}+x`.
+
+Bijvoorbeeld met 4 bits (:math:`2^{N-1}=8`):
+
+========== ========= =======================
+Waarde     Tekenbit  Overige bits
+========== ========= =======================
+7          0         111
+6          0         110
+5          0         101
+4          0         100
+3          0         011
+2          0         010
+1          0         001
+0          0         000
+:math:`-1` 1         111  :math:`=8+(-1)=7`
+:math:`-2` 1         110  :math:`=8+(-2)=6`
+:math:`-3` 1         101  :math:`=8+(-3)=5`
+:math:`-4` 1         100  :math:`=8+(-4)=4`
+:math:`-5` 1         011  :math:`=8+(-5)=3`
+:math:`-6` 1         010  :math:`=8+(-6)=2`
+:math:`-7` 1         001  :math:`=8+(-7)=1`
+:math:`-8` 1         000  :math:`=8+(-8)=0`
+========== ========= =======================
+
+Dit voldoet aan de eigenschappen: 1011+0010 (:math:`-5+2`) is 1101
+(:math:`-3`); en 0001-0011 (:math:`1-3`) is 1110 (:math:`-2`).
+
+Overloop met grote getallen
+```````````````````````````
+
+.. index:: overloop (getallen)
+.. index:: overflow (arithmetic)
+
+Als je alle bits van de codering groepeert en sorteert, krijg je dan
+de volgende tabel:
+
+========== =========
+Codering   Waarde
+0000       0
+0001       1
+0010       2
+0011       3
+0100       4
+0101       5
+0110       6
+0111       7
+1000       -8
+1001       -7
+1010       -6
+1011       -5
+1100       -4
+1101       -3
+1110       -2
+1111       -1
+========== =========
+
+Dit geeft aan wat gebeurt als je een te groot getal optelt bij een
+positief getal: het resultaat wordt negatief! Dit heet :def:`overloop`
+(Engels: :def:`overflow`). Je kunt dit testen bijvoorbeeld in C:
+
+.. literalinclude:: overflow.c
+   :language: c
+
+.. note:: Dit programma werkt niet op alle computers. Sommige computers
+   geven een foutmelding aan wanneer overloop gebeurt. Andere
+   computers gebruiken ook andere coderingen voor negatieve getallen,
+   waardoor het resultaat anders uit komt. Echter laat dit voorbeeld
+   overloop wel zien op de meeste computers.
+
+Codering aangeven
+`````````````````
+
+Als je data krijgt van *N* bits waar de eerste bit 1 is, hoe weet je
+of het een negatief getal is, of simpel een zeer groot positief getal?
+
+**Beide interpretaties zijn mogelijk.** Je kunt dit niet zelf bepalen
+door alleen naar de data te kijken. Om het verschil te kunnen maken,
+moet je halen *uit het context* welke codering werd gebruikt.
+
+Voorbeelden:
+
+- "...the data is written as *unsigned* values..." (geen tekenbit,
+  allen positieve getallen worden geencodeerd)
+
+- "...the data is written as *signed values using two's complement*..." (negatieve
+  getallen mogelijk)
+
+- in programma's, door de *datatype* van variabelen. Bijvoorbeeld
+  :code:`int` (:code:`signed int`) vs. :code:`unsigned`
+  (:code:`unsigned int`) in C, C++ of Java.
 
 (Zelf)evaluatie
 ---------------
