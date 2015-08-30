@@ -289,10 +289,10 @@ Codering   Waarde
 001        1
 010        2
 011        3
-100        -0
-101        -1
-110        -2
-111        -3
+100        :math:`-0`
+101        :math:`-1`
+110        :math:`-2`
+111        :math:`-3`
 ========== =========
 
 Echter wordt deze manier amper gebruikt, omdat het de volgende
@@ -367,14 +367,14 @@ Codering   Waarde
 0101       5
 0110       6
 0111       7
-1000       -8
-1001       -7
-1010       -6
-1011       -5
-1100       -4
-1101       -3
-1110       -2
-1111       -1
+1000       :math:`-8`
+1001       :math:`-7`
+1010       :math:`-6`
+1011       :math:`-5`
+1100       :math:`-4`
+1101       :math:`-3`
+1110       :math:`-2`
+1111       :math:`-1`
 ========== =========
 
 Dit geeft aan wat gebeurt als je een te groot getal optelt bij een

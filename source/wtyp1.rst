@@ -42,7 +42,7 @@ punt              period, dot      ``.``              .
 puntcomma         semicolon        ``;``              ;
 dubbele punt      colon            ``:``              :
 koppelteken       hyphen           ``-``              \-
-minteken          minus sign       ``$-$``            −
+minteken          minus sign       ``$-$``            :math:`-`
 aanhalingstekens  quotes,
                   quotation marks  zie onder          “ ” ‘ ’
 accolade          curly brace      ``\{``             { }
