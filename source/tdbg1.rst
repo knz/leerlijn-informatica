@@ -168,7 +168,7 @@ Stapsgewijze executie voor Java programma's met Eclipse
 De inhoud van variabelen inspecteer je dan in de grafische
 gebruikersomgeving van Eclipse.
 
-Stapsgewije exectutie voor C/C++ met |gdb(1)|
+Stapsgewijze executie voor C/C++ met |gdb(1)|
 `````````````````````````````````````````````
 
 .. index:: backtrace

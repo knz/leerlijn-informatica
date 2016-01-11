@@ -191,7 +191,7 @@ Conversie in de programmeertaal C
 
       In veel programmeertallen zal de vergelijkoperatie (bv. ==, !=)
       de codering vergelijken. Door afrondingsfouten kan de codering
-      van een resultaat afwiken van de reëele waarde, waardoor de
+      van een resultaat afwijken van de reëele waarde, waardoor de
       directe vergelijking mislukt. Het is dus verstandig om niet
       zwevendekommagetallen direct met elkaar te vergelijken, en in
       plaats daarvan het verschil tussen de twee getallen vergelijken
