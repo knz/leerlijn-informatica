@@ -268,7 +268,7 @@ kwaliteitswinsten.
 Eigenaarschap en onderhoud
 --------------------------
 
-De docententeam als geheel is verantwoordelijk voor de lange termijn
+Het docententeam als geheel is verantwoordelijk voor de lange termijn
 visie van de leerlijn en het formuleren van de algemene profieleisen
 die naar individuele vaardigheden vertaald moeten worden.
 
