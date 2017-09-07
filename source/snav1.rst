@@ -11,20 +11,20 @@
 Waarom is dit belangrijk?
 -------------------------
 
-Soms moet je een bestaande project van iemands anders onderzoeken en
-daarin de definitie van sommige onderdelen snel kunne vinden.
+Soms moet je een bestaand project van iemands anders onderzoeken en
+daarin de definitie van sommige onderdelen snel kunnen vinden.
 
 Je eigen programma's kunnen ook groter worden met tientallen
-broncodebestanden. 
+broncodebestanden.
 
 **Het zelf onthouden van waar alles zit is best lastig en
 onpraktisch.**
 
-Gelukkig zijn er al tools om je mee te helpen. De belangrijkste
+Gelukkig zijn er tools om je hier mee te helpen. De belangrijkste
 operaties die je vaak zal gebruiken zijn:
 
 - snel navigeren van het punt van gebruik van een struct, type,
-  variabele of functie naar het punt waar het gedefinieerd is. Engels:
+  variabele of functie naar het punt waar deze gedefinieerd is. Engels:
   ":def:`use to definition`". Dit is de belangrijkste operatie.
 
 - snel navigereren vanaf de definitie van een variabele, struct, type
@@ -37,18 +37,18 @@ Navigereren met Eclipse
 Voor Java programmeren zal je vaak Eclipse gebruiken. Hier is het heel
 simpel:
 
-- navigereren van gebruik naar definitie: :kbd:`F3` of rechtse
-  muisknop dan "Open Declaration".
+- navigereren van gebruik naar definitie: :kbd:`F3` of rechter
+  muisknop en dan "Open Declaration".
 
-- navigereren van definitie naar gebruik: :kbd:`Shift+Ctrl+G` of
-  rechtse muisknop dan "References > Workspace".
+  - navigereren van definitie naar gebruik: :kbd:`Shift+Ctrl+G` of
+  rechter muisknop en dan "References > Workspace".
 
 Navigereren in C projecten met Vim / Emacs en tags
 ---------------------------------------------------
 
-.. note:: Deze methode geeft je alleen een richting: van gebruik naar definitie.
+.. note:: Deze methode geeft je alleen één richting: van gebruik naar definitie.
    Het voordeel is dat het bijna altijd beschikbaar is, zelfs als je een
-   onbekende computer gebruikt waar je niet eigen tools mag installeren.
+   onbekende computer gebruikt waar je geen eigen tools mag installeren.
 
 1. Voordat je kunt zoeken moet je een :def:`tag database` aanmaken om
    je broncode te inventariseren. Dit doe je met het programma
@@ -57,7 +57,7 @@ Navigereren in C projecten met Vim / Emacs en tags
    bestanden in je project:
 
    .. code-block:: shell
- 
+
       $ cd /pad/naar/je/project
 
       $ ctags *.c *.h
@@ -67,11 +67,11 @@ Navigereren in C projecten met Vim / Emacs en tags
 2. In je editor, kun je vervolgens een willekeurig bestand openen
    en dan je cursor positioneren op het woord dat je wil zoeken. Dan:
 
-   - in Vim: :kbd:`Ctrl-]`  (dan :kbd:`Ctrl+T` om terug te gaan)
+   - in Vim: :kbd:`Ctrl-]`  (:kbd:`Ctrl+T` om terug te gaan)
    - in Emacs: :kbd:`M-.` (:kbd:`Alt+.` of :kbd:`Esc .`)
 
-Je moet vervolgens de database updaten (met :program:`ctags` of :program:`etags`) 
-iedere keer dat je nieuwe definities toevoegd in je broncode. Dit kan je eventueel
+Iedere keer dat je nieuwe definities toevoegd in je broncode moet je de database
+updaten (met :program:`ctags` of :program:`etags`). Dit kan je eventueel
 automatiseren (zie |DAUTO1|_ en |DAUTO2|_).
 
 .. tip::
@@ -79,8 +79,8 @@ automatiseren (zie |DAUTO1|_ en |DAUTO2|_).
    Als je het programma `exuberant ctags`__ gebruikt (standaard op
    Linux, extra softwarepakket op BSD), kunnen :program:`ctags` /
    :program:`etags` ook een database maken voor andere
-   programmeertalen dan C: Python, JavaScript, enz.
- 
+   programmeertalen dan C (o.a. Python, JavaScript).
+
    .. __: http://ctags.sourceforge.net/
 
 Navigereren in C projecten met Vim / Emacs en cscope
@@ -101,7 +101,7 @@ Initialisatie
    :program:`cscope` (werkt met Vim en Emacs tegelijk):
 
    .. code-block:: shell
- 
+
       $ cd /pad/naar/je/project
 
       $ cscope -Rb
@@ -112,10 +112,10 @@ Gebruik in Vim
 1. In je editor moet je eerst cscope activeren:
 
    - download het bestand
-     http://cscope.sourceforge.net/cscope_maps.vim 
+     http://cscope.sourceforge.net/cscope_maps.vim
 
    - plaats dit bestand in de map :file:`~/.vim/plugin` (NB: "plugin"
-     zonder s). Je kunt deze map aanmaken met |mkdir(1)|_ als het nog
+     zonder s). Je kunt deze map aanmaken met |mkdir(1)|_ als hij nog
      niet bestaat.
 
 2. Om te zoeken:
@@ -176,14 +176,14 @@ Gebruik in Emacs
 
       1. Eerst :program:`ctags` of :program:`etags` draaien om de code te
          inventariseren.
-   
+
       2. Bestand :file:`fits_imaxint.c` openen in tekseditor.
-   
+
       3. Cursor plaatsen op regel 12, op de naam ":code:`mpfr_init2`"
-   
+
       4. :kbd:`M-.` (Emacs) of :kbd:`Ctrl+]` (Vim) om te vinden
          waar :code:`mpfr_init2` gedefinieerd is
-   
+
       5. de definitie vergelijken met regel 12 in :file:`fits_imaxint.c`
          om te zien welk argument fout is.
 
@@ -197,5 +197,3 @@ Verder inlezen
 - CEDET__ verander Emacs in een gevorderde programmeeromgeving.
 
   .. __: http://cedet.sourceforge.net/
-
-

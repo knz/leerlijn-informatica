@@ -19,16 +19,16 @@ Een :def:`archief` is een verzameling van bestanden.
 Ieder archiveringsprogramma heeft zijn eigen opslagformaat voor de
 inhoud van archieven, oftevel :def:`archiefformaat`.
 
-Je kent al waarschijnlijk het ZIP formaat.  Je weet misschien al dat
+Je kent waarschijnlijk het ZIP formaat al.  Je weet misschien al dat
 ZIP een zogenaamd :def:`gecomprimeerd` formaat is: de grootte van een ZIP
 archief is vaak kleiner dan de bestanden erin. ZIP is in feite een
 combinatie van een archiefformaat én een compressieformaat.
 
-Er zijn verschillende archiefformaten, en in de informatica wordt
-vaak archieveren en comprimeren als twee onafhankelijke stappen
-beschouwd. Voor veel standaard archieveringscommando's op Unix is
-compressie optioneel. Commando's bestaan ook om compressie uit te
-voeren op willekeurige bestanden, niet alleen archieven.
+Er zijn verschillende archiefformaten, en in de informatica worden
+archiveren en comprimeren vaak als twee onafhankelijke stappen
+beschouwd. Voor veel standaard archiveringscommando's op Unix is
+compressie optioneel. Er bestaan ook commando's om compressie uit te
+voeren op willekeurige bestanden, niet alleen op archieven.
 
 Opslagformaten
 --------------
@@ -64,7 +64,7 @@ gzip     LZ77       GNU, 1992    :file:`.gz`   |gzip(1)|_, |gunzip(1)|_, |zcat(1
 compress LZW        4.3BSD, 1984 :file:`.Z`    |compress(1)|_, |uncompress(1)|_
 ======== ========== ============ ============= =========================
 
-Gecombineerde archieverings+compressieformaten:
+Gecombineerde archiverings+compressieformaten:
 
 ======== ========== ============ ============= =========================
 Formaat  Algoritme  Oorsprong    Naamextensies Programma(s)
@@ -90,18 +90,18 @@ Naamextensie    Gelijk aan       Gebruik met
 Nieuw is beter vs. beschikbaarheid
 ----------------------------------
 
-In het algemeen zijn recentelijkere formaten "beter": ieder formaat is
+Over het algemeen zijn recentelijkere formaten "beter": ieder formaat is
 ooit ontwikkeld om bepaalde innovaties beschikbaar te maken voor
 iedereen, dus hebben latere formaten vaak nieuwere features en/of
 minder beperkingen.
 
-Waarom zou je dan een "oudere" formaat gebruiken? **Omdat de tools
+Waarom zou je dan een "ouder" formaat gebruiken? **Omdat de tools
 voor recentere formaten niet altijd beschikbaar zijn op een
 willekeurige computer.**
 
-In 2003 was |bzip2(1)|_ bijvoorbeeld een heel bekend goede
+In 2003 was |bzip2(1)|_ bijvoorbeeld een heel bekend en goed
 compressieprogramma maar het was nog niet gangbaar op de meeste unix
-(en Linux) systemen. In 2015 is |xz(1)|_ heel wenselijk maar helaas nog niet
+(en Linux) systemen. In 2015 was |xz(1)|_ heel wenselijk maar helaas nog niet
 beschikbaar op veel computers.
 
 In het algemeen kies je een formaat als volgt:
@@ -112,8 +112,8 @@ In het algemeen kies je een formaat als volgt:
   :file:`.tar.bz2`, :file:`.tar.xz` en :file:`.zip` tegelijk te
   publiceren.
 
-- als je een bestand maakt voor gebruik alleen op korte termijn op
-  dezelfde computer, het maakt niet uit; gebruik dan waar je aan
+- als je een bestand maakt voor gebruik op korte termijn op
+  dezelfde computer, maakt het niet uit; gebruik dan waar je aan
   gewend bent.
 
 - als je bestanden moet inleveren voor werk of studie, gebruik dan het
@@ -122,8 +122,8 @@ In het algemeen kies je een formaat als volgt:
   gevraagd, dat betekent een tar archief gecomprimeerd met |gzip(1)|_
   of |bzip2(1)|_.
 
-- als je bestanden wil archiveren voor eigen backups op lange termijn,
-  gebruik dan een formaat die gestandardiseerd is, waarvoor de kans groot
+- als je bestanden wilt archiveren voor eigen backups op lange termijn,
+  gebruik dan een formaat dat gestandaardiseerd is, waardoor de kans groot
   blijft dat compatibele tools blijven bestaan over meerdere jaren. Tar
   is vaak een goede keuze hiervoor.
 
@@ -136,7 +136,7 @@ Een hogere compressiekracht levert kleinere resultaten, maar vergroot
 de compressietijd.
 
 Je kunt voor |compress(1)|_, |gzip(1)|_, |bzip2(1)|_, zip en |xz(1)|_
-de compressiekracht aanpassen door een numerieke parameter tussen 0
+de compressiekracht aanpassen met een numerieke parameter tussen 0
 (geen compressie) en 9 (maximale compressie).
 
 Gebruikelijke commando's
@@ -169,7 +169,7 @@ compress    tar -Z,  tar | compress
 Voorbeelden
 -----------
 
-Een enkel bestand comprimeren door gzip::
+Een enkel bestand comprimeren met gzip::
 
    gzip file.txt
 
@@ -236,7 +236,7 @@ Zelfde voor een gecomprimeerd archief::
           # of:
           zless readme.txt.gz
 
-5. Je wil een gecomprimeerd archief maken met een hogere compressiekracht
+5. Je wilt een gecomprimeerd archief maken met een hogere compressiekracht
    dan standaard, maar het commando |tar(1)|_ ondersteunt geen parameter om
    de compressiekracht aan te passen. Hoe doe je het dan?
 

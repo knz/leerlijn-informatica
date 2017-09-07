@@ -32,9 +32,9 @@ mappen. Dit principe ken je al.
 
 De bijzonderheden:
 
-- ieder proces heeft een notie van :def:`huidige map` (Engels: :def:`current working
+- ieder proces heeft een notie van de :def:`huidige map` (Engels: :def:`current working
   directory`, afgekort "cwd"). Als je een bestand noemt zonder te zeggen waar het zich
-  vindt, gaat het proces dat bestand proberen te zoeken in de huidige
+  bevindt, gaat het proces dat bestand proberen te zoeken in de huidige
   map.
 
 - het commando om je "huidige map" te controleren in een shell:
@@ -56,23 +56,23 @@ De bijzonderheden:
   ouderproces, maar kunnen het verder veranderen zonder die van de
   ouder te veranderen.
 
-- Een :def:`pad` (Engels: :def:`path`) is een naam naar een map of bestand *vanaf* de huidige
+- Een :def:`pad` (Engels: :def:`path`) is de naam naar een map of bestand *vanaf* de huidige
   map. Bijvoorbeeld :file:`Documents/hello.txt` refereert naar het
   bestand/map :file:`hello.txt` in de map :file:`Documents` vanuit de
-  huidige map. Je kunt een :def:`absoluut pad` noemen door met een "/" te
-  beginnen. Bijvoorbeeld op de UvA machines refereert altijd
-  :file:`/scratch` naar een map met veel ruimte, bijvoorbeeld voor
+  huidige map. Je kunt een :def:`absoluut pad` maken door met een "/" te
+  beginnen. Op de UvA machines refereert bijvoorbeeld :file:`/scratch` altijd
+  naar een map met veel ruimte, bijvoorbeeld voor
   experimenten.
 
   Opdracht: gebruik :program:`cd` dan :program:`pwd` om het absolute
   pad naar je thuismap te leren.
 
-- Er is maar een grote boom van mappen: geen "schrijfletters".
+- Er is maar een grote boom van mappen: geen "schijfletters".
   Verschillende opslagelementen worden benaderd door verschillende
   paden in de boom. Bijvoorbeeld op Android is de SD-kaart vaak te
   vinden in de map :file:`/sdcard`. Op OSX worden harde schrijven en
-  geheugenkaartjes zichtbaar in de map :file:`/Volumes`. Meestal op andere
-  soorten Unixsysstemen zijn opslagelementen zichtbaar in de map
+  geheugenkaartjes zichtbaar in de map :file:`/Volumes`. Op andere
+  soorten Unixsysstemen zijn opslagelementen meestal zichtbaar in de map
   :file:`/mnt`.
 
 - de bijzondere naam :file:`..` refereert altijd naar "een map omhoog".
@@ -127,8 +127,8 @@ Goed te weten:
   aanmaakdatum en eigenaar van de kopie. Om deze eigenschappen te
   bewaren, gebruik :program:`cp -a`.
 
-- |ln(1)|_ kan twee soorten verwijzingen aanmaken, zogenoemd :def:`"hard" en
-  "soft" links` (ook :def:`symbolic` genoemd). Soft links worden heel vak
+- |ln(1)|_ kan twee soorten verwijzingen aanmaken, zogenaamde :def:`"hard" en
+  "soft" links` (ook :def:`symbolic` genoemd). Soft links worden heel vaak
   gebruikt om Unix software te bouwen. Raadpleeg de Wikipedia pagina's
   voor meer informatie:
 
@@ -138,7 +138,7 @@ Goed te weten:
 
 - De hoofdrol van |touch(1)|_ is om de laatste modificatiedatum te
   veranderen naar de huidige tijd. Dit kan bijvoorbeeld een
-  backupsysteem informeren om een bestand opnieuw te pakken.
+  backupsysteem informeren om een bestand opnieuw te verwerken.
   |touch(1)|_ wordt ook vaak gebruikt tijdens het automatiseren van
   complexe taken. Dit zal je later leren.
 
@@ -155,7 +155,7 @@ Bestandstatus inspecteren
 Programma      Beschrijving
 ============== =======================================
 |stat(1)|_     Eigenschappen van bestand(en) weergeven
-|file(1)|_     Bestandsinhoudtype identificeren
+|file(1)|_     Bestandinhoudstype identificeren
 ============== =======================================
 
 Goed te weten:
@@ -163,15 +163,15 @@ Goed te weten:
 - |stat(1)|_ (wordt vaak aangeroepen als :program:`stat -x`) geeft
   details over de aanmaakdatum, laatste modificatiedatum, laatste
   toegangsdatum, grootte, eigenaarschap en locatie van het object in
-  de filesystem.
+  het filesystem.
 
-- **Op een Unixsysteem is de type van de data binnen een bestand niet
-  bepaald door zijn bestandsnaamextensie**. Er kunt dus een JPEG beeld
-  zich bevinden in een bestand genoemd :file:`hallo.exe`, of een
+- **Op een Unixsysteem is het type van de data binnen een bestand niet
+  bepaald door zijn bestandsnaamextensie**. Er kan zich dus een JPEG afbeelding
+  bevinden in een bestand genaamd :file:`hallo.exe`, of een
   draaibaar programma in een bestand :file:`pretty.jpg`.
 
 - Het programma |file(1)|_ kijkt naar de data binnen een bestand om je
-  te informeren over zijn type. Bijvoorbeeld
+  te informeren over zijn type. Bijvoorbeeld:
 
   .. code-block:: shell
 
@@ -252,7 +252,7 @@ Programma               Beschrijving
       _astris
       _krbfast
 
-- |sort(1)|_ geeft het omgekeerde volgorde wanneer aangeroepen met
+- |sort(1)|_ geeft het resultaat in de omgekeerde volgorde wanneer het wordt aangeroepen als
   :program:`sort -r`.
 
 - |sort(1)|_ kan ook duplicaatregels verwijderen indien aangeroepen met
@@ -270,8 +270,8 @@ Programma   Beschrijving
 
 - Met |find(1)|_ geef je altijd als eerste parameter het pad naar de
   map waar je wilt beginnen met zoeken. Vaak is het :program:`find .`
-  (zoeken vanaf huidige map), :program:`find ~` (zoeken overal in
-  thuismap) of :program:`find /` (zoeken op hele
+  (zoeken vanaf huidige map), :program:`find ~` (zoeken vanaf de
+  thuismap) of :program:`find /` (zoeken op het hele
   bestandssysteem).
 
 - Om te zoeken op basis van naam of eigenschappen worden de volgende
@@ -290,13 +290,13 @@ Programma   Beschrijving
        find . -size +100k
 
        # zoeken naar bestanden veranderd
-       # sinds 10 minuten geleden:
+       # in de afgelopen 10 minuten:
        find . -mtime -10m
 
   .. note:: |find(1)|_ kent veel meer vormen, je kunt zelfs meerdere
      condities combineren. Lees er evt. verder over in de manpage.
 
-- In tegenstelling met |find(1)|_, met |grep(1)|_ komt het te zoeken
+- In tegenstelling tot |find(1)|_ komt met |grep(1)|_ het te zoeken
   woord eerst en dan pas de paden naar de te inspecteren bestanden of
   mappen.
 
@@ -328,16 +328,15 @@ Programma   Beschrijving
 (Zelf)evaluatie
 ---------------
 
-1. Je huidige map is :file:`/home/hai`. Na het commando :program:`cd
-   ../../etc/./../var`, wat is je huidige map?
+1. Je huidige map is :file:`/home/hai`. Wat is de huidige map, na het commando :program:`cd
+   ../../etc/./../var`?
 
    .. admonition:: Oplossing
       :class: toggle
 
       :file:`/var`
 
-2. Je huidige map is :file:`/`. Na het commando :program:`cd ..`, wat
-   is je huidige map?
+2. Je huidige map is :file:`/`. Wat is de huidige map, na het commando :program:`cd ..`?
 
    .. admonition:: Oplossing
       :class: toggle
@@ -345,7 +344,7 @@ Programma   Beschrijving
       :file:`/`  (want :file:`/` is zijn eigen bovenmap)
 
 3. Een logbestand groeit wanneer applicaties meldingen schrijven aan
-   het eind van het bestand. Welk kommando gebruik je om
+   het eind van het bestand. Welk commando gebruik je om
    de laatste 10 logberichten van :file:`app.log` te printen?
 
    .. admonition:: Oplossing
@@ -364,19 +363,19 @@ Programma   Beschrijving
       Eerst kijken met |ls(1)|_ of :file:`foo` belangrijke bestanden
       bevat. Dan eventueel :program:`rm -r`.
 
-5. Hoe maak je een backup van je projectmap :file:`opdracht` in map
-   :file:`/backups/20150808`?
+5. Hoe maak je een backup van je projectmap :file:`opdracht` in de map
+   :file:`/backups/20170808`?
 
    .. admonition:: Oplossing
       :class: toggle
 
       .. code-block:: shell
 
-         mkdir -p /backups/20150808
-         cp -a opdracht /backups/20150808
+         mkdir -p /backups/20170808
+         cp -a opdracht /backups/20170808
 
       .. note:: Het is belangrijk om :program:`-a` te gebruiken met
-         |cp(1)|_ omdat anders worden de bestandseigenschappen niet goed
+         |cp(1)|_ omdat anders de bestandseigenschappen niet goed worden
          bewaard.
 
 6. Welk commando gebruik je om de naam van alle gebruikers (eerste
@@ -390,8 +389,8 @@ Programma   Beschrijving
 
          cat /etc/passwd | cut -d: -f1 | grep o | sort -r
 
-7. Welk commando gebruik je om te tellen hoeveel regels met het woord
-   "hello" zich bevinden in :file:`roman1.txt` en :file:`roman2.txt`
+7. Welk commando gebruik je om te tellen hoeveel regels het woord
+   "hello" bevatten in :file:`roman1.txt` en :file:`roman2.txt`
    samengevoegd?
 
    .. admonition:: Oplossing

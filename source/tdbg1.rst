@@ -8,8 +8,8 @@
 .. contents:: Inhoud
    :local:
 
-Soorten fout
-------------
+Soorten fouten
+--------------
 
 .. index:: ontwerpfout
 .. index:: design bug
@@ -18,7 +18,7 @@ Soorten fout
 .. index:: contractovertreding (door omgeving)
 .. index:: hardwarefout
 
-De mens en computers zijn feilbaar. Fouten bestaan. In de informatica
+De mens en de computer zijn feilbaar. Fouten bestaan. In de informatica
 hebben we te maken met 4 soorten fouten:
 
 - :def:`ontwerpfouten`: het *idee* (voor een algoritme, een
@@ -26,7 +26,7 @@ hebben we te maken met 4 soorten fouten:
   :def:`specification bug`.
 
 - :def:`implementatiefouten`: het idee en het plan kloppen, maar de
-  vertaling naar een werkendprogramma is niet juist. Engels:
+  vertaling naar een werkent programma is niet juist. Engels:
   :def:`implementation error`.
 
 - :def:`contractovertreding door de softwareomgeving`: de software
@@ -65,7 +65,7 @@ hardware      uren tot dagen
 ============= ===============================
 
 In de vorige sectie heb je gezien dat implementatiefouten het vaakst
-voorkomen. Dit betekent dat het van uitermaat belang is om dit zo snel
+voorkomen. Dit betekent dat het van groot belang is om dit zo snel
 te kunnen.
 
 Overzicht starterskit debuggen
@@ -87,8 +87,8 @@ volgende technieken:
   Engels: :def:`print debugging`.
 
 - beweringen: voeg :code:`assert` toe om de verwachte eigenschappen
-  van je datastructuren zo vaak mogelijk te checken. 
- 
+  van je datastructuren zo vaak mogelijk te checken.
+
   Engels: :def:`assertions`.
 
 - stapsgewijze executie: door middel van een :def:`debugger` je
@@ -97,7 +97,7 @@ volgende technieken:
 
   Engels: :def:`stepwise execution` of :def:`stepping`.
 
-- beheerde executie: je programma draaien onder controle van 
+- beheerde executie: je programma draaien onder controle van
   een validatieprogramma zoals :program:`valgrind`. Dit zal
   het gedrag van het programma checken en fouten automatisch
   detecteren en rapporteren.
@@ -113,7 +113,8 @@ stepping          simpel          redelijk goed
 monitoring        simpel          goed
 ================= =============== ======================
 
-Welke kies je en wanneer? Kun je de volgende handige tabel gebruiken:
+Om te bepalen welke methode je wanneer het beste kan kiezen
+kun je de volgende handige tabel gebruiken:
 
 ================= =====================================
 Techniek          Wanneer?
@@ -131,11 +132,11 @@ Stapsgewijze executie
 .. index:: breakpoint
 .. index:: debugger
 
-Vaak hoef je niet alles vanaf het begin van de executie te onderzoeken. We werken dus voor stapsgewijze executie als volg:
+Vaak hoef je niet alles vanaf het begin van de executie te onderzoeken. We werken dus voor stapsgewijze executie als volgt:
 
 1. een :def:`afbreekpunt` (Engels: :def:`breakpoint`) plaatsen op de
-   eerste opdracht in het gedeelte van het programma te onderzoeken.
-   Als je toch het hele programma wil onderzoeken kun je dit plaatsen
+   eerste opdracht van het gedeelte van het programma dat je wilt onderzoeken.
+   Als je toch het hele programma wilt onderzoeken kun je dit plaatsen
    op :code:`main`.
 
 2. De executie beginnen in :def:`debug modus` (Engels: :def:`debug mode`).
@@ -152,7 +153,7 @@ Stapsgewijze executie voor Java programma's met Eclipse
 ```````````````````````````````````````````````````````
 
 - een afbreekpunt zetten: je cursor plaatsen waar je hem wil zetten,
-  dan :kbd:`Ctrl+Shift+B` (of rechtse muisklik *in de linkse marge*
+  dan :kbd:`Ctrl+Shift+B` (of rechter muisklik *in de linkse marge*
   dan "Toggle Breakpoint").
 
 - executeren met :kbd:`F11` (Run -> Debug)
@@ -162,7 +163,7 @@ Stapsgewijze executie voor Java programma's met Eclipse
   - :kbd:`F5`: een stap doen binnen dezelfde functies, hele functiecalls in een keer uitvoeren.
 
   - :kbd:`F6`: stapsgewijze ook binnen aangeroepen functies pauseren.
- 
+
   - :kbd:`F8`: doorgaan met executie zonder pause tot het volgende afbreekpunt of het eind van de executie.
 
 De inhoud van variabelen inspecteer je dan in de grafische
@@ -174,7 +175,7 @@ Stapsgewijze executie voor C/C++ met |gdb(1)|
 .. index:: backtrace
 
 1. zorg ervoor dat je programma wordt gecompileerd met parameter
-   :code:`-g`: ":program:`gcc -g -o foo foo.c`" of zo. Eventueel kun je
+   :code:`-g`: ":program:`gcc -g -o foo foo.c`" bijvoorbeeld. Eventueel kun je
    :code:`-g` plaatsen in je :file:`Makefile`, zie ook |DAUTO1|_.
 
 2. dan je programma executeren in debug modus met |gdb(1)|_:
@@ -231,15 +232,15 @@ Beheerde executie met :program:`valgrind`
 
 .. index:: memcheck
 
-Valgrind__ is de naam van een gereedschapkist voor het analyseren van
-programmas. :program:`valgrind` is een van de tools in Valgrind die de
+Valgrind__ is de naam van een gereedschapskist voor het analyseren van
+programma's. :program:`valgrind` is een van de tools in Valgrind die de
 verschillende features van Valgrind automatisch kan aanroepen.
 
 .. __: http://valgrind.org/
 
 De belangrijkste feature voor het analyseren van implementatiefouten
-is "memcheck".  Om met :program:`valgrind` en memcheck te beginnen,
-lees de volgende zeer korte tutorial:
+is de "memcheck".  Om met :program:`valgrind` en memcheck te beginnen
+lees je de volgende zeer korte tutorial:
 
 http://valgrind.org/docs/manual/quick-start.html
 
@@ -255,17 +256,17 @@ http://valgrind.org/docs/manual/quick-start.html
       :class: toggle
 
       Ontwerpfouten, implementatiefouten, contractovertredingen door
-      de omgeving, hardwarefouten.
+      de omgeving en hardwarefouten.
 
-2. De uitvoer van je programma is altijd en onverwacht fout wanneer je
+2. De uitvoer van je programma is altijd fout wanneer je
    een bepaalde input geeft, maar voor andere inputs blijkt het goed
    te werken. Hoe onderzoek je dit verder?
 
    .. admonition:: Oplossing
       :class: toggle
 
-      Omdat het goed werkt voor veel input is het onwaarschijnlijk een
-      ontwerpfout. Omdat het altijd niet goed werkt voor een bepaalde
+      Omdat het goed werkt voor veel input is het onwaarschijnlijk dat het een
+      ontwerpfout is. Omdat het altijd niet goed werkt voor een bepaalde
       input is het dan verstandig door te gaan met print debugging,
       asserts of stapsgewijze executie.
 
@@ -283,7 +284,7 @@ http://valgrind.org/docs/manual/quick-start.html
       Je kunt ook eventueel je programma draaien met
       :program:`valgrind`. Dit kan vaak de oorzaak van de fout
       onthullen.
-      
+
 
 Verder inlezen
 --------------

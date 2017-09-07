@@ -19,15 +19,15 @@ De belangrijkste redenen:
 - **hardwarefout in opslagapparaat** - schijven worden oud en kunnen falen zonder waarschuwing. Statistisch een keer per 1-2 jaar.
 - **diefstal** - het gebeurt, helaas. Statistisch een keer per 3-10 jaar.
 
-Je **zal ongetwijfeld data verliezen** tenmijnste een keer tijdens je studie, en meerdere keer daarna.
+Je zal, tenminste een keer tijdens je studie, ongetwijfeld **data verliezen**, en meerdere keer daarna.
 
 Back-ups moet je zien als een **verzekering**: het lijkt niet nodig te
-zijn totdat een probleem ontstaat, en dan is het te laat om ermee te
+zijn totdat er een probleem ontstaat, en dan is het te laat om ermee te
 beginnen.
 
-.. note:: Tijdens je studie **kan je niet "data verlies" gebruiken
-   als excuus voor laat inleveren**, zelfs wanneer er spraak is van diefstal.
-   Het is je eigen verantwoordelijkheid om
+.. note:: Tijdens je studie **kan je niet "data verlies" als excuus gebruiken
+   voor te laat inleveren**, zelfs wanneer er sprake is van diefstal.
+   Het is je eigen verantwoordelijkheid om voor
    jezelf back-ups te regelen en ervoor zorgen dat je back-ups altijd
    goed up-to-date en bruikbaar zijn.
 
@@ -36,13 +36,13 @@ In de praktijk
 
 Vroeger moesten mensen handmatig en regelmatig hun data kopiëren naar
 externe opslag om back-ups te maken. Dit was onpraktisch en
-tijdberovend, en back-ups waren dus vaak vergeten.
+tijdrovend, en werd vaak vergeten.
 
 Gelukkig hebben we nu veel verschillende tools om back-ups automatisch te
-regelen. We maken verder een onderscheid tussen:
+regelen. We maken onderscheid tussen:
 
 - echte :def:`back-up programma's`, die alle bestanden kunnen opnemen en meerdere
-  versies van de gearchiveerde bestanden over tijd kunnen bijhouden;
+  versies van de gearchiveerde bestanden over de tijd kunnen bijhouden;
 
 - :def:`bestandssynchronisatieprogramma's`, die de inhoud van een bepaalde map
   identiek houdt tussen meerdere computers, maar waar je vaak niet meer
@@ -160,24 +160,24 @@ Versiebeheerprogramma's
 .. index:: gitlab
 
 Versiebeheerprogramma's (Engels: :def:`version control software`, afgekort VCS) houden de veranderingen aan je bestanden over
-tijd in de gaten en bewaren oude kopiëen door middel van eigen
-database, die heet een :def:`opslagplaats` (Engels: :def:`repository`).
+tijd in de gaten en bewaren oude kopiëen door middel van een eigen
+database, een zogeheten :def:`opslagplaats` (Engels: :def:`repository`).
 
-De meest gebruikte versiebeheerprogramma's medio 2015 zijn Git
-(:program:`git`), en Mercurial (:program:`hg`). Er wordt ook steeds
+De meest gebruikte versiebeheerprogramma's medio 2017 zijn Git
+(:program:`git`) en Mercurial (:program:`hg`). Er wordt ook steeds
 gebruik gemaakt van Subversion (:program:`svn`) en heel soms van CVS
-(:program:`cvs`), echter zijn die niet aangeraden voor nieuwe
+(:program:`cvs`), echter zijn die niet aan te raden voor nieuwe
 projecten.
 
 Deze programma's kun je gebruiken voor je broncode tijdens
 programmeropdrachten, maar ook voor de verschillende verslagen
 en scripties die je erbij zal moeten inleveren.
 
-Vaak kun je ze koppelen aan een aandere computerserver die als
-:def:`opslagplaats op afstand` (Engels: :def:`remote repository`) zal
-spelen en eventueel back-ups zal regelen voor je repositories.
+Vaak kun je ze koppelen aan een andere computerserver die als
+:def:`opslagplaats op afstand` (Engels: :def:`remote repository`) optreedt
+en eventueel back-ups zal regelen voor je repositories.
 
-Bijvoorbeeld op de UvA wordt je uitgenodigd op GitLab:
+Op de UvA, bijvoorlbeeld, wordt je uitgenodigd op GitLab:
 https://gitlab-fnwi.uva.nl/ — het gebruik daarvan leer je later met |SGIT1|_.
 
 Pas op je bestandseigenschappen!
@@ -190,11 +190,11 @@ zijn belangrijk omdat ze bepalen of een bestand draaibaar (Engels:
 :def:`executable`) is.
 
 **Bestandssynchronisatieprogramma's gemaakt om ook te werken met
-Windows (Dropbox enz.), bewaren deze eigenschappen niet goed.**
-Versiebeheersoftware bewaart de data en eigenaarinformatie ook niet.
+Windows (Dropbox etc.) bewaren deze eigenschappen niet goed.**
+Versiebeheersoftware bewaart de data en eigenaarsinformatie ook niet.
 
 Om een exacte kopie te maken van een unix bestandssysteem, kan je een
-echte back-up programma gebruiken (zie boven), of eventueel kun je de
+echt back-up programma gebruiken (zie boven), of eventueel kun je de
 bestanden archiveren met :program:`tar -p ...` (:program:`-p` bewaart
 de toegangsrechten, zie ook |UAR|_ voor het gebruik van |tar(1)|_)
 waardoor deze eigenschappen ook goed worden opgeslagen.
@@ -203,18 +203,18 @@ waardoor deze eigenschappen ook goed worden opgeslagen.
 ---------------
 
 1. Je krijgt een nieuwe computer. Hoe regel je geschikte back-ups voordat
-   je hem begint te gebruiken voor werk?
+   je deze begint te gebruiken?
 
    .. admonition:: Oplossing
       :class: toggle
 
       1. externe harde of SSD schijf aanschaffen (of eventueel
-	 bestaande schijf hergebruiken) en echte back-up programma
+	 bestaande schijf hergebruiken) en een echt back-up programma
 	 inschakelen en configureren voor het hele systeem.
 
       2. eventueel het clientprogramma van de
 	 bestandssynchronisatiediensten (SURFdrive, Dropbox, e.d.)
-	 waar je al een account hebt installeren, en in het
+	 waar je al een account hebt installeren, en in de
 	 achtergrond laten synchroniseren.
 
       3. voor nieuwe programmeerprojecten, verslagen, scripties etc
@@ -223,9 +223,9 @@ waardoor deze eigenschappen ook goed worden opgeslagen.
 
 	 .. __: https://gitlab-fnwi.uva.nl/
 
-2. Je hebt je eigen programma gemaakt en wil hem delen met een
-   vriend. Je plaats hem in je Dropbox :file:`Shared` map. Echter zegt
-   je vriend dat het niet goed werkt. Wat is er aan de hand?
+2. Je hebt je eigen programma gemaakt en wilt hem delen met een
+   vriend. Je plaatst het in je Dropbox :file:`Shared` map. Je vriend zegt, echter,
+   dat het niet goed werkt. Wat is er aan de hand?
 
    .. admonition:: Oplossing
       :class: toggle

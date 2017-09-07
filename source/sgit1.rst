@@ -92,7 +92,7 @@ Hier is maar één commando voor nodig:
    $ cd ~/belangrijk
    $ git init
 
-Je weet dat het commando is successvol afgerond omdat een map
+Je weet dat het commando successvol is afgerond omdat een map
 :file:`.git` wordt aangemaakt (dit zie je evt. met :program:`ls -a`).
 
 Bestanden laten tracken door Git en committen
@@ -140,7 +140,7 @@ Naar oude versies kijken
 
 Met het commando :program:`git log` kun je de geschiedenis van je
 repository inspecteren. In de output van :program:`git log` is elke
-commit geidentificeerd door een tekenreeks die het :def:`commit id` of
+commit geidentificeerd door een tekenreeks die het :def:`commit id` of de
 :def:`commit hash` heet.
 
 Door middel van de commit hash kun je oudere versies van de bestanden
@@ -152,7 +152,7 @@ terug brengen in je huidige map. Dit doe je met het commando:
 
 Als je klaar bent met het inspecteren van oudere versies, gebruik dan
 het commando :program:`git checkout master` om terug te komen naar de
-recentelijkste versie.
+meest recente versie.
 
 Ongewenste veranderingen verwerpen met :program:`git reset`
 -----------------------------------------------------------
@@ -183,13 +183,13 @@ om tijdelijk je veranderingen te :def:`stashen`.
 Dit doe je door middel van het commando :program:`git stash`.
 
 Dit commando slaat je huidige veranderingen op in een ander soort
-commit die niet in de geschiedenis van je project verschijnt, en breng
+commit die niet in de geschiedenis van je project verschijnt, en brengt
 de huidige inhoud van je map terug naar de laatste gecommitte versie.
 
-Je kunt vanaf dit punt andere operaties voeren, je repository brengen
-naar een oudere toestand, push of pullen, enz.
+Je kunt vanaf dit punt andere operaties uitvoeren: je repository terugzetten
+naar een oudere toestand, pushen of pullen, enz.
 
-Als je je tijdelijke veranderingen wil terugbrengen, gebruik dan het
+Als je je tijdelijke veranderingen wilt terugbrengen, gebruik dan het
 commando :program:`git stash pop`.
 
 Je kunt meerdere verzamelingen veranderingen naast elkaar opslaan met
@@ -241,7 +241,7 @@ repositories zijn de volgende stappen algemeen van toepassing:
 Voorbeeld gebruik
 -----------------
 
-Je begint een programmeeropdracht en wil je code beschermen met
+Je begint een programmeeropdracht en je wilt je code beschermen met
 Git. Hoe doe je dit?
 
 1. Op de GitLab inloggen.
@@ -262,7 +262,7 @@ Git. Hoe doe je dit?
 
 6. :program:`git commit` om te committen.
 
-7. :program:`git push` om je commit te sturen naar je online repository.
+7. :program:`git push` om je commit naar je online repository te sturen.
 
 (Zelf)evaluatie
 ---------------
@@ -287,7 +287,7 @@ Git. Hoe doe je dit?
 
       Eerst :program:`git add` dan pas weer :program:`git commit`.
 
-3. Je hebt een bestand verwijderd van je project en wil hem ook
+3. Je hebt een bestand verwijderd van je project en wilt hem ook
    verwijderen uit je repository. Wat doe je?
 
    .. admonition:: Oplossing

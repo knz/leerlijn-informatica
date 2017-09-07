@@ -7,7 +7,7 @@
 
 .. index:: LaTeX (math)
 
-In de wiskunde en de informatica, zal je de meeste wiskundige formules
+In de wiskunde en de informatica zal je de meeste wiskundige formules
 uitdrukken in LaTeX documenten en presentaties. Het is dus belangrijk
 dat je snel de LaTeX taal kent voor simpele formules, zodat je snel en
 efficiënt formules kunt produceren.
@@ -23,7 +23,7 @@ Omgevingen
 .. index:: environment (math)
 
 De meeste formules schrijf je tussen dollartekens, bijvoorbeeld
-"``$x+y$``" ":math:`x+y`".
+"``$x+y$``" wordt ":math:`x+y`".
 
 Er zijn twee soorten :def:`wiskundige omgevingen` (Engels: :def:`math environments`):
 
@@ -38,7 +38,7 @@ Er zijn twee soorten :def:`wiskundige omgevingen` (Engels: :def:`math environmen
   .. math::
      \sum_{i=0}^n2^i
 
-Inline wiskunde blijft compact, kun je gebruiken bv. binnen een zin,
+Inline wiskunde blijft compact en kan je gebruiken bv. binnen een zin,
 maar het maakt het lezen van complexe formules moeilijker. Blok
 wiskunde staat altijd op zijn eigen regel.
 
@@ -49,22 +49,21 @@ Wat je absoluut moet weten
 .. index:: superscript (math)
 
 - variabelen en functienamen van maar één letter schrijf je gewoon,
-  bijvoorbeeld "``$ x+f(x) $``" ":math:`x+f(x)`". Breedere woorden schrijf
-  je altijd met ``\mathit{...}``, bijvoorbeeld "``$ x+\mathit{sin}(x) $``"
-  ":math:`x+\mathit{sin}(x)`". Als je dit niet doet, kan je woord heel
-  lelijk eruitzien, bijvoorbeeld:
+  bijvoorbeeld "``$ x+f(x) $``" wordt ":math:`x+f(x)`". Breedere woorden schrijf
+  je altijd met ``\mathit{...}``, bijvoorbeeld "``$ x+\mathit{sin}(x) $``" wordt
+  ":math:`x+\mathit{sin}(x)`". Als je dit niet doet kan je woord er heel
+  lelijk uitzien, bijvoorbeeld:
 
-  - "``$ fft(x) $``" ":math:`fft(x)`" – kijk hoe ver de 2 "f" staan van
-    elkaar!
+  - "``$ fft(x) $``" wordt ":math:`fft(x)`" – kijk hoe ver de 2 "f'en" uit elkaar staan!
 
-  - "``$ \mathit{fft}(x) $``" ":math:`\mathit{fft}(x)`" – alles goed.
+  - "``$ \mathit{fft}(x) $``" wordt ":math:`\mathit{fft}(x)`" – alles goed.
 
 - ondergeschreven (Engels: :def:`subscript`) en erboven geschreven (Engels:
   :def:`superscript`) tekens maak je met "``_``" en "``^``", bijvoorbeeld
-  "``$ x^2 $``" ":math:`x^2`" en "``$ x_i $``" ":math:`x_i`".
+  "``$ x^2 $``" wordt ":math:`x^2`" en "``$ x_i $``" wordt ":math:`x_i`".
 
   Als je subscript of superscript langer dan 1 teken is, gebruik dan {...}:
-  "``$ x^{n+1} $``" ":math:`x^{n+1}`" en "``$ x_{i+1} $``" ":math:`x_{i+1}`".
+  "``$ x^{n+1} $``" wordt ":math:`x^{n+1}`" en "``$ x_{i+1} $``" wordt ":math:`x_{i+1}`".
 
 - som met: ``$ \sum_{i=1}^n $``
 
@@ -95,15 +94,15 @@ Wat je absoluut moet weten
      \{\sum_k 2^k\} \quad \text{vs.} \quad \left\{\sum_k 2^k\right\}
 
 - De griekse letters schrijf je met een ``\`` dan hun naam,
-  bijvoorbeeld "``$ \pi \theta $``" ":math:`\pi \theta`".
+  bijvoorbeeld "``$ \pi \theta $``" wordt ":math:`\pi \theta`".
 
 - Om heel snel voorbeelden op te kunnen zoeken, onthoud goed de link
-  naar de `Wikibook: LaTeX/Mathematics`_.
+  naar het `Wikibook: LaTeX/Mathematics`_.
 
 (Zelf)evaluatie
 ---------------
 
-1. In LaTeX is de wortel geschreven met ``\sqrt{...}``. Hoe schrijf je
+1. In LaTeX wordt de wortel geschreven met ``\sqrt{...}``. Hoe schrijf je
    de formule voor de lengte van de diagonaal van een rechthoek met
    zijlengte *a* en *b* (formule van Pythagoras)?
 
@@ -114,7 +113,7 @@ Wat je absoluut moet weten
 
       :math:`d = \sqrt{a^2+b^2}`
 
-2. Hoe schrijf je de oppervlakte van een cirkel met straal *r* in
+2. Hoe schrijf je de formule voor de oppervlakte van een cirkel met straal *r* in
    LaTeX?
 
    .. admonition:: Oplossing
@@ -124,7 +123,7 @@ Wat je absoluut moet weten
 
       :math:`a = \pi r^2`
 
-3. Hoe schrijf je de som van alle even getallen tussen 2 en 100
+3. Hoe schrijf je de formule voor de som van alle even getallen tussen 2 en 100
    inclusief?
 
    .. admonition:: Oplossing

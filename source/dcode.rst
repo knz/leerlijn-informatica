@@ -33,7 +33,7 @@ talstelsel.
 
 Een :def:`positiestelsel` (:def:`positional notation` in het Engels) is een
 talstelsel waar de representatie van getallen opgebouwd wordt door de
-cijfers te lezen of schrijven in een vaste richting. Dit is de meest
+cijfers te lezen of schrijven in een vaste richting. Dit is het meest
 gangbare soort talstelsel. Dit onderscheid bestaat omdat bijvoorbeeld romeinse
 getallen geen positiestelsel vormen.
 
@@ -303,7 +303,7 @@ wenselijke eigenschappen breekt:
    want ":math:`110+1`" (:math:`-2+1`) geeft 111 (:math:`-3`), niet
    101 (:math:`-1`).
 
-2. aftrekken van een positief getal moet het goede negatieve waarde
+2. aftrekken van een positief getal moet de goede negatieve waarde
    bereiken.  Hier werkt dit ook niet, want ":math:`010-011`"
    (:math:`2-3`) geeft 100 (:math:`-0`), niet 101 (:math:`-1`).
 
@@ -313,13 +313,13 @@ wenselijke eigenschappen breekt:
 .. index:: two's complement
 .. index:: 2-complement
 
-Er wordt dus echter de :def:`2-complement` notatie gebruikt (Engels:
+In plaats daarvan wordt de :def:`2-complement` notatie gebruikt (Engels:
 :def:`two's complement`). Dit werkt als volgt voor *N* bits:
 
 - 1 bit wordt gebruikt als teken;
-- voor een getal :math:`x\leq 0`, is de tekenbit 0, dan coderen de andere :math:`N-1` bits gewoon
+- voor een getal :math:`x\geq 0`, is de tekenbit 0, dan coderen de andere :math:`N-1` bits gewoon
   het getal;
-- voor een getal :math:`x<0`, is de teken 1, dan coderen de andere
+- voor een getal :math:`x<0`, is de tekenbit 1, dan coderen de andere
   :math:`N-1` bits de waarde van :math:`2^{N-1}+x`.
 
 Bijvoorbeeld met 4 bits (:math:`2^{N-1}=8`):
@@ -398,7 +398,7 @@ of het een negatief getal is, of simpel een zeer groot positief getal?
 
 **Beide interpretaties zijn mogelijk.** Je kunt dit niet zelf bepalen
 door alleen naar de data te kijken. Om het verschil te kunnen maken,
-moet je halen *uit het context* welke codering werd gebruikt.
+moet je *uit de context* halen welke codering werd gebruikt.
 
 Voorbeelden:
 

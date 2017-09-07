@@ -44,12 +44,14 @@ cores) voor extra snelheid.
 Waarom |make(1)|_ en waarom workflows automatiseren?
 ----------------------------------------------------
 
+.. index:: scripts (voordelen van)
+
 Een :def:`workflow` in de wetenschap is als een recept voor een kok: een
-stapwijs methode om een bepaalde doel te bereiken.
+stapsgewijze methode om een bepaald doel te bereiken.
 
 In de informatica kunnen sommige workflows heel complex
-worden. Bijvoorbeeld kan het opbouwen van complexe programma's het
-groeperen van honderden bestanden vereisen.  Het handmatig uitvoeren
+worden. Het opbouwen van complexe programma's kan bijvoorbeeld het
+groeperen van honderden bestanden vereisen. Het handmatig uitvoeren
 van alle taken wordt snel onhandig!
 
 Er zijn twee strategiëen om *workflows te automatiseren*:
@@ -58,16 +60,16 @@ Er zijn twee strategiëen om *workflows te automatiseren*:
   aanroept in een vaste volgorde;
 
 - de *afhankelijkheidsrelaties tussen delen van het resultaat*
-  (Engels: :def:`dependency graph`) beschrijven, en aan het computer een
-  volgorde automatisch laten bepalen om het resultaat te produceren,
-  door middel van een expertsysteem, zoals |make(1)|_.
+(Engels: :def:`dependency graph`) beschrijven, en de computer automatisch een
+  volgorde laten bepalen om het resultaat te produceren,
+  met behulp van een expertsysteem, zoals |make(1)|_.
 
 Waarom geen scripts?
 --------------------
 
 .. index:: scripts (nadelen van)
 
-Scripts klinken vaak makkelijker! Een script schrijven is vaak maar
+Scripts klinken vaak makkelijker. Een script schrijven is vaak maar
 een kwestie van een editor pakken en gewoon dezelfde commando's
 erin opschrijven die je zelf handmatig in een shell zou uitvoeren. Maar
 scripts hebben twee belangrijke nadelen:
@@ -75,11 +77,11 @@ scripts hebben twee belangrijke nadelen:
 - iedere keer dat je een script aanroept, moeten alle stappen opnieuw
   worden geëxecuteerd.
 
-  Bijvoorbeeld, je hebt een LaTeX document die 100 plaatjes includeert
+  Bijvoorbeeld, je hebt een LaTeX document dat 100 plaatjes includeert
   in PDF vorm. Echter kan je beeldverwerkingsprogramma alleen PNG
   beelden opslaan, je schrijft dus een script om eerst alle 100 PNG
   beelden te converteren naar PDF voordat je je LaTeX document
-  vertaalt. Nu als je maar één van de beelden modificeert, moet je opnieuw
+  vertaalt. Als je nu maar één van de beelden modificeert, moet je opnieuw
   wachten op de conversie van alle 100 beelden! Dit kan lang duren.
 
 - scripts draaien in sequentiële volgorde, met alle stappen na
@@ -99,8 +101,8 @@ In een notendop werkt |make(1)|_ als volgt:
 Het bestand :file:`Makefile` is waar je je workflow beschrijft.
 
 Zodra je een :file:`Makefile` hebt aangemaakt, kun je het meermalig
-hergebruiken. Vaak gebruiken mensen dezelfde stukken :file:`Makefile`
-in meerdere projecten. In het begin is het verwacht dat je vaste
+hergebruiken. Vaak gebruiken mensen dezelfde stukken uit één :file:`Makefile`
+in meerdere projecten. In het begin wordt het verwacht dat je vaste
 patronen zal hergebruiken voor je eigen Makefiles.
 
 Voordat je begint
@@ -117,7 +119,7 @@ spatietekens naar tabtekens of omgekeerd. Als dit zo is, moet je eerst
 dit gedrag uitschakelen. Kijk naar de voorkeuren van je teksteditor om
 dit zodanig aan te passen.
 
-Ter informatie, zijn :program:`vim` en :program:`emacs` vaak standaard
+Ter informatie, :program:`vim` en :program:`emacs` zijn vaak standaard
 al goed geconfigureerd.
 
 Je eerste :file:`Makefile`
@@ -171,7 +173,7 @@ Je eerste :file:`Makefile`
          "``*** missing separator.  Stop.``" ziet, heb je het
          tabteken niet goed ingetikt. Check het nogmaals.
 
-   Wat is gebeurt?
+   Wat is er gebeurt?
 
    - de eerste regel van je :file:`Makefile` zegt "om :file:`test` te
      maken, moeten :file:`hello.o` en :file:`world.o` eerst bestaan".
@@ -183,7 +185,7 @@ Je eerste :file:`Makefile`
      Zoals je kunt zien, speelt "``$^``" als afkorting voor "de
      bestandsnamen rechts van de dubbele punt op de eerste regel".
 
-   - wanneer je |make(1)|_ hebt aangeroepen met de doel :file:`test`,
+   - wanneer je |make(1)|_ hebt aangeroepen met het doel :file:`test`,
      heeft |make(1)|_ dit gevonden in de :file:`Makefile` en de benodigde
      opdrachten automatisch uitgevoerd in de goede volgorde.
 
@@ -219,10 +221,10 @@ Je eerste :file:`Makefile`
          cc -c -o hello.o hello.c
          cc -o test hello.o world.o
 
-   Merk het voor jezelf: het bestand :file:`world.o` wordt niet
+   Merk op: het bestand :file:`world.o` wordt niet
    opnieuw aangemaakt. Dit hoeft niet omdat het niet veranderd is
    sinds de laatste keer! |make(1)|_ heeft dit automatisch
-   geoptimiseerd.
+   geoptimaliiseerd.
 
    Je kunt het opnieuw geproduceerde programma :file:`test` weer
    aanroepen:
@@ -232,7 +234,7 @@ Je eerste :file:`Makefile`
       $ ./test
       hello 456
 
-Hergebruikbaar :file:`Makefile` voor je eigen projecten
+Herbruikbaar :file:`Makefile` voor je eigen projecten
 -------------------------------------------------------
 
 .. index:: voorbeeld Makefile
@@ -241,7 +243,7 @@ Hergebruikbaar :file:`Makefile` voor je eigen projecten
 Voor Java applicaties
 `````````````````````
 
-Voor het bouwen van Java programma's, kun je het volgende
+Voor het bouwen van Java programma's, kun je de volgende
 :file:`Makefile` hergebruiken:
 
 .. code-block:: Makefile
@@ -263,8 +265,8 @@ Voor het bouwen van Java programma's, kun je het volgende
 .. note:: Let goed op, de eerste regel na "clean:" en ".java.class"
    moeten beginnen met een tabteken.
 
-Om dit te gebruiken, plaats je eerst dit :file:`Makefile` in de map
-van je project, dan pas je ``SOURCES`` aan met de namen van je
+Om de :file:`Makefile` te gebruiken plaats je hem eerst in de map
+van je project en dan pas je ``SOURCES`` aan met de namen van je
 :file:`.java` bestanden.
 
 Dan gebruik je :program:`make` (of :program:`make all`) om je Java
@@ -272,12 +274,12 @@ klassen opnieuw te bouwen, dit zal alleen de klassen opbouwen die
 sinds de laatste keer zijn veranderd.
 
 Je kunt ook :program:`make clean` gebruiken om de klassen te wissen,
-indien je ze allemaal opnieuw wil bouwen met :program:`make all`.
+indien je ze allemaal opnieuw wilt bouwen met :program:`make all`.
 
 Voor C applicaties
 ``````````````````
 
-Voor het bouwen van C programma's, kun je het volgende
+Voor het bouwen van C programma's, kun je de volgende
 :file:`Makefile` hergebruiken:
 
 .. code-block:: Makefile
@@ -300,8 +302,8 @@ Voor het bouwen van C programma's, kun je het volgende
 .. note:: Let goed op, de eerste regel na "clean:" en "$(TARGET):"
    moeten beginnen met een tabteken.
 
-Om dit te gebruiken, plaats je eerst dit :file:`Makefile` in de map
-van je project, dan pas je ``SOURCES`` aan met de namen van je
+Om de :file:`Makefile` te gebruiken plaats je hem eerst in de map
+van je project en dan pas je ``SOURCES`` aan met de namen van je
 :file:`.c` bestanden en ``TARGET`` met de gewenste naam voor het
 resulterende binaire programma.
 
@@ -328,8 +330,7 @@ Bijvoorbeeld:
 
 Dit vraagt |make(1)|_ om maximaal 4 taken tegelijk uit te voeren om
 het doel ``test`` te bereiken. Je krijgt de beste prestaties door een
-waarde te kiezen die net hoger is dan het aantal cores op je
-computer. Bijvoorbeeld met 4 cores kun je :program:`-j 6` gebruiken.
+acomputer. Bijvoorbeeld met 4 cores kun je :program:`-j 6` gebruiken.
 
 Automatisch bouwen van LaTeX documenten
 ---------------------------------------
@@ -342,10 +343,10 @@ kunt aanroepen om een LaTeX document te vertalen naar PDF.
 
 Echter, wanneer het document gebruik maakt van externe onderdelen,
 bijvoorbeeld grafieken, andere LaTeX bestanden, plaatjes, citaten,
-etc., moet je meerdere commando's achter elkaar aanroepen en soms zelfs
+etc. moet je meerdere commando's achter elkaar aanroepen en soms zelfs
 meermalig.
 
-Voor LaTeX is er een programma dat dit voor je helemaal regelt:
+Voor LaTeX is er een programma dat dit helemaal voor je regelt:
 :program:`latexmk`, inbegrepen met de meeste LaTeX
 installaties. :program:`latexmk` kun je zien als een soort |make(1)|
 met veel ingebouwde regels voor gebruik met LaTeX.
@@ -361,8 +362,8 @@ met veel ingebouwde regels voor gebruik met LaTeX.
      $ latexmk -pdf hello.tex
 
 - om continu een PDF te updaten terwijl je het LaTeX document aan het
-  editen bent (om een voorvertoning automatisch te updaten) start je
-  het volgende commando op in eigen terminal:
+  editen bent (om een voorvertoning automatisch up te daten) start je
+  het volgende commando op in je eigen terminal:
 
   .. code-block:: shell
 
@@ -373,14 +374,14 @@ met veel ingebouwde regels voor gebruik met LaTeX.
 (Zelf)evaluatie
 ---------------
 
-1. Waarom wordt |make(1)|_ gebruikt eigenlijk?
+1. Waarom wordt |make(1)|_ eigenlijk gebruikt?
 
    .. admonition:: Antwoord
       :class: toggle
 
-      Om een procedure of workflow te automatiseren, beter dan een
-      script schrijven: alleen de strikt noodzakelijke stappen worden
-      uitgevoerd, en ze kunnen gebruik maken van meerdere processoren
+      Om een procedure of workflow te automatiseren. Het is beter dan een
+      script schrijven, omdat alleen de strikt noodzakelijke stappen worden
+      uitgevoerd en er gebruik gemaakt kan worden van meerdere processoren
       of cores.
 
 2. Je wordt gevraagd om een :file:`Makefile` in te leveren met je

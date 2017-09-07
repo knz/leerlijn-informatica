@@ -15,7 +15,7 @@ Soorten bestandssysteem
 .. index:: filesystem
 
 Een :def:`bestandssysteem` (Engels: :def:`filesystem`) is een opslagformaat
-voor bestanden en mappen, die door een besturingssysteem wordt
+voor bestanden en mappen, dat door een besturingssysteem wordt
 gebruikt om de data te organiseren in een vast opslagmedium,
 bijvoorbeeld een harde schijf.
 
@@ -47,7 +47,7 @@ verder interessante technische voordelen:
 Naam       Wordt gebruikt met
 ========== =======================================
 XFS_       Goed voor mediabestanden en file servers
-ZFS_       Goed voor gemengde gebruik
+ZFS_       Goed voor gemengd gebruik
 Btrfs_     Goed voor grote databases
 ========== =======================================
 
@@ -91,7 +91,7 @@ van de mountpointmap weer zichtbaar.
 Om een apparaat aan te koppelen, zal je het programma |mount(8)|_
 aanroepen.
 
-1. eerst zorg ervoor dat er een mountpoint bestaat, bijvoorbeeld :file:`/mnt`::
+1. zorg er eerst voor dat er een mountpoint bestaat, bijvoorbeeld :file:`/mnt`::
 
       mkdir -p /mnt
 
@@ -128,7 +128,7 @@ Commando's uitvoeren als beheerder
 ``````````````````````````````````
 
 Je moet beheerder zijn om de verschillende programma's van dit
-hoofdstuk te kunnen gebruiken.  Als gewone gebruiker kun je vak
+hoofdstuk te kunnen gebruiken.  Als gewone gebruiker kun je vaak
 individuele commando's aanroepen met de rechten van een beheerder door
 middel van het programma :program:`sudo`. Bijvoorbeeld::
 
@@ -140,7 +140,7 @@ Uitzoeken welk block device hoort bij welk apparaat
 .. index:: dmesg
 .. index:: lsblk
 
-Welke "block device" hoort bij welke apparaat hangt heel erg af van je
+Welk "block device" hoort bij welke apparaat hangt heel erg af van je
 computer, je besturingssysteem en de koppelingsvolgorde van
 opslagelementen.  Je kunt achterhalen wat de naam is van je
 opslagelementen door middel van de volgende commando's:
@@ -148,7 +148,7 @@ opslagelementen door middel van de volgende commando's:
 ================== =============================== ====================================
 Besturingssysteem  Commando                        Kijk je dan naar
 ================== =============================== ====================================
-Linux              :program:`lsblk`                linke kant
+Linux              :program:`lsblk`                linker kant
 Linux              :program:`cat /proc/partitions` rechter kolom
 Linux              :program:`dmesg | more`         begin van de regels waar je je apparaat herkent
 OS X               :program:`diskutil list`        rechter kolom
@@ -171,12 +171,12 @@ Een nieuw bestandssysteem kiezen
 Je hebt een nieuwe opslagapparaat en je moet kiezen met welk
 bestandssysteem je het gaat gebruiken. Hoe doe je dat?
 
-- als je de opslag alleen als intern schijf zal gebruiken, kies dan het
+- als je de opslag alleen als interne schijf zal gebruiken, kies dan het
   gangbare bestandssysteem voor je besturingssysteem (bv. UFS, Ext4,
   HFS+, NTFS).
 
 - als je de opslag zal gebruiken als wisselschijf, kan je kiezen voor
-  FAT32 die het breedst ondersteunt is door meedere
+  FAT32 wat het breedst ondersteunt is door meedere
   besturingssystemen.
 
 - als je een DVD-R of DVD-RW wil branden, kies je dan voor UDF.
@@ -184,7 +184,7 @@ bestandssysteem je het gaat gebruiken. Hoe doe je dat?
 Welke bestandssystemen worden erkend door welke besturingssystemen?
 `````````````````````````````````````````````````````````````````````
 
-In de volgende tabel, "R" betekent "kan alleen lezen" en "R/W"
+"R" betekent "kan alleen lezen" en "R/W"
 betekent "kan lezen en schrijven". Een sterretje
 betekent dat extra stuurprogramma's nodig zijn.
 
@@ -209,8 +209,8 @@ Sommige hebben bekende nadelen:
 ================= =========================================
 Bestandssysteem   Grootste nadelen
 ================= =========================================
-ISO9660           Schrijven is zeer onefficiënt
-FAT32             Beperkt tot 16TB; ondersteunt geen symlinks; geen verschil tussen klein en hoofdletters in namen
+ISO9660           Schrijven is zeer inefficiënt
+FAT32             Beperkt tot 16TB; ondersteunt geen symlinks; geen verschil tussen kleine letters en hoofdletters in namen
 ExFAT             Ontwikkelaar moet flink betalen aan Microsoft voor gebruik
 HFS+              Zeer complex te implementeren, meestal weet alleen Apple hoe dit goed kan
 NTFS              Ondersteunt symlinks alleen gedeeltelijk
@@ -234,7 +234,7 @@ aanmaken van een bestandssysteem verwijdert de huidige inhoud van
 het opslagelement.
 
 Er zijn echter vaak meerdere :program:`mkfs` programma's, een per
-ondersteunde bestandssysteem:
+ondersteund bestandssysteem:
 
 ================= ======================= =========================== ==========================
 Bestandssysteem   Linux                   OS X                        FreeBSD
@@ -300,7 +300,7 @@ van een block device als parameter.
          nog niet heeft. Raadpleeg je systeembeheerder en/of
          installeer eerst de benodigde tools.
 
-2. Je wil een tweedehands USB sleutel hergebruiken, maar wil eerst
+2. Je wilt een tweedehands USB stick hergebruiken, maar wil eerst
    zijn hele inhoud wissen. Wat doe je?
 
    .. admonition:: Oplossing

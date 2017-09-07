@@ -17,14 +17,14 @@ Waarom presenteren met LaTeX?
 .. index:: LaTeX (Beamer)
 
 Waarom LaTeX (en Beamer) wanneer Google Presentaties, Keynote,
-Powerpoint enz. ook beschikbaar zijn?
+Powerpoint etc. ook beschikbaar zijn?
 
 - omdat het daarmee heel eenvoudig is om complexe formules en/of
   complexe grafieken in je dia's te plaatsen.
 
-- omdat het resultaat altijd zeer professioneel eruit ziet.
+- omdat het resultaat er altijd zeer professioneel uit ziet.
 
-- omdat het resultaat niet zal veranderen wanneer je tool wordt
+- omdat het resultaat niet zal veranderen wanneer de tool wordt
   geupgrade naar een nieuwere versie.
 
 - omdat LaTeX zeer lang zal blijven bestaan (tientallen jaren). Je
@@ -45,7 +45,7 @@ Je eerste presentatie
    (of eventueel gewoon :program:`pdflatex test.tex` als
    :program:`latexmk` niet beschikbaar is)
 
-3. Kijk naar het resultaat :file:`test.pdf` en zie je voor jezelf.
+3. Kijk naar het resultaat :file:`test.pdf` en zie het resultaat voor jezelf.
 
 Richtlijnen voor het structureren
 ---------------------------------
@@ -56,7 +56,7 @@ Richtlijnen voor het structureren
   presentatie. Bijvoorbeeld als je 15mn moet presenteren, gebruik niet
   meer dan 7-15 dia's.
 
-- Neem het volgende advies van Simon Peyton-Jones, een heel belangrijke
+- Gebruik het volgende advies van Simon Peyton-Jones, een belangrijke
   wetenschapper en competent docent in de informatica:
 
   .. pull-quote::
@@ -95,14 +95,13 @@ Simpele animaties
 
 .. index:: animaties (in dia's)
 
-Binnen een dia kun je ook inhoud stap voor stap laten zien tijdens het
+Binnen een dia kun je ook de inhoud stap voor stap laten zien tijdens het
 presenteren. Bijvoorbeeld:
 
 .. literalinclude:: beamerexample2.tex
    :language: latex
 
-Het commando ``\pause`` maakt een pause in de weergave. Probeer het
-voor jezelf!
+Het commando ``\pause`` maakt een pause in de weergave. Probeer het zelf!
 
 Thema's - uiterlijk aanpassen
 -----------------------------
@@ -114,7 +113,7 @@ door het commando ``\usetheme{...}`` vóór ``\begin{document}``, bijvoorbeeld:
 
    \usetheme{wolverine}
 
-Hier vind je en demo van alle standaard beschikbare thema's:
+Hier vind je een demo van alle standaard beschikbare thema's:
 
    https://www.hartwork.org/beamer-theme-matrix/
 

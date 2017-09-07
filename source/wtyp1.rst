@@ -95,7 +95,7 @@ Bijvoorbeeld, als je dit schrijft in LaTeX:
 Krijg je dit: **Jan zegt: ”hallo”**
 
 Kijk naar het begin van ”hallo”. (Eventueel, vergroot de tekst om het
-beter te kunnen zien). **Er staat daar een fout, je hebt de rechtse
+beter te kunnen zien). **Er staat daar een fout: je hebt de rechtse
 aanhalingstekens links gebruikt!**
 
 De goede manier:
@@ -104,7 +104,7 @@ De goede manier:
 
    Jan zegt: ``hallo''
 
-Krijg je dan dit: **Jan zegt: “hallo”**
+Dan krijg je dit: **Jan zegt: “hallo”**
 
 Hetzelfde gebeurt met enkele aanhalingstekens:
 
@@ -177,7 +177,7 @@ Helaas kan het mis gaan in wiskundige formules:
 
 Kijk hoe lelijk "S is finite" is geworden! Dit corrigeer je door
 middel van ``\text{...}`` of ``\mathit{...}`` (heb je eerder gezien
-met |WMATH1|_):
+in |WMATH1|_):
 
 .. code-block:: latex
 
@@ -269,7 +269,7 @@ LaTeX                Resultaat
 ``$-3$``             :math:`-3` (minteken, goed)
 ==================== =====================
 
-Merk hoe de minteken een stuk dikker is dan het gedachtestreeptje.
+Merk hoe het minteken een stuk dikker is dan het gedachtestreeptje.
 
 Kortom, in LaTeX gebruik je altijd de "math mode" (tussen ``$``) voor getallen.
 

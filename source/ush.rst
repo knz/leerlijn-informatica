@@ -61,7 +61,7 @@ Prompt
 .. index:: .profile (prompt aanpassen)
 .. index:: PS1
 
-Een :def:`prompt` is een tekenreeks waarbij een programma aanduidt dat het
+Een :def:`prompt` is een tekenreeks waarmee een programma aanduidt dat het
 klaar is om een nieuwe opdracht uit te voeren.
 
 Je zal tenminstens twee programma's gebruiken met een prompt tijdens
@@ -71,7 +71,7 @@ je studie:
 - Python: "``>>>``"
 
 De prompt in de shell wordt ook gebruikt om extra informatie aan te
-geven over de toestand van de shell. Bijvoorbeeld is het gebruikelijk om
+geven over de toestand van de shell. Het is bijvoorbeeld gebruikelijk om
 ook de huidige map (zie |UCMD|_) daar weer te geven:
 
 .. code-block:: shell
@@ -81,7 +81,7 @@ ook de huidige map (zie |UCMD|_) daar weer te geven:
    /var $ cd /usr/local
    /usr/local $
 
-.. tip:: Je kunt ook de prompt van je shell zelf aanpassen!
+.. tip:: Je kunt ook zelf de prompt van je shell aanpassen!
    :class: toggle
 
    Dit doe je als volgt:
@@ -98,7 +98,7 @@ ook de huidige map (zie |UCMD|_) daar weer te geven:
         hello /home $ cd /etc
         hello /etc $
 
-     Zoals je hier kunt zien, vertaalt de shell "``\u``" in ``PS1`` automatisch
+     Zoals je hier kunt zien, vertaalt de shell "``\w``" in ``PS1`` automatisch
      naar je huidige map. Raadpleeg de manpage van je shell om de verschillende
      mogelijkheden te onderzoeken.
 
@@ -115,7 +115,7 @@ History
 De meeste shells houden de geschiedenis van je opdrachten bij.
 
 - Het laatste commando roep je weer aan door de toets :kbd:`Up` (pijl omhoog).
-- Je kunt zoeken door de hele geschiedenis van je shell door :kbd:`Ctrl+R`. Probeer het eens!
+- Je kunt zoeken door de hele geschiedenis van je shell met :kbd:`Ctrl+R`. Probeer het eens!
 
 Jokertekens
 -----------
@@ -183,15 +183,15 @@ Jokertekens
      foo1*
 
   Dit heb je eerder gezien met het commando |find(1)|_ (|UCMD|_),
-  die bestanden zoekt ook op patroon:
+  dat ook bestanden zoekt op patroon:
 
   .. code-block:: shell
 
      $ find . -name "foo1*"
 
   Als je geen aanhalingstekens gebruikt met |find(1)|_, zal de shell
-  het patroon vervangen voordat |find(1)|_ wordt aangeroepen, en
-  |find(1)|_ heeft dan geen patroon meer om mee te werken.
+  het patroon vervangen voordat |find(1)|_ wordt aangeroepen, en heeft
+  |find(1)|_ geen patroon meer om mee te werken.
 
 Omgevingsvariabelen
 -------------------
@@ -211,7 +211,7 @@ Omgevingsvariabelen
   - door commandolijn argumenten, bijvoorbeeld "``-l``" in :program:`ls -l`
   - door :def:`omgevingsvariabelen` (Engels: :def:`environment variables`).
 
-  (Je hebt al z'n variabele hierboven gezien: ``PS1`` die de prompt van
+  (Je hebt al zo'n variabele hierboven gezien: ``PS1`` die de prompt van
   je shell configureert.)
 
 - een omgevingsvariabele zet je in je shell met het commando
@@ -287,7 +287,7 @@ Variabelesubstitutie
 
 - Het is ook mogelijk om de naam van de variabele te plaatsen tussen accolades, bijvoorbeeld
   ``${TMPDIR}`` is gelijk aan ``$TMPDIR``. Dit is handig als je een tekst wil plakken
-  na de waarde van een variabel, bijvoorbeeld:
+  na de waarde van een variabele, bijvoorbeeld:
 
   .. code-block:: shell
 
@@ -297,7 +297,7 @@ Variabelesubstitutie
      /tmphello
 
 - Tijdens de substitutie is het mogelijk om eenvoudige operaties uit te voeren
-  om de waarde van de variabele:
+  op de waarde van de variabele:
 
   =============== ================================== =================================
   Syntax          Betekenis                          Voorbeeld
@@ -308,7 +308,7 @@ Variabelesubstitutie
   ``${a:-tekst}`` Geeft "tekst" als ``a`` niet gezet :program:`echo ${b:-hello}` -> hello
   =============== ================================== =================================
 
-  Vooral de eerste twee zijn handig wanneer je bestandsnamen wil veranderen, bijvoorbeeld
+  Vooral de eerste twee zijn handig wanneer je bestandsnamen wilt veranderen, bijvoorbeeld
   een extensie vervangen door een andere:
 
   .. code-block:: shell
@@ -321,7 +321,7 @@ Variabelesubstitutie
   de manpage van je shell, bv. |sh(1)|_
 
 - Als een variabele meerdere woorden bevat, worden ze gesplitst als meerdere
-  argumenten tijdens de substitutie. Dit kun je uitschakelen om
+  argumenten tijdens de substitutie. Dit kun je uitschakelen door
   de substitutie tussen *dubbele* aanhalingstekens te plaatsen. Bijvoorbeeld:
 
   .. code-block:: shell
@@ -361,7 +361,7 @@ Simpele programma's
 .. index:: if (shell)
 .. index:: short-circuit evaluatie (shell)
 
-De shell heeft ook eigen programmeertaal, die zal je langzamerhand
+De shell heeft ook eigen programmeertaal, die je langzamerhand zal
 leren. De volgende 4 constructies komen zo vaak voor en zijn zo handig
 dat je ze alvast kunt leren:
 
@@ -407,7 +407,7 @@ dat je ze alvast kunt leren:
 
          export PS1='\w $ '  # of dergelijk
 
-      Dans als het naar wens is, opslaan in :file:`~/.profile`.
+      Dan, als het naar wens is, opslaan in :file:`~/.profile`.
 
 2. De prompt "``\u@\h \w\$``" wordt vaak gebruikt met de Bourne
    shell. Wat geeft dit weer?
@@ -435,9 +435,9 @@ dat je ze alvast kunt leren:
 
          for f in *.htm; do n=${f%.html}; mv "$f" "$n".html; done
 
-4. Een map hoort een :file:`.jpg` bestand te bevatten per :file:`.html` bestand.
-   Hoe zou je de lijst printen van alle :file:`.html` bestanden zonder
-   bijbehorende :file:`.jpg`?
+4. Een map hoort één :file:`.jpg` bestand te bevatten per :file:`.html` bestand.
+   Hoe kan je de lijst printen van alle :file:`.html` bestanden zonder
+   bijbehorende :file:`.jpg` file?
 
    .. admonition:: Oplossing
       :class: toggle
@@ -446,7 +446,7 @@ dat je ze alvast kunt leren:
 
          for f in *.htm; do test -r "${f%.htm}".jpg || echo "$f"; done
 
-5. Je heeft een programma geïnstalleerd in :file:`~/bin`. Je wil hem makkelijk kunnen
+5. Je hebt een programma geïnstalleerd in :file:`~/bin`. Je wilt hem makkelijk kunnen
    gebruiken vanaf een andere map. Wat doe je?
 
    .. admonition:: Oplossing

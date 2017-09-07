@@ -27,7 +27,7 @@ Wat je absoluut moet weten
   .. index:: exponent
 
   - het teken (+1 of -1)
-  - een eerst geheel getal, de :def:`mantisse`
+  - een eerste geheel getal, de :def:`mantisse`
   - een tweede geheel getal, de :def:`exponent`
 
 - De *waarde* *r* van een zwevende kommagetal met onderdelen
@@ -46,7 +46,7 @@ Wat je absoluut moet weten
   genoteerd +0 en -0.
 
 - Sommige reële getallen kennen geen exacte codering als
-  zwevendekommagetal (bijvoorbeeld :math:`\pi`). Wanneer z'n reëel
+  zwevendekommagetal (bijvoorbeeld :math:`\pi`). Wanneer zo'n reëel
   getal word geconverteerd naar een zwevendekommagetal,
   ontstaat een :def:`afrondfout`.
 
@@ -82,10 +82,10 @@ Wat je absoluut moet weten
   :math:`-\infty` ``-INFINITY``    |isfinite(3)|_
   =============== ================ ==================
 
-- Binnen de computer worden zwevendekommagetallen vaakst gecodeerd in
+- Binnen de computer worden zwevendekommagetallen vaak gecodeerd in
   grondtal 2, met de volgende standaard parameters:
 
-  .. index:: half precision
+  .. index:: halve precision
   .. index:: single precision
   .. index:: double precision
   .. index:: quad precision
@@ -107,7 +107,7 @@ Wat je absoluut moet weten
        - 10 of 16 bytes
        - 16 bytes
      * - Gesproken naam
-       - half precisie
+       - halve precisie
        - single precisie
        - double (dubbele) precisie
        - extended double precisie
@@ -142,19 +142,19 @@ Wat je absoluut moet weten
        - 11
        - 15
        - 15
-     * - Aantal decimaal cijfers
+     * - Aantal decimale cijfers
        - ~3.3
        - ~7.2
        - ~15.9
        - ~19.3
        - ~34.0
-     * - Kleinst codeerbaar strikt positief getal
+     * - Kleinst codeerbaar strikt positieve getal
        - :math:`\approx 6.10\times 10^{-5}`
        - :math:`\approx 1.18\times 10^{-38}`
        - :math:`\approx 2.23\times 10^{-308}`
        - :math:`\geq 3.35\times 10^{-4932}`
        - :math:`\approx 3.36\times 10^{-4932}`
-     * - Grootst codeerbaar positief getal
+     * - Grootst codeerbaar positieve getal
        - 65504
        - :math:`\approx 3.40\times 10^{38}`
        - :math:`\approx 1.80\times 10^{308}`
@@ -192,10 +192,9 @@ Conversie in de programmeertaal C
       In veel programmeertallen zal de vergelijkoperatie (bv. ==, !=)
       de codering vergelijken. Door afrondingsfouten kan de codering
       van een resultaat afwijken van de reëele waarde, waardoor de
-      directe vergelijking mislukt. Het is dus verstandig om niet
-      zwevendekommagetallen direct met elkaar te vergelijken, en in
-      plaats daarvan het verschil tussen de twee getallen vergelijken
-      met een drempel.
+      directe vergelijking mislukt. Het is dus verstandig om
+      zwevendekommagetallen niet direct met elkaar te vergelijken. Vergelijk in
+      plaats daarvan het verschil tussen de twee getallen met een drempel.
 
 2. Je programma probeert 65536 te converteren naar een half-float. Wat is het resultaat?
 

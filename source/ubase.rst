@@ -61,7 +61,7 @@ voor je neus hebt, kun je deze paragraaf overslaan. Anders moet je op
 zoek naar een terminal. Er is vast ergens op het scherm een menu die
 je toegang geeft tot alle beschikbare applicaties. Een terminal is
 gebruikelijk te vinden bij een menu "Hulpprogramma's", "Utilities",
-"Systeem" of "Development". Al je Unixsysteem een visuele zoekfunctie
+"Systeem" of "Development". Als je Unixsysteem een visuele zoekfunctie
 heeft, kun je deze ook gebruiken: zoek naar "Terminal" of "xterm". Als
 je een veld kunt vinden om een commando handmatig in te voeren, tik
 dan ":program:`xterm`" in. Op Linux (maar niet andere Unixsystemen) kun je
@@ -89,7 +89,7 @@ Shell en programma's
 .. index:: shell
 
 Meerdere programma's delen de terminal om met jou te communiceren. Het
-"hoofdprogramma" dat je als eerste ziet heet de :def:`shell`: het is het
+"hoofdprogramma" dat je als eerste ziet heet de :def:`shell`: dit is het
 programma dat je commando's zal herkennen en uitvoeren.
 
 Aan het begin heb je een soort mini-teksteditor voor maar 1 regel
@@ -134,7 +134,7 @@ terug naar een bekende situatie?". Stel je voor: je hebt een programma
 geopend, en je weet niet hoe je hem kunt afsluiten. Wat dan?
 
 Vaak werkt de :kbd:`Esc` toets *niet*. De toetscombinatie :kbd:`Alt+F4` ook
-niet. Dan op een terminal is er natuurlijk geen klein kruis waarop je
+niet. En op een terminal is er natuurlijk geen kruisje waarop je
 kunt klikken met je muis, of vinger op een touchscreen.
 
 .. index:: Ctrl-D (invoer afsluiten)
@@ -149,8 +149,8 @@ kunt klikken met je muis, of vinger op een touchscreen.
 
 Op Unix zijn er meerdere manieren een programma af te sluiten:
 
-1. als je programma een overzichtelijke interface heeft met duidelijk
-   aanwijzing van hoe je hem kunt afsluiten, gebruik dan dat.
+1. als je programma een overzichtelijke interface heeft met duidelijke
+   aanwijzingen hoe je hem kunt afsluiten, gebruik dan dat.
 
 2. als je programma een soort commandolijn heeft waar je commando's
    blijkt in te kunnen tikken, probeer dan de woorden ":program:`quit`" of
@@ -201,23 +201,23 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
 5. als het je niet lukt met de stappen #1-#4 het programma af te
    sluiten, heb je misschien te maken met een van "de bijzondere 4":
 
-   - het programma :program:`vi` or :program:`vim` (teksteditor): die
-     wordt afgesloten door :kbd:`Esc`, :kbd:`:` (dubbele punt),
+   - het programma :program:`vi` of :program:`vim` (teksteditor): dat
+     kan worden afgesloten door :kbd:`Esc`, :kbd:`:` (dubbele punt),
      :kbd:`q`, :kbd:`!`, :kbd:`Enter` in te tikken.
 
-   - het programma :program:`emacs` (een andere teksteditor): die wordt
+   - het programma :program:`emacs` (een andere teksteditor): dat kan worden
      afgesloten door :kbd:`Ctrl+X`, dan :kbd:`Ctrl+C` in te tikken.
 
-   - het programma :program:`ssh` (om een andere computer te benaderen, zal je later zien in |USRV1|_): die
-     wordt afgesloten door uit te loggen binnen de ssh sessie. Mocht
+   - het programma :program:`ssh` (om een andere computer te benaderen, zal je later zien in |USRV1|_): dat kan
+     worden afgesloten door uit te loggen binnen de ssh sessie. Mocht
      dit niet lukken, bijvoorbeeld door een netwerkprobleem, kan
      :program:`ssh` worden afgesloten door :kbd:`Enter`, :kbd:`~`, :kbd:`.` in te tikken.
 
-   - het programma :program:`telnet`: tik dan :kbd:`Ctrl+]` in, dan :program:`exit`.
+   - het programma :program:`telnet`: dat kan worden afgesloten door :kbd:`Ctrl+]` in te tikken, en dan :program:`exit`.
 
 6. als alles tot nu toe heeft gefaald, kan je de "final solution"
-   gebruiken. Dit werkt op alle processen, op alle commando's, en je
-   moet dus voorzichtig mee omgaan: het commando :program:`kill`.
+   gebruiken. Dit werkt op alle processen, op alle commando's, en moet
+   je voorzichtig mee omgaan: het commando :program:`kill`.
 
    Om :program:`kill` te kunnen gebruiken, moet je toegang hebben tot een
    commandolijn. Natuurlijk, als je :program:`kill` nodig hebt, is de kans
@@ -232,13 +232,13 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
    :kbd:`^Z`.
 
    Als :kbd:`^Z` het niet doet, kun je ook een andere terminal openen op
-   hetzelfde systeem. Zelfs als het dan opnieuw moet inloggen, heb je
+   hetzelfde systeem. Zelfs als je dan opnieuw moet inloggen, heb je
    toegang tot alle processen die je al draaiend hebt in je eerdere
    sessie.
 
-   Zodra je wel een commandolijn beschikt naast het programma die je
-   wil beëindigen, moet je zijn :def:`procesidentificatienummer` weten, ook
-   "PID" genoemd. Die vind je door het commando ":program:`ps x`", dat een
+   Zodra je over een commandolijn beschikt naast het programma die je
+   wil beëindigen, moet je zijn :def:`procesidentificatienummer` weten, ook wel
+   "PID" genoemd. Deze kun je vinden met het commando ":program:`ps x`", dat een
    lijst geeft van al jouw processen die nu draaien op het
    systeem. Het identificatienummer is dan te vinden in de eerste
    kolom.
@@ -248,7 +248,7 @@ Op Unix zijn er meerdere manieren een programma af te sluiten:
    als :kbd:`^C` maar dan ook als het proces de toetscombinatie
    heeft uitgeschakeld.
 
-   (NB: het was trouwens niet de hele waarheid: alleen het commando
+   (NB: Dit is niet de hele waarheid: alleen het commando
    :program:`kill` met een PID is soms niet genoeg. Het commando :program:`kill`
    heeft wel een "ultieme" vorm, maar deze zal je pas later
    ontdekken.)
@@ -284,8 +284,8 @@ meestal maar één programma actief is aan het "hoofd" van de terminal.
 Documentatie zoeken
 -------------------
 
-Het is natuurlijk altijd mogelijk je browser te openen en naar hulp
-gaan vragen op een forum of zo. Maar het wordt ook verwacht dat je
+Het is natuurlijk altijd mogelijk je browser te openen en om hulp te vragen
+op een forum o.i.d. Maar het wordt ook verwacht dat je
 weet dat veel informatie al beschikbaar is binnen je Unix systeem!
 
 Informatie over commando's
@@ -324,15 +324,15 @@ Informatie over commando's
 - om te herinneren welk commando iets doet, als je de naam van het
   commando bent vergeten: ":program:`apropos`".
 
-  Stel je voor bijvoorbeeld dat je niet meer weet welk commando je
+  Stel je voor dat je bijvoorbeeld niet meer weet welk commando je
   moet gebruiken om een proces te beëindigen. Je denkt aan het woord
   "terminate" maar dit is geen commando. Dan tik je :program:`apropos
   terminate` in: |apropos(1)|_ zoekt in alle beschikbare manual
-  pagina's naar het woord "terminate" en laat je zien de naam van de
+  pagina's naar het woord "terminate" en laat je de namen zien van de
   pagina's die het woord bevatten. Hiermee zie je waarschijnlijk snel
   weer een referentie naar het programma |kill(1)|_.
 
-- om snel te weten welke opties een programma heeft. Je kunt natuurlijk
+- om snel te weten welke opties een programma heeft: je kunt natuurlijk
   het commando |man(1)|_ gebruiken, maar de meeste programma's reageren
   ook op de optie ``--help`` of ``-h``. Probeer bijvoorbeeld::
 
@@ -342,7 +342,7 @@ Informatie over commando's
 
   Misschien past de tekst van het programma niet volledig binnen je
   terminal. Als je terminal wordt weergegeven in een grafische omgeving,
-  beschik je misschien over een scrollbar. (Dit is een luxe.) Zo niet, kan je
+  beschik je misschien over een scrollbar. (Dit is een luxe) Zo niet, kan je
   het woord ":program:`|more`" toevoegen aan het eind van je commandolijn,
   bijvoorbeeld::
 
@@ -351,8 +351,7 @@ Informatie over commando's
   Dit werkt op alle Unix systemen, ongeacht de omgeving waar je een
   terminal hebt.
 
-Naast die opties bestaat er nog een bijzonder hulp-systeem, die heet
-:program:`info`. Weinig programma's maken gebruik van |info(1)|, maar voor de
+Naast die opties bestaat er nog een bijzonder hulp-systeem: :program:`info`. Weinig programma's maken gebruik van |info(1)|, maar voor de
 enkele programma's die er wel in staan, is de documentatie daar zeer
 uitgebreid en vaak van zeer hoge kwaliteit. Je hoeft het nu niet te
 leren gebruiken, maar onthoud hem voor later, voornamelijk voor je
@@ -378,12 +377,12 @@ Draaiende programma's
 ---------------------
 
 Eerder heb je al geleerd hoe je :kbd:`^Z` kan gebruiken om een programma
-tijdelijk te stoppen en sturen naar de achtergrond; heb je ook geleerd
+tijdelijk te stoppen en naar de achtergrond kan sturen en heb je geleerd
 hoe je de commando's |ps(1)|_ en |kill(1)|_ kunt gebruiken om een
 programma af te sluiten.
 
 Door |ps(1)|_ heb je waarschijnlijk veel andere programma's zien draaien
-die je misschien had verwacht. Een Unix systeem heeft vaak tientallen
+die je misschien niet had verwacht. Een Unix systeem heeft vaak tientallen
 :def:`processen` draaien in de achtergrond.
 
 Het volgende plaatje laat zien hoe je Unix systeem eruit ziet "van binnen":
@@ -431,7 +430,7 @@ het systeem om het programma te draaien.
 
 Je hebt eerder gezien hoe je met |kill(1)|_ een proces kunt beëindigen.
 
-Tot nu toe ziet er alsof je de volgende kunt doen met een proces:
+Tot nu toe ziet het eruit alsof je het volgende kunt doen met een proces:
 
 - het opstarten vanuit een shell;
 - zijn communicatiekanalen afsluiten:
@@ -492,15 +491,15 @@ systeem).
 .. admonition:: Antwoord
    :class: toggle
 
-   Het proces Xorg eindigt. Dit sluit de communicatiekanaal naar de
+   Het proces Xorg eindigt. Dit sluit de communicatiekanalen naar de
    verschillende programma's die X11 gebruiken, inclusief bijvoorbeeld
    de terminal.  Wanneer de terminal eindigt, sluit het dan zijn
    communicatiekanaal met de processen opgestart vanaf de
    terminal. Als die processen dan met de terminal proberen te
    communiceren, krijgen ze automatisch ``SIGHUP``, en eindigen zo.
 
-   Een interessante feature is dat een programma die niet met X11 of
-   een terminal probeert te communiceren in het achtergrond blijft
+   Een interessante feature is dat een programma dat niet met X11 of
+   een terminal probeert te communiceren in de achtergrond blijft
    draaien, zelfs nadat Xorg is opgeruimd.
 
 Jobbeheer
@@ -509,7 +508,7 @@ Jobbeheer
 Je kent nu al |ps(1)|_, |kill(1)|_, en het concept van signalen.
 
 Een applicatie hiervan is het zogenoemde "job control" protocol. Dit is
-een feature van de shell en is beschikbaar met bijna alle shells op alle Unix systemen.
+een feature van de shell en is beschikbaar in bijna alle shells op alle Unix systemen.
 
 .. index:: fg
 .. index:: bg
@@ -523,10 +522,10 @@ Probeer het volgende:
    Op dit moment is je proces gepauzeerd in de achtergrond.
 3. Draai het commando: :program:`jobs`
 
-   :program:`jobs` laat zien welke processen zijn nu opgestart door je shell.
+   :program:`jobs` laat zien welke processen zijn opgestart door je shell.
 4. Draai het commando: :program:`fg %1`
 
-   :program:`fg` brengt een proces die op de achtergrond zit terug aan het
+   :program:`fg` brengt een proces dat op de achtergrond zit terug naar het
    hoofd van de terminal, en activeert hem weer als het gepauzeerd
    was. Hier komt dus :program:`sleep` terug.
 5. Toets :kbd:`^Z` weer.
@@ -536,7 +535,7 @@ Probeer het volgende:
    weer. Hierdoor blijft het proces draaien, alleen zit hij niet meer
    aan het hoofd van de terminal. Je kunt dan tegelijk iets anders
    gaan doen, bijvoorbeeld andere commando's intikken in je shell, of
-   een andere commando terugbrengen aan het hoofd van je terminal.
+   een ander commando terugbrengen naar het hoofd van je terminal.
 7. Draai het commando: :program:`vim`
 8. Toets :kbd:`^Z` weer.
 9. Draai het commando: :program:`jobs`
@@ -549,7 +548,7 @@ Probeer het volgende:
 11. Draai het commando: :program:`fg`
 
     Dit brengt de andere job aan de voorgrond en activeert hem weer.
-12. Sluit die laatste job af zelf.
+12. Sluit die laatste job zelf af.
 
 Hiermee heb je geleerd:
 
@@ -594,7 +593,7 @@ Anders:
   waar je met meerdere vingers tegelijk moet duwen op je toetsenbord.
 
 - Emacs (:program:`emacs`): werkt op basis van zijn eigen besturingssysteem,
-  geprogrammeerd in het eerbiedwaardige programmeertaal LISP. Emacs is
+  geprogrammeerd in de eerbiedwaardige programmeertaal LISP. Emacs is
   dus heel krachtig met heel veel functionaliteit, maar dus ook
   wat ingewikkelder goed te leren gebruiken. Emacs maakt veel
   gebruik van toetscombinaties.
@@ -688,13 +687,13 @@ Naar controlemodus  :kbd:`Esc`     :kbd:`M-x`
 
 6. Je draait het commando ``sleep 100&`` in je terminal, dan sluit je
    je terminal af. Je maakt dan weer een nieuwe terminal open, en dan draai
-   je |ps(1)|_. Is het programma |sleep(1)|_ steeds actief?
+   je |ps(1)|_. Is het programma |sleep(1)|_ nog steeds actief?
 
    .. admonition:: Oplossing
       :class: toggle
 
-      Ja, want de processen opgestart vanaf de eerste terminal alleen
-      worden beeindigd (met ``SIGHUP``) wanneer ze met de gesloten
+      Ja, want de processen opgestart vanaf de eerste terminal worden alleen
+      beeindigd (met ``SIGHUP``) wanneer ze met de gesloten
       terminal proberen te communiceren. Omdat |sleep(1)|_ niet
       communiceert, blijft het gewoon draaien in het achtergrond.
 
@@ -708,7 +707,7 @@ Naar controlemodus  :kbd:`Esc`     :kbd:`M-x`
 
       Emacs: :kbd:`Ctrl-X Ctrl-C`
 
-8. De uitvoer van een commando past in je terminal niet. Wat doe je dan?
+8. De uitvoer van een commando past niet in je terminal. Wat doe je dan?
 
    .. admonition:: Oplossing
       :class: toggle
