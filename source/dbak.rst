@@ -117,8 +117,8 @@ Bestandssynchronisatie
 - Bestandssynchronisatieprogramma's tussen je verschillende computers
   en die van het bedrijf die het programma maakt:
 
-  - SURFdrive__ (opslag in Nederland - **je krijgt daar als UvA student
-    automatisch een account**)
+  - SURFdrive__ (opslag in Nederland - **UvA medewerkers krijgen daar 
+    automatisch een account, studenten helaas niet**)
 
     .. __: http://surfdrive.surf.nl/
 
@@ -140,6 +140,10 @@ Bestandssynchronisatie
   - ownCloud__
 
    .. __: https://owncloud.org/
+
+  - Nextcloud__ (een afsplitsing van ownCloud) 
+
+   .. __: https://nextcloud.com/
 
   - `Bittorent Sync`__
 
